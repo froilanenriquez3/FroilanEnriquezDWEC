@@ -1,0 +1,76 @@
+main, header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: lightgray;
+  padding: 20px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+main img, header img {
+  margin: 20px;
+}
+
+body {
+  background-color: tan;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+header h1 {
+  color: white;
+}
+
+content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+content aside {
+  background-color: gray;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+content aside button {
+  background-color: black;
+  color: white;
+  margin: 10px;
+}
+
+content aside button::hover {
+  background-color: yellow;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+/*# sourceMappingURL=style.css.map */

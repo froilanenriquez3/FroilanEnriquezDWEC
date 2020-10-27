@@ -1,0 +1,58 @@
+//Variables
+$boxColor: black;
+$textColor: white;
+
+//partials, including other scss files into your code
+@import "./main";
+
+//mixins, or functions that are reusable code
+@mixin flexCenter($direction){
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:$direction;
+}
+
+body{
+    background-color: tan;
+}
+
+header{
+    //Mixins can have parameters
+    @include flexCenter(column);
+
+    //allows class to inherit other classes
+    @extend main;
+
+    background-color:$boxColor;
+    border-radius: 8px; 
+    margin:10px;
+
+    //SASS nesting
+    h1{
+        color: $textColor;
+    }
+}
+
+content{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    
+
+    aside{
+        
+        background-color: gray;
+        border-bottom-left-radius: 8px; 
+        border-top-left-radius: 8px; 
+
+        button{
+            background-color:black;
+            color:white;
+            margin: 10px;
+            &::hover{
+                background-color:yellow;
+                transition-duration: 0.4s;
+            }
+        }
+    }
+}

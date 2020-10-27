@@ -1,0 +1,13 @@
+main{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    background-color:lightgray;
+    padding:20px;
+    border-bottom-right-radius: 8px; 
+    border-top-right-radius: 8px; 
+    img {
+        margin:20px;
+    }
+}
