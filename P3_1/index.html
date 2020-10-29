@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P3_1 Exercises</title>
+    <title>Number Game</title>
 </head>
-<body> 
-    <input id="target" type="text">
-    
-    <button onclick="getName()">
+
+<body>
+
+    <button onclick="getNumber(getMessage)">
+        Generate a new random number
+    </button>
+    <p id="display"></p>
+    <p>
+        Guess what number I am thinking of.
+    </p>
+
+    <input id="target" type="number">
+
+    <button onclick="compareNum(window.answer)">
         Submit
-    </button> 
+    </button>
 
     <p id="output"></p>
+
 </body>
 <script src="demo.js"></script>
+
 </html>
