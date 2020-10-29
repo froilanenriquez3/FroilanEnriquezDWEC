@@ -9,7 +9,7 @@ function getNumber(getMessage){
  }
 
  function getMessage(){
-    document.getElementById("display").innerHTML = "New number generated!";
+    document.getElementById("output").innerHTML = "New number generated!";
  }
  
 function compareNum(answer){
