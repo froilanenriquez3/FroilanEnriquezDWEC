@@ -9,26 +9,26 @@
 
 <body>
 
-    <button onclick="getNumber(getMessage)">
+    <button onclick="resetGame(getMessage); resetList()">
         Generate a new random number
     </button>
     <p>
         I am thinking of a number between 1 and 100.
     </p>
     <p>
-        Guess what number I am thinking of.
+        Guess what number I am thinking of in 5 tries or less.
     </p>
 
 
     <input id="target" type="number">
 
-    <button onclick="checkNum(compareNum)">
+    <button id="submit" onclick="checkNum(compareNum,listPrevious); document.getElementById('target').value = ''">
         Submit
     </button>
 
     <p id="output"></p>
-
-
+    <p>Your guesses</p>
+    <p id="previous">: </p>
 
 </body>
 <script src="demo.js"></script>
