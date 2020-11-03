@@ -29,6 +29,12 @@ body{
     font-size: 200%;
     background-color: white;
     border-radius: 14px;
+    text-decoration: none;
+    box-shadow: 0 9px #999;
+}
+.reset button:active{
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
 }
 .info{
     width: 100%;
@@ -48,7 +54,13 @@ body{
     border-color: white;
     border: 1px solid;
     color: white;
+   
     
+}
+
+.input button:active {
+    transform: translateY(2px);
+  
 }
 
 .output{
