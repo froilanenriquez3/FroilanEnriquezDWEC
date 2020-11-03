@@ -10,7 +10,7 @@ function resetGame(message){
  }
 
  function getMessage(){
-    document.getElementById("output").innerHTML = "New number generated! (Tries left: 5)";
+    document.getElementById("output").innerHTML = "New number generated! (Tries left: 6)";
  }
  
  function checkNum(callback1, callback2){
@@ -19,8 +19,9 @@ function resetGame(message){
     number = document.getElementById("target").value;
     if(number < 1 || number > 100){
         document.getElementById("output").innerHTML = "Your guess is not valid! (Number is between 1 and 100)";
-    }else if(window.tries > 5) {
+    }else if(window.tries > 6) {
         document.getElementById("output").innerHTML = "You're out of tries! Generate a new number to try again.";
+        document.getElementById("submit").style.display = "none";
     } else{
         let counter = 0;
         let repeat = false;
@@ -47,13 +48,13 @@ function compareNum(){
     window.tries++;
     
    if (number == window.answer){
-    document.getElementById("output").innerHTML = "You are correct, my number is " + window.answer + "! You had " + (5 - window.tries) + " try/tries left to spare.";
+    document.getElementById("output").innerHTML = "You are correct, my number is " + window.answer + "! You had " + (6 - window.tries) + " try/tries left to spare.";
     document.getElementById("submit").style.display = "none";
-   } else if (number < window.answer && window.tries < 5){
-  	document.getElementById("output").innerHTML =  number + " is too low, try again! (Tries left: " + (5 - window.tries) + ")";
-   } else if(number > window.answer && window.tries < 5){
-  	document.getElementById("output").innerHTML =  number + " is too high, try again! (Tries left: " + (5 - window.tries) + ")";
-   } else if(window.tries == 5){
+   } else if (number < window.answer && window.tries < 6){
+  	document.getElementById("output").innerHTML =  number + " is too low, try again! (Tries left: " + (6 - window.tries) + ")";
+   } else if(number > window.answer && window.tries < 6){
+  	document.getElementById("output").innerHTML =  number + " is too high, try again! (Tries left: " + (6 - window.tries) + ")";
+   } else if(window.tries == 6){
     document.getElementById("output").innerHTML = "You're all out of tries! My number was " + window.answer+ ". Generate a new number to try again.";
    }
    
@@ -83,7 +84,7 @@ let tries;
 let answers;
 
 resetGame(function (){
-        document.getElementById("output").innerHTML = "Initial number generated. (Tries left: 5)"
+        document.getElementById("output").innerHTML = "Initial number generated. (Tries left: 6)"
 
     });
 
