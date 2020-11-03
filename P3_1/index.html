@@ -4,31 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Number Game</title>
 </head>
 
 <body>
 
-    <button onclick="resetGame(getMessage); resetList()">
-        Generate a new random number
-    </button>
-    <p>
-        I am thinking of a number between 1 and 100.
-    </p>
-    <p>
-        Guess what number I am thinking of in 5 tries or less.
-    </p>
+    <div class="container">
+        <div class="reset">
+            <button onclick="resetGame(getMessage); resetList()">
+                Generate a new random number
+            </button>
+        </div>
+
+        <div class="info">
+            <p>
+                I am thinking of a number between 1 and 100.
+                Guess what number I am thinking of in 5 tries or less.
+            </p>
+
+        </div>
+
+        <div class="input">
+            <input id="target" type="number">
+
+            <button id="submit"
+                onclick="checkNum(compareNum,listPrevious); document.getElementById('target').value = ''">
+                Submit
+            </button>
+
+        </div>
+
+        <div class="output">
+            <p id="output"></p>
+            <div class="guesses">
+                <p>Your guesses</p>
+                <p id="previous">: </p>
+            </div>
+
+        </div>
 
 
-    <input id="target" type="number">
 
-    <button id="submit" onclick="checkNum(compareNum,listPrevious); document.getElementById('target').value = ''">
-        Submit
-    </button>
+    </div>
 
-    <p id="output"></p>
-    <p>Your guesses</p>
-    <p id="previous">: </p>
 
 </body>
 <script src="demo.js"></script>
