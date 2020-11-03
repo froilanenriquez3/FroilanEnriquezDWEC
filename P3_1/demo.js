@@ -56,6 +56,7 @@ function compareNum(){
   	document.getElementById("output").innerHTML =  number + " is too high, try again! (Tries left: " + (6 - window.tries) + ")";
    } else if(window.tries == 6){
     document.getElementById("output").innerHTML = "You're all out of tries! My number was " + window.answer+ ". Generate a new number to try again.";
+    document.getElementById("submit").style.display = "none";
    }
    
 }
