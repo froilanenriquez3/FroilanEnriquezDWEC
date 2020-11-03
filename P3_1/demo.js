@@ -3,6 +3,7 @@
 function resetGame(message){
     window.answer = Math.floor((Math.random() * 100) + 1);
     window.tries = 0;
+    window.answers = [];
     document.getElementById("submit").style.display = "inline-block";
     message();
 	console.log(window.answer);
@@ -21,8 +22,22 @@ function resetGame(message){
     }else if(window.tries > 5) {
         document.getElementById("output").innerHTML = "You're out of tries! Generate a new number to try again.";
     } else{
-        callback1();
-        callback2();
+        let counter = 0;
+        let repeat = false;
+        do{
+            if (number === window.answers[counter]){
+                repeat = true;
+            }
+            counter++;
+            
+        } while(counter < window.answers.length);
+
+        if (repeat){
+            document.getElementById("output").innerHTML = "You already guessed " + number +"!";
+        } else{
+            callback1();
+            callback2();
+        }      
     }
 }
 
@@ -32,7 +47,7 @@ function compareNum(){
     window.tries++;
     
    if (number == window.answer){
-    document.getElementById("output").innerHTML = "You are correct, my number is " + window.answer + "! You had " + (5 - window.tries) + " tries left to spare.";
+    document.getElementById("output").innerHTML = "You are correct, my number is " + window.answer + "! You had " + (5 - window.tries) + " try/tries left to spare.";
     document.getElementById("submit").style.display = "none";
    } else if (number < window.answer && window.tries < 5){
   	document.getElementById("output").innerHTML =  number + " is too low, try again! (Tries left: " + (5 - window.tries) + ")";
@@ -48,7 +63,12 @@ function compareNum(){
 function listPrevious(){
     let number;
     number = document.getElementById("target").value;
-    document.getElementById("previous").innerHTML += number + " : ";
+    window.answers.push(number);
+    document.getElementById("previous").innerHTML = ": ";
+    for (let i = 0 ; i < window.answers.length ; i++ ){
+        document.getElementById("previous").innerHTML += window.answers[i] + " : ";
+    }
+    
 }
 
 function resetList(){
@@ -60,6 +80,7 @@ function resetList(){
 
 let answer;
 let tries;
+let answers;
 
 resetGame(function (){
         document.getElementById("output").innerHTML = "Initial number generated. (Tries left: 5)"
