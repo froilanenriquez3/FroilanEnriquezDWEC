@@ -1,10 +1,10 @@
 let candidate1 = {
-	name: "Biden",
+	name: "",
   states: []
 }
 
 let candidate2 = {
-	name: "Trump",
+	name: "",
   states: []
 }
 
@@ -15,9 +15,10 @@ function displayStates(item){
 }
 
 function displayCandidate(candidate, display){
-	document.getElementById(display).innerHTML = candidate.name;
+	document.getElementById(display).innerHTML = "<p>" + candidate["name"] + "</p>";
   document.getElementById(display).innerHTML += candidate.states.forEach(displayStates);
 }
+
 
 states.forEach(displayStates);
 displayCandidate(candidate1, "candidate1");
