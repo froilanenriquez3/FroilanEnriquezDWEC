@@ -1,0 +1,13 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  div {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+   
+  }
+  
+  

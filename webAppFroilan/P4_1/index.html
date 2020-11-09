@@ -7,7 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <div class="input">
+          <p id="plea">Enter the grade of student 1</p>
+      
+          <input id="target" type="number">
+          <button id="submit" onclick="addGrades(),nextStudent(),displayGrades(), averageGrades(),document.getElementById('target').value = ''">
+           Submit
+          </button>
+          <button id="undo" onclick="removeGrades(), displayGrades(), lastStudent()">
+           Undo last submission
+          </button>
+       </div>
+      
+      <div class="studentlist">
+        <p>Current list of grades:</p>
+         <p id="output"></p>
+      </div>
+      
+      <div class="sortedlist">
+        <p id="high">
+         Who is the smartest student?
+        </p>
+        <button id="sort" onclick="highGrade(), sortGrades()">
+        Sort the list
+        </button>
+         <p id="list"></p>
+      </div>
+      
+      </main>
+      
+      <div class="bottom">
+        <p id="average">
+        Add students to see the average grade here.
+        </p>
+      </div>
 </body>
 <script src="script.js"></script>
 </html>
