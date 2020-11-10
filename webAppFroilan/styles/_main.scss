@@ -1,13 +1,43 @@
-main{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction: column;
-    background-color:lightgray;
-    padding:20px;
-    border-bottom-right-radius: 8px; 
-    border-top-right-radius: 8px; 
-    img {
-        margin:20px;
+$myFont: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+main {
+    
+    background-color: lightgray;
+    padding: 20px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+
+    h2 {
+        margin-top: 9px;
+        margin-left: 20px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        div {
+            box-sizing: border-box;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            height:300px;
+            width: 400px;
+        
+            border: 10px solid white;
+
+            h2 {
+                font-family: $myFont;
+            }
+            img {
+                margin: 20px;
+            }
+        }
     }
 }

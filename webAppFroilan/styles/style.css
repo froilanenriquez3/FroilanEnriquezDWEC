@@ -1,32 +1,16 @@
 main, header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: lightgray;
   padding: 20px;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-main img, header img {
-  margin: 20px;
+main h2, header h2 {
+  margin-top: 9px;
+  margin-left: 20px;
 }
 
-body {
-  background-color: tan;
-}
-
-header {
+main .container, header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,41 +20,95 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .container div, header .container div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 20px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: white;
+  height: 300px;
+  width: 400px;
+  border: 10px solid white;
+}
+
+main .container div h2, header .container div h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main .container div img, header .container div img {
+  margin: 20px;
+}
+
+body {
+  background-color: lightblue;
+}
+
+header {
   background-color: black;
-  border-radius: 8px;
-  margin: 10px;
+  border-radius: 0;
+  margin-bottom: 10px;
 }
 
 header h1 {
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 4fr;
-      grid-template-columns: 1fr 4fr;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
 }
 
 content aside {
-  background-color: gray;
-  border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
+  background-color: lightcyan;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 30px;
 }
 
-content aside button {
-  background-color: black;
-  color: white;
+content aside h2 {
+  margin-bottom: 10px;
+}
+
+content aside ul {
+  margin-top: 20px;
+}
+
+content aside ul li {
   margin: 10px;
 }
 
-content aside button::hover {
-  background-color: yellow;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+content aside ul li a {
+  text-decoration: none;
+  color: blue;
+}
+
+content aside ul li a:hover {
+  color: purple;
 }
 /*# sourceMappingURL=style.css.map */
