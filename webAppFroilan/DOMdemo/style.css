@@ -1,0 +1,30 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+div#container{
+    margin: 20px;
+    background-color: rgb(0, 217, 255);
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    display: block;
+    text-align: center;
+    padding-top: 200px;
+}
+
+button{
+    background-color: white;
+    border: solid 1px black;
+    margin: 15px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button#yes:hover{
+   background-color: rgb(35, 231, 35);
+}
