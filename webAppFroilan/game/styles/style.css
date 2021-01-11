@@ -1,0 +1,737 @@
+* {
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+.dropdown {
+  display: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+.gameContainer {
+  width: calc(100% - 100px);
+  margin-top: 5%;
+  margin-left: 4%;
+}
+
+button {
+  cursor: pointer;
+}
+
+#game {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  height: 546px;
+  width: 895px;
+  border: solid grey 10px;
+}
+
+.startscreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../img/store.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 526px;
+  width: 875px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: black;
+}
+
+.text {
+  border-radius: 50px;
+  background-color: white;
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.text h1 {
+  position: relative;
+  font-size: 32px;
+  text-align: center;
+}
+
+.text h4 {
+  text-align: center;
+}
+
+.text p {
+  padding-top: 10px;
+  text-align: justify;
+}
+
+.startbutton {
+  width: 100px;
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: greenyellow;
+  color: black;
+  border: solid black 2px;
+}
+
+.startbutton:hover {
+  background-color: #14d614;
+  color: white;
+  border: solid black 2px;
+}
+
+.mainscreen {
+  display: none;
+}
+
+.rulescreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../img/store.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 526px;
+  width: 875px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: black;
+}
+
+.topbar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 76px;
+  background-color: white;
+  color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 6fr 5fr;
+      grid-template-columns: 5fr 6fr 5fr;
+  padding-bottom: 5px;
+  padding-top: 0px;
+}
+
+.topbar #feedbackbox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: whitesmoke;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.75fr 1fr 1fr 1fr;
+      grid-template-columns: 0.75fr 1fr 1fr 1fr;
+  height: 100%;
+  border-right: solid black 3px;
+  padding-top: 27px;
+  vertical-align: center;
+}
+
+.topbar #feedbackbox p {
+  border: solid black 3px;
+  border-radius: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  vertical-align: center;
+  height: 25px;
+  font-size: 15px;
+}
+
+.topbar #scorebox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  row-gap: 1;
+  margin-left: 10px;
+  padding: 1px;
+  vertical-align: center;
+  font-size: 15px;
+}
+
+.topbar #scorebox p {
+  border: solid black 3px;
+  border-bottom: none;
+  border-radius: 20px;
+  margin: 0px;
+  text-align: center;
+}
+
+.topbar #scorebox #winner {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.topbar #buttonsbox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  padding: 10px;
+  padding-top: 24px;
+  height: 100%;
+  -ms-grid-columns: 0.5fr 0.5fr 0.5fr;
+      grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  background-color: aliceblue;
+  border-left: solid black 3px;
+}
+
+.topbar #buttonsbox .music {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 1fr 0.5fr;
+      grid-template-columns: 0.5fr 1fr 0.5fr;
+  margin-right: 2px;
+}
+
+.topbar #buttonsbox .music .fa-volume-up,
+.topbar #buttonsbox .music .fa-volume-mute {
+  padding-top: 7px;
+}
+
+.topbar #buttonsbox .music .fa-volume-up {
+  position: relative;
+  left: 4px;
+}
+
+.topbar #buttonsbox .music .fa-volume-mute {
+  position: relative;
+  left: 1px;
+}
+
+.topbar #buttonsbox .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.topbar #buttonsbox .switch input {
+  display: none;
+}
+
+.topbar #buttonsbox .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #06f0d1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.topbar #buttonsbox .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 30px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.topbar #buttonsbox .switch input:checked + .slider {
+  background-color: #ccc;
+}
+
+.topbar #buttonsbox .switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #ccc;
+          box-shadow: 0 0 1px #ccc;
+}
+
+.topbar #buttonsbox .switch input:checked + .slider:before {
+  -webkit-transform: translateX(-26px);
+          transform: translateX(-26px);
+}
+
+.topbar #buttonsbox button {
+  height: 30px;
+  width: 70px;
+  font-size: 15px;
+  margin-left: 3px;
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  border: solid black 2px;
+}
+
+.topbar #buttonsbox button.endgame {
+  background-color: red;
+  color: white;
+}
+
+.topbar #buttonsbox button.endgame:active {
+  background-color: pink;
+  color: black;
+}
+
+.topbar #buttonsbox button.endgame:hover {
+  background-color: white;
+  color: black;
+}
+
+.topbar #buttonsbox button.endgame:disabled {
+  background-color: grey;
+}
+
+.topbar #buttonsbox button.endgame:disabled:active {
+  color: white;
+}
+
+.topbar #buttonsbox button.endgame:disabled:hover {
+  background-color: grey;
+  color: white;
+}
+
+.topbar #buttonsbox button.howto:hover {
+  background-color: white;
+  color: black;
+  border: solid  black 2px;
+}
+
+.box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40% 32% 22% 6%;
+      grid-template-rows: 40% 32% 22% 6%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 450px;
+  width: 875px;
+  border-top: solid black 3px;
+}
+
+.box .shelf {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.box .shelf .dropzone {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid black 2px;
+  width: 80%;
+  height: 80%;
+  margin: 10px;
+  padding: 0px;
+  background-color: #583f21;
+}
+
+.box .shelf [draggable="true"] {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: transparent;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  background-image: url("../img/hat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box .shelf .center {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 300px;
+  height: 100%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box .shelf .center .dropzone {
+  border: none;
+  margin-top: 0px;
+  background-color: beige;
+  width: 300px;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .shelf .center .dropzone [draggable="true"] {
+  width: 300px;
+  height: 100%;
+}
+
+.box #hats {
+  background-color: brown;
+}
+
+.box #hats #draghat1 {
+  background-image: url("../img/hats/red.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #hats #draghat2 {
+  background-image: url("../img/hats/brown.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #hats #draghat3 {
+  background-image: url("../img/hats/disguise.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #hats .center .dropzone {
+  background-image: url("../img/head.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #hats #draghat4 {
+  background-image: url("../img/hats/jokein2020.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #hats #draghat5 {
+  background-image: url("../img/hats/astronaut.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #hats #draghat6 {
+  background-image: url("../img/hats/superhero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shirts {
+  background-color: lightsalmon;
+}
+
+.box #shirts #dragshirt1 {
+  background-image: url("../img/shirts/btr.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shirts #dragshirt2 {
+  background-image: url("../img/shirts/dwight.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shirts #dragshirt3 {
+  background-image: url("../img/shirts/sweater.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shirts .center .dropzone {
+  background-image: url("../img/shirts/pain.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shirts #dragshirt4 {
+  background-image: url("../img/shirts/gamer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shirts #dragshirt5 {
+  background-image: url("../img/shirts/yoda.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shirts #dragshirt6 {
+  background-image: url("../img/shirts/spidey.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #pants {
+  background-color: #aa7447;
+}
+
+.box #pants #dragpants1 {
+  background-image: url("../img/pants/redpants.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #pants #dragpants2 {
+  background-image: url("../img/pants/dwight.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #pants #dragpants3 {
+  background-image: url("../img/pants/blackpants.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #pants .center .dropzone {
+  background-image: url("../img/legs.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #pants #dragpants4 {
+  background-image: url("../img/pants/whitepants.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #pants #dragpants5 {
+  background-image: url("../img/pants/greenpants.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #pants #dragpants6 {
+  background-image: url("../img/pants/bluepants.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shoes {
+  background-color: #5c3b3b;
+}
+
+.box #shoes #dragshoes1 {
+  background-image: url("../img/shoes/pinkshoes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shoes #dragshoes2 {
+  background-image: url("../img/shoes/brownshoes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shoes #dragshoes3 {
+  background-image: url("../img/shoes/blueshoes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shoes .center .dropzone {
+  background-color: beige;
+  background-image: url("../img/feet.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shoes #dragshoes4 {
+  background-image: url("../img/shoes/whiteshoes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shoes #dragshoes5 {
+  background-image: url("../img/shoes/greenshoes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box #shoes #dragshoes6 {
+  background-image: url("../img/shoes/redshoes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.check {
+  position: relative;
+  bottom: 100px;
+  left: 295px;
+  z-index: 1;
+  height: 50px;
+  width: 92px;
+  border-radius: 50px;
+  border: black solid 2px;
+  background-color: green;
+  color: white;
+  font-size: 25px;
+}
+
+.check#next {
+  left: 393px;
+}
+
+.check:hover {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+}
+
+.check:active {
+  background-color: lime;
+  color: black;
+}
+
+.check:disabled {
+  background-color: grey;
+}
+
+.check:disabled:active {
+  color: white;
+}
+
+.check:disabled:hover {
+  background-color: grey;
+  color: white;
+  border: black solid 2px;
+}
+
+.endscreen {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 526px;
+  width: 875px;
+  background-image: url("../img/store.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: black;
+}
+
+.endscreen .text {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  height: 150px;
+}
+
+.endscreen .text h2 {
+  color: red;
+  margin: 10px;
+}
+
+.endscreen button {
+  width: 375px;
+}
+
+.endscreen .redeem {
+  background-color: lightblue;
+  color: black;
+  border: solid black 2px;
+}
+
+.endscreen .redeem:hover {
+  background-color: blue;
+  color: white;
+  border: solid black 2px;
+}
+/*# sourceMappingURL=style.css.map */

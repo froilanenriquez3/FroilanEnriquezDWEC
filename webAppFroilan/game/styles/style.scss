@@ -1,0 +1,617 @@
+@mixin flexDisplay($direction) {
+    display: flex;
+    justify-content: $direction;
+    align-items: $direction;
+}
+
+@mixin gridDisplay() {
+    display: grid;
+}
+
+@mixin bodyImage($url) {
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+*{
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+// html{
+//     background-color: #C9DBE3;
+// }
+
+.dropdown{
+    display: none;
+}
+
+
+body {
+    display: flex;
+    font-family: 'Montserrat', 'sans-serif';
+    //background-color: #e2f3e7;
+}
+
+.gameContainer{
+    //position: absolute;
+    //right: 0px;
+    width: calc(100% - 100px);
+    margin-top: 5%;
+    margin-left: 4%;
+    //z-index: -1;
+}
+
+button {
+    cursor: pointer;
+}
+#game {
+    box-sizing: border-box;
+    margin: auto;
+    // margin-top: 10%;
+
+    //height: 450px;
+    height: 546px;
+    //width: 75%;
+    width: 895px;
+    //min-width: 1068px;
+    border: solid grey 10px;
+}
+
+.startscreen {
+    @include flexDisplay(center);
+
+    flex-direction: column;
+    background-image: url("../img/store.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-sizing: border-box;
+    height: 526px;
+    width: 875px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+
+    color: black;
+}
+
+.text {
+    border-radius: 50px;
+    background-color: white;
+    margin-top: 70px;
+    padding: 20px;
+    // text-align: center;
+    h1{
+        position: relative;
+        font-size: 32px;
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+
+    }
+    p{
+        padding-top: 10px;
+        text-align: justify;
+    }
+    
+  
+}
+
+.startbutton {
+    width:100px;
+    margin: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color: black;
+    border: solid black 2px;
+
+    &:hover {
+        background-color: rgb(20, 214, 20);
+        color: white;
+        border: solid black 2px;
+    }
+}
+
+.mainscreen {
+    display: none;
+}
+
+.rulescreen{
+    @include flexDisplay(center);
+
+    flex-direction: column;
+    background-image: url("../img/store.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-sizing: border-box;
+    height: 526px;
+    width: 875px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+
+    color: black;
+}
+
+.topbar {
+    box-sizing: border-box;
+    height: 76px;
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: 5fr 6fr 5fr;
+    padding-bottom: 5px;
+    padding-top: 0px;
+
+    #feedbackbox {
+        box-sizing: border-box;
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 0.75fr 1fr 1fr 1fr;
+        height: 100%;
+        border-right: solid black 3px;
+        padding-top: 27px;
+        vertical-align: center;
+        p {
+            border: solid black 3px;
+            border-radius: 20px;
+            // margin: 1px;
+            margin-bottom: 0px;
+            text-align: center;
+            vertical-align: center;
+            height: 25px;
+            font-size: 15px;
+        }
+    }
+
+    #scorebox {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1;
+
+        margin-left: 10px;
+        padding: 1px;
+
+        vertical-align: center;
+        font-size: 15px;
+
+        p {
+            border: solid black 3px;
+            border-bottom:none;
+            border-radius: 20px;
+            margin: 0px;
+            text-align: center;
+        }
+        #winner {
+            grid-area: 2 / 1 / span 1 / span 2;
+        }
+    }
+
+    #buttonsbox {
+        box-sizing: border-box;
+        display: grid;
+        padding: 10px;
+        padding-top: 24px;
+        height: 100%;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        background-color: aliceblue;
+        border-left: solid black 3px;
+
+        .music {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 0.5fr;
+            .fa-volume-up,
+            .fa-volume-mute {
+                padding-top: 7px;
+            }
+            .fa-volume-up {
+                position: relative;
+                left: 4px;
+            }
+            .fa-volume-mute {
+                position: relative;
+                left:1px;
+            }
+            margin-right: 2px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+
+            input {
+                display: none;
+            }
+
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #06f0d1;
+                
+                transition: 0.4s;
+                border-radius: 50px;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 30px;
+                bottom: 4px;
+                background-color: white;
+                transition: 0.4s;
+                border-radius: 50%;
+            }
+
+            input:checked + .slider {
+                background-color: #ccc;
+                
+            }
+
+            input:focus + .slider {
+                box-shadow: 0 0 1px #ccc;
+            }
+
+            input:checked + .slider:before {
+                transform: translateX(-26px);
+            }
+        }
+
+        button {
+            height: 30px;
+            width: 70px;
+            font-size: 15px;
+            margin-left: 3px;
+            text-decoration: none;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            border: solid black 2px;
+
+            &.endgame{
+                background-color: red;
+                color: white;
+
+                
+                &:active {
+                    background-color: pink;
+                    color: black;
+                }
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+                
+                &:disabled {
+                    background-color: grey;
+                    &:active {
+                        color: white;
+                    }
+                    &:hover {
+                        background-color: grey;
+                        color: white;
+                    }
+                }
+
+            }
+
+            &.howto{
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    border:solid  black 2px;
+                }
+            }
+
+            
+
+            
+
+            
+        }
+    }
+}
+
+.box{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 40% 32% 22% 6%;
+    justify-content: space-between;
+    //height:480px;
+    //width: 1048px;
+    height: 450px;
+    width: 875px;
+    border-top: solid black 3px;
+
+    .shelf {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+        align-items: center;
+        height: 100%;
+
+        .dropzone {
+            box-sizing: border-box;
+            border: solid black 2px;
+            //width: 100px;
+            width: 80%;
+            //height: 90%;
+            height: 80%;
+            margin: 10px;
+            padding: 0px;
+
+            background-color: rgb(88, 63, 33);
+        }
+
+        [draggable="true"] {
+            //width: 100px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background: transparent;
+            zoom: 1;
+            filter: alpha(opacity=50);
+        
+            @include bodyImage("../img/hat.png");
+        }
+
+        .center {
+            box-sizing: border-box;
+            //background-color: rgb(51, 168, 168);
+            width: 300px;
+            height: 100%;
+            margin: auto;
+            display: grid;
+            justify-content: center;
+
+            .dropzone {
+                border: none;
+                margin-top: 0px;
+                background-color: beige;
+                width: 300px;
+                height: 100%;
+
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                [draggable="true"] {
+                    width: 300px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    #hats {
+        background-color: brown;
+        #draghat1 {
+            @include bodyImage("../img/hats/red.png");
+        }
+
+        #draghat2 {
+            @include bodyImage("../img/hats/brown.png");
+        }
+
+        #draghat3 {
+            @include bodyImage("../img/hats/disguise.png");
+        }
+        .center {
+            .dropzone {
+                @include bodyImage("../img/head.png");
+            }
+        }
+
+        #draghat4 {
+            @include bodyImage("../img/hats/jokein2020.png");
+        }
+        #draghat5 {
+            @include bodyImage("../img/hats/astronaut.png");
+        }
+
+        #draghat6 {
+            @include bodyImage("../img/hats/superhero.png");
+        }
+    }
+
+    #shirts {
+        background-color: lightsalmon;
+
+        #dragshirt1 {
+            @include bodyImage("../img/shirts/btr.png");
+        }
+
+        #dragshirt2 {
+            @include bodyImage("../img/shirts/dwight.png");
+        }
+        #dragshirt3 {
+            @include bodyImage("../img/shirts/sweater.png");
+        }
+        .center {
+            .dropzone {
+                @include bodyImage("../img/shirts/pain.png");
+            }
+        }
+
+        #dragshirt4 {
+            @include bodyImage("../img/shirts/gamer.png");
+        }
+
+        #dragshirt5 {
+            @include bodyImage("../img/shirts/yoda.png");
+        }
+        #dragshirt6 {
+            @include bodyImage("../img/shirts/spidey.PNG");
+        }
+    }
+
+    #pants {
+        background-color: rgb(170, 116, 71);
+        #dragpants1 {
+            @include bodyImage("../img/pants/redpants.png");
+        }
+        #dragpants2 {
+            @include bodyImage("../img/pants/dwight.png");
+        }
+        #dragpants3 {
+            @include bodyImage("../img/pants/blackpants.png");
+        }
+        .center {
+            .dropzone {
+                @include bodyImage("../img/legs.png");
+            }
+        }
+
+        #dragpants4 {
+            @include bodyImage("../img/pants/whitepants.png");
+        }
+
+        #dragpants5 {
+            @include bodyImage("../img/pants/greenpants.png");
+        }
+        #dragpants6 {
+            @include bodyImage("../img/pants/bluepants.png");
+        }
+    }
+
+    #shoes {
+        background-color: rgb(92, 59, 59);
+
+        #dragshoes1 {
+            @include bodyImage("../img/shoes/pinkshoes.png");
+        }
+
+        #dragshoes2 {
+            @include bodyImage("../img/shoes/brownshoes.png");
+        }
+
+        #dragshoes3 {
+            @include bodyImage("../img/shoes/blueshoes.png");
+        }
+
+        .center {
+            .dropzone {
+                background-color: beige;
+                @include bodyImage("../img/feet.png");
+            }
+        }
+
+        #dragshoes4 {
+            @include bodyImage("../img/shoes/whiteshoes.png");
+        }
+
+        #dragshoes5 {
+            @include bodyImage("../img/shoes/greenshoes.png");
+        }
+
+        #dragshoes6 {
+            @include bodyImage("../img/shoes/redshoes.png");
+        }
+    }
+}
+
+.check {
+    position: relative;
+    bottom: 100px;
+    left: 295px;
+    z-index: 1;
+    height: 50px;
+    width: 92px;
+    border-radius: 50px;
+    border: black solid 2px;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    &#next {
+        left: 393px;
+    }
+    &:hover {
+        background-color: white;
+        color: black;
+        border: black solid 2px;
+    }
+    &:active {
+        background-color: lime;
+        color: black;
+    }
+    &:disabled {
+        background-color: grey;
+        &:active {
+            color: white;
+        }
+        &:hover {
+            background-color: grey;
+            color: white;
+            border: black solid 2px;
+        }
+    }
+}
+
+.endscreen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    height: 526px;
+    width: 875px;
+
+    background-image: url("../img/store.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-left: 40px;
+    padding-right: 40px;
+
+    color: black;
+
+    .text {
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        height: 150px;
+
+
+        h2 {
+            color: red;
+            margin: 10px;
+
+        }
+    }
+
+    button {
+        width: 375px;
+    }
+
+    .redeem {
+        background-color: lightblue;
+        color: black;
+        border: solid black 2px;
+
+        &:hover {
+            background-color: blue;
+            color: white;
+            border: solid black 2px;
+        }
+    }
+}
