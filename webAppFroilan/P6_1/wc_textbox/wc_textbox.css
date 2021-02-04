@@ -1,0 +1,7 @@
+.textboxComponent{
+    display: block;
+    background-color:grey;
+    margin: 2vh;
+    width: 100vh;
+    height: 50vh;
+}
