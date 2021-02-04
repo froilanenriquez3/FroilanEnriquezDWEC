@@ -1,4 +1,6 @@
-.myButton{
-    background-color: grey;
-    margin: 2vh;
+.buttonComponent{
+    border: solid black 1px;
+    margin: 10px;
+    width: 100vh;
+    padding: 10px;
 }
