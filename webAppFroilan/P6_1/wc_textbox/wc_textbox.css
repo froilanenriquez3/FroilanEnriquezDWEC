@@ -1,7 +1,11 @@
 .textboxComponent{
     display: block;
-    background-color:grey;
-    margin: 2vh;
+    border: solid black 1px;
+    margin: 10px;
     width: 100vh;
-    height: 50vh;
+  
+}
+
+p{
+    margin: 10px;
 }
