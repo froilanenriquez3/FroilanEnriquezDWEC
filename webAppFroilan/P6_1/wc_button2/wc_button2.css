@@ -1,5 +1,7 @@
 .secondButton{
     background-color: grey;
+    border: solid black 1px;
+    color: white;
     width: 100vh;
     margin: 10px;
     padding: 10px;

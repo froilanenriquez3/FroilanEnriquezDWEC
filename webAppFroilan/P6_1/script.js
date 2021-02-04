@@ -27,7 +27,7 @@ function importHTML(e) {
     console.log('component added!')
 }
 
-// Calling importHTML when the page loads on each object in the array
+// Calling importHTML when each object in the array loads
 htmlImportHelpers.forEach(
     (htmlImportHelper) => {
         htmlImportHelper.addEventListener('load', importHTML);
@@ -35,13 +35,3 @@ htmlImportHelpers.forEach(
 );
 
 
-/* document.head.innerHTML += '<link rel="stylesheet" href="wc_textbox/wc_textbox.css">';
-let myScript = document.createElement('script');
-myScript.src = "wc_textbox/wc_textbox.js";
-document.body.append(myScript);
-
-document.head.innerHTML += '<link rel="stylesheet" href="wc_button/wc_button.css">';
-let myScript2 = document.createElement('script');
-myScript2.src = "wc_button/wc_button.js";
-document.body.append(myScript2);
- */
