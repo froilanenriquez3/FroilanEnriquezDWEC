@@ -8,16 +8,28 @@
     <title>Multimedia Demonstration</title>
 </head>
 <body>
-    <button>
-
+    <button id="controlsToggle" onclick="toggleControls()">
+        Add controls
     </button>
+
     <div class="container">
-        <video width="320" height="240"controls>
+
+        <video id="myVideo" width="320" height="240">
             <source src="assets/videos/myvideo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        
+  
+
+        <img src="assets/images/handsome_boy.jpeg" height="240" alt="Image of a handsome boy">
+
+        <audio controls>
+            <source src="assets/audio/music.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+          </audio>
+
     </div>
-    
+
 <script src="script.js"></script>
 </body>
 </html>
