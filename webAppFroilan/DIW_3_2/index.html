@@ -8,39 +8,52 @@
     <title>Multimedia Demonstration</title>
 </head>
 <body>
-    
-    <div id="videoSection">
+    <h1>Multimedia Demo</h1>
 
-        <div class="videoButtons">
-            <button id="controlsToggle" onclick="toggleControls()">
-                Use default controls
-            </button>
-            <div id="customControl">
-                <button id="playVideo" onclick="playVideo()">Play video</button>
-                <button id="skipTen" onclick="skipTen()">Skip 10 seconds</button>
-                <button id="rewindTen" onclick="rewindTen()">Go back 10 seconds</button>
+    <div class="container">
+        <div id="videoSection">
+            <h3>Video</h3>
+    
+            <div class="videoButtons">
+                <button id="controlsToggle" onclick="toggleControls()">
+                    Use default controls
+                </button>
+                <div id="customControl">
+                    <button id="playVideo" onclick="playVideo()">Play video</button>
+                    
+                    <button id="rewindTen" onclick="rewindTen()">Rewind 10 seconds</button>
+                    <button id="skipTen" onclick="skipTen()">Skip 10 seconds</button>
+                    <div id="videoProgress">
+    
+                    </div>
+                </div>
+                
             </div>
+            <video id="myVideo" width="320" height="240">
+                <source src="assets/videos/myvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             
         </div>
-        <video id="myVideo" width="320" height="240">
-            <source src="assets/videos/myvideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        
+    
+        <div>
+            <h3>Image</h3>
+            <img src="assets/images/handsome_boy.jpeg" height="240" alt="Image of a handsome boy">
+        </div>
+    
+    
+        <div>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="assets/audio/music.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+              </audio>
+        </div>
     </div>
+    
+    
 
-    <div>
-        <img src="assets/images/handsome_boy.jpeg" height="240" alt="Image of a handsome boy">
-    </div>
-
-
-    <div >
-        <audio controls>
-            <source src="assets/audio/music.mp3" type="audio/mp3">
-            Your browser does not support the audio tag.
-          </audio>
-    </div>
-
-<script src="script.js"></script>
+<script src="functions.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
