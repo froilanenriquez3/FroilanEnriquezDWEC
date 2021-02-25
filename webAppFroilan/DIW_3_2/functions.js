@@ -48,7 +48,7 @@ function pauseVideo(){
     let videoElem = document.querySelector("#myVideo");
     videoElem.pause();
 
-    document.querySelector("#playVideo").innerHTML = "Pause video";
+    document.querySelector("#playVideo").innerHTML = "Play video";
     document.querySelector("#playVideo").removeEventListener("click", pauseVideo);
     document.querySelector("#playVideo").addEventListener("click", playVideo);
 
@@ -58,5 +58,16 @@ function pauseVideo(){
 function displayProgress(){
     let videoElem = document.querySelector("#myVideo");
     vLength = videoElem.duration;
+
     document.querySelector("#videoProgress").innerHTML = "The video is at timestamp: " + videoElem.currentTime.toFixed(2);
+
+    if(videoElem.ended || videoElem.currentTime == vLength){
+        thanksMessage();
+    } else{
+        document.querySelector("#thanks").innerHTML = "";
+    }
+}
+
+function thanksMessage(){
+    document.querySelector("#thanks").innerHTML = "Thanks for watching my video!"; 
 }
