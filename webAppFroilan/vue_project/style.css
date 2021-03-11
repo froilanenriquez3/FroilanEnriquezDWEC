@@ -1,0 +1,41 @@
+.cardlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardlist div {
+    padding: 10px;
+}
+
+.skillcard{
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 40vh;
+    width: 23vw;
+    border: solid black 1px;
+    padding: 20px;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
