@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MAPBOX -->
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../styles/apistyles.css">
+    <title>API Mapbox</title>
+</head>
+
+<body>
+    <p>Using Mapbox API, with AXIOS request.</p>
+    <p>Enter an address and it will be added to the map.</p>
+    <input type="text" id="inputAddress">
+    <button onclick="addAddress()">Enter</button>
+    <button onclick="removeAllMarks(MyMap)">Erase Markers</button>
+    <br><br>
+    <div id="myMapDiv" style="height: 500px;">
+
+    </div>
+
+
+
+    <!-- MapBox API -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <!-- AXIOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
