@@ -1,5 +1,7 @@
 Project 3: It's My Turn
 
+Vue / Bootstrap Vue
+
 Scratch: 
 
 Link portfolio in resume (QR code or link)
@@ -34,3 +36,4 @@ testimonials?
 
 
 Design: 
+Simplex, Journal, Darkly, Lumen, Sandstone, Lux
