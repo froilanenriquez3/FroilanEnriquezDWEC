@@ -2,6 +2,9 @@ Project 3: It's My Turn
 
 Vue / Bootstrap Vue
 
+From src folder, run 'vue serve'
+
+
 Scratch: 
 
 Link portfolio in resume (QR code or link)
@@ -21,8 +24,9 @@ Include:
 Bilingual - buttons for spanish/english
 
 
-
 List of projects: page per project
+
+cards with picture/text and alternating halves
 
 timeline/journey
 
@@ -32,6 +36,9 @@ languages / tools / technologies
 
 testimonials?
 
+Call to action button
+
+AOS Library - animations for js
 
 
 

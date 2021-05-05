@@ -3,7 +3,7 @@
 
 // Variables
 // @import 'variables';
-@import "~bootswatch/dist/darkly/variables";
+@import "~bootswatch/dist/simplex/variables";
 
 // Define variable defaults
 // $body-bg: #000;
@@ -12,5 +12,5 @@
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 //Bootswatch
-@import "~bootswatch/dist/darkly/bootswatch";
+@import "~bootswatch/dist/simplex/bootswatch";
 @import "../../node_modules/bootstrap-vue/src/index.scss";
