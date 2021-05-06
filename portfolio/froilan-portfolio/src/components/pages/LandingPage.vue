@@ -1,7 +1,16 @@
 <template>
   <div id="landingPage">
     <img src="../../assets/img/plane.svg" alt="" id="plane" />
-    <main></main>
+    <main>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+
+
+    </main>
 
     <footer>
       <div>
@@ -25,10 +34,13 @@ export default {
 }
 main {
   display: flex;
+  flex-wrap: wrap;
   height: 1000vh;
 }
 section {
-  width: 50vw;
+    width: 100%;
+    height: 5%;
+  border: solid black;
 }
 #plane {
 
