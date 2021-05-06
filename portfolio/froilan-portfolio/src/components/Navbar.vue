@@ -1,7 +1,10 @@
 <template>
-  <div class="container">
-    <b-navbar toggleable="lg" type="dark" variant="primary">
-      <b-navbar-brand href="#">NavBar</b-navbar-brand>
+    <b-navbar toggleable="lg" type="dark" variant="primary" class="fixed-top">
+      <b-navbar-brand href="#">
+        <div class="bg-white rounded-circle" height="60">
+          <img src="../assets/img/logo.svg" alt="" height="40" />
+        </div>
+      </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -42,7 +45,6 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-  </div>
 </template>
 <script>
 export default {
@@ -54,4 +56,7 @@ export default {
 </script>
 
 <style scoped>
+b-navbar {
+  position: sticky;
+}
 </style>

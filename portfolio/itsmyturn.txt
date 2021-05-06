@@ -17,6 +17,8 @@ of the video that have the corresponding answer
 
 Theme - music?
 
+airplane 
+
 API AI Azure?
 
 
@@ -44,3 +46,8 @@ AOS Library - animations for js
 
 Design: 
 Simplex, Journal, Darkly, Lumen, Sandstone, Lux
+
+Logo color: #e62e57
+
+$primary: #3D348B;
+$secondary: #e62e57;
