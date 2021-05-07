@@ -7,36 +7,42 @@
     <main>
       <SafetyVideo />
 
-    <!-- <section id="blank"></section> -->
+      <!-- <section id="blank"></section> -->
 
-      <section id="markerOne" >
-        <Card />
-         <Card />
+      <section id="markerOne">
+        <div data-aos="fade-right" data-aos-duration="1000"><Card /></div>
+
+        <div data-aos="fade-left" data-aos-duration="1000"><Card /></div>
       </section>
       <section></section>
       <section id="markerTwo">
-         <Card />
-         <Card />
+        <div data-aos="fade-right" data-aos-duration="1000"><Card /></div>
+
+        <div data-aos="fade-left" data-aos-duration="1000"><Card /></div>
       </section>
       <section></section>
       <section id="markerThree">
-         <Card />
-         <Card />
+        <div data-aos="fade-right" data-aos-duration="1000"><Card /></div>
+
+        <div data-aos="fade-left" data-aos-duration="1000"><Card /></div>
       </section>
 
-      <Email />
+        <Email />
     </main>
 
-    <!-- <footer id="footer">
-      <div class="mt-5">
+    <footer id="footer">
+      <div class="mt-2 mb-2">
         Icons made by <a href="" title="monkik">monkik</a> from
         <a href="https://www.flaticon.com/" title="Flaticon"
           >www.flaticon.com</a
         >
-
-        <a href="https://www.freepik.com/vectors/background">Background vector created by starline - www.freepik.com</a>
+        <br />
+        Background vector created by starline
+        <a href="https://www.freepik.com/vectors/background">
+          www.freepik.com</a
+        >
       </div>
-    </footer> -->
+    </footer>
   </div>
 </template>
 <script>
@@ -50,7 +56,6 @@ export default {
     Card,
     Email,
     SafetyVideo,
-
   },
 };
 </script>
@@ -62,18 +67,16 @@ main {
   margin-top: 12vh;
   background-image: url("../../assets/img/sky.jpg");
   background-color: #cccccc;
-  background-size: cover; 
-
+  background-size: cover;
 }
 #plane {
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scale(-1, -1) ;
+  transform: translate(-50%, -50%) scale(-1, -1);
   font-size: 30px;
   width: 30vw;
   /* background-color: cyan; */
-
 }
 section {
   margin: 1%;
@@ -87,6 +90,4 @@ section {
 #blank {
   height: 5vh;
 }
-
-
 </style>
