@@ -5,29 +5,20 @@
       <font-awesome-icon icon="fighter-jet" size="10x" class="fa-rotate-270"></font-awesome-icon>
     </div> -->
     <main>
+      <span id="about"></span>
       <SafetyVideo />
 
-      <!-- <section id="blank"></section> -->
+      <span id="skills"></span>
 
-      <section id="markerOne">
+      <section >
         <div data-aos="fade-right" data-aos-duration="1000"><Card /></div>
-
-        <div data-aos="fade-left" data-aos-duration="1000"><Card /></div>
-      </section>
-      <section></section>
-      <section id="markerTwo">
-        <div data-aos="fade-right" data-aos-duration="1000"><Card /></div>
-
-        <div data-aos="fade-left" data-aos-duration="1000"><Card /></div>
-      </section>
-      <section></section>
-      <section id="markerThree">
-        <div data-aos="fade-right" data-aos-duration="1000"><Card /></div>
-
         <div data-aos="fade-left" data-aos-duration="1000"><Card /></div>
       </section>
 
-        <Email />
+       <span id="projects"></span>
+
+      <span id="contact"></span>
+      <Email />
     </main>
 
     <footer id="footer">
@@ -84,10 +75,17 @@ section {
   display: flex;
   justify-content: space-around;
   width: 100vw;
-  height: 50vh;
   /* background-color: cyan; */
 }
 #blank {
   height: 5vh;
+}
+span {
+  width: 100vw;
+  /* border: solid black; */
+  margin-bottom: 10vh;
+}
+#about {
+  margin-bottom: 0;
 }
 </style>

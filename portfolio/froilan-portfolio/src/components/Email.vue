@@ -1,11 +1,11 @@
 <template>
   <div class="jumbotron bg-white text-black" id="emailSection">
     <div class="row">
-      <h1 class="display-5" align="left">Thank you for flying with us!</h1>
+      <h1 class="display-6" align="left">Thank you for flying with us!</h1>
       <div class="col" align="right">
         <font-awesome-icon
           icon="envelope"
-          size="6x"
+          size="5x"
           id="envelope"
         ></font-awesome-icon>
       </div>
@@ -122,7 +122,6 @@ export default {
 </script>
 <style scoped>
 #emailSection {
-  margin-top: 80vh;
   width: 80vw;
   opacity: 1;
   z-index: 1;
