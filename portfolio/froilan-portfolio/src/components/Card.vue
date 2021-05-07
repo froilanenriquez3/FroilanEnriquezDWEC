@@ -1,11 +1,10 @@
 <template>
-  <div class="card m-1" style="width: 18rem">
+  <div class="card m-1 cardcom">
     <div class="card-header bg-primary text-white">Featured</div>
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti et assumenda distinctio qui dolore illo error vitae nisi quia nemo, dignissimos harum, beatae doloremque veritatis, exercitationem eveniet. Quasi, quae eius.
       </p>
       <a href="#" class="btn btn-secondary">Go somewhere</a>
     </div>
@@ -21,4 +20,10 @@ export default {
 </script>
 
 <style scoped>
+.cardcom {
+  width: 35vw;
+  height: 40vh;
+  opacity: 0.95;
+}
+
 </style>
