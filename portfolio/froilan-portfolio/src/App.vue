@@ -12,22 +12,23 @@
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
-
-import Navbar from "./components/Navbar.vue";
 // import Card from "./components/Card.vue";
 import LandingPage from "./components/pages/LandingPage";
-
+import Navbar from "./components/Navbar.vue";
 
 export default {
   name: "App",
   components: {
     LandingPage,
-    Navbar 
+    Navbar
   },
 };
 </script>
 
 <style>
+html{
+  scroll-behavior: smooth;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,6 +36,7 @@ export default {
   text-align: center;
   /* color: #2c3e50; */
   /* margin-top: 60px; */
+
 }
 
 
