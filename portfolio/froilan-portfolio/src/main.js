@@ -3,10 +3,10 @@ import App from './App.vue'
 import { BootstrapVue } from "bootstrap-vue";
 import "./styles/app.scss";
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown, faEnvelope, faFighterJet } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faCaretDown)
+library.add(faCaretDown, faEnvelope, faFighterJet)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

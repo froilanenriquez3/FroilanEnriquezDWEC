@@ -24,6 +24,9 @@ pre-flight safety demonstration
 
 API AI Azure?
 
+fading background images
+
+
 
 Include:
 Bilingual - buttons for spanish/english
@@ -52,5 +55,7 @@ Simplex, Journal, Darkly, Lumen, Sandstone, Lux
 
 Logo color: #e62e57
 
-$primary: #3D348B;
+$primary: #00AEDC;
 $secondary: #e62e57;
+
+Use scrollspy for navbar

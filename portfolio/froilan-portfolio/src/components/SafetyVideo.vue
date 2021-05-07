@@ -1,5 +1,5 @@
 <template>
-  <div class="card" id="safetyVideo">
+  <div class="card " id="safetyVideo">
     <div class="card-header bg-primary text-white">
       <h5 class="card-title mt-2">Pre-flight Safety Video</h5>
       <h6 class="card-subtitle">Introduction and Overview</h6>
