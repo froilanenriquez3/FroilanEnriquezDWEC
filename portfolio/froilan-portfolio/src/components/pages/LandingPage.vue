@@ -31,7 +31,7 @@
     </main>
 
     <footer id="footer">
-      <div class="mt-2 mb-2">
+      <div class="mt-1 mb-1">
         Icons made by <a href="" title="monkik">monkik</a> from
         <a href="https://www.flaticon.com/" title="Flaticon"
           >www.flaticon.com</a
@@ -64,7 +64,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 12vh;
+  margin-top: 10vh;
   background-image: url("../../assets/img/sky.jpg");
   background-color: #cccccc;
   background-size: cover;

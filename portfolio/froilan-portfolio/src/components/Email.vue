@@ -3,59 +3,133 @@
     <div class="row">
       <h1 class="display-5" align="left">Thank you for flying with us!</h1>
       <div class="col" align="right">
-        <font-awesome-icon icon="envelope" size="6x" id="envelope"></font-awesome-icon>
+        <font-awesome-icon
+          icon="envelope"
+          size="6x"
+          id="envelope"
+        ></font-awesome-icon>
       </div>
     </div>
 
     <h2 align="left">Get in touch</h2>
     <hr class="my-4 bg-secondary" />
-    <p>
-      It uses utility classes for typography and spacing to space content out
-      within the larger container.
-    </p>
-    <div class="form-group row" id="emailDiv">
-      <label for="exampleInputEmail1">Email address</label>
+
+    <div v-show="incomplete" class="alert alert-danger alert-dismissible fade show" role="alert">
+      Please fill out all the fields.
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+        @click="hideAlert"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div v-show="success" class="alert alert-success alert-dismissible fade show" role="alert">
+      Form processed correctly!
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+        @click="hideSuccess"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+
+    <div class="row" id="emailDiv">
+      <label for="inEmail">Email address</label>
     </div>
 
     <div class="row">
       <input
         type="email"
         class="form-control"
-        id="exampleInputEmail1"
+        id="inEmail"
         aria-describedby="emailHelp"
+        v-model="email"
       />
-      <small id="emailHelp" class="form-text text-muted"
-        >We'll never share your email with anyone else.</small
-      >
+    </div>
+
+    <div class="row mt-2">
+      <label for="inSubject">Subject</label>
     </div>
 
     <div class="row">
+      <input
+        type="text"
+        class="form-control"
+        id="inSubject"
+        aria-describedby="emailHelp"
+        v-model="subject"
+      />
+    </div>
+
+    <div class="row mt-2">
       <label for="emailBody">Body</label>
     </div>
 
     <div class="form-group row">
-      <textarea class="form-control" id="emailBody" />
+      <textarea class="form-control" id="emailBody" v-model="body" />
     </div>
 
-    <button class="btn btn-lg bg-secondary text-white">Send</button>
+    <button class="btn btn-lg bg-secondary text-white" @click="sendEmail">
+      Email
+    </button>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      body: null,
+      email: null,
+      incomplete: false,
+      subject: null,
+      success: false,
+    };
+  },
   setup() {},
+  methods: {
+    sendEmail() {
+      if (this.body != null && this.subject != null && this.email != null) {
+        this.incomplete = false;
+        window.open(
+          `mailto:froilanenriquez3@gmail.com?subject=${this.subject}&body=${this.body}`
+        );
+        this.body = null;
+        this.subject = null;
+        this.email = null;
+
+        this.success = true;
+      } else {
+        this.incomplete = true;
+      }
+    },
+    hideAlert(){
+      this.incomplete = false;
+    },
+    hideSuccess(){
+      this.success = false;
+    }
+  },
 };
 </script>
 <style scoped>
 #emailSection {
-    margin-top: 80vh;
+  margin-top: 80vh;
   width: 80vw;
   opacity: 1;
   z-index: 1;
   padding-left: 7%;
   padding-right: 7%;
 }
-#envelope{
-    color: #00AEDC;
+#envelope {
+  color: #00aedc;
 }
 </style>

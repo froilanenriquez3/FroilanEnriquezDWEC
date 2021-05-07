@@ -59,3 +59,6 @@ $primary: #00AEDC;
 $secondary: #e62e57;
 
 Use scrollspy for navbar
+
+
+make cards into clouds
