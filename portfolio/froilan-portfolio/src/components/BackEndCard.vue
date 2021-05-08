@@ -1,13 +1,15 @@
 <template>
   <div class="card m-1 cardcom">
     <div class="card-header bg-info text-white">
-      <h5 class="card-title mt-2" align="right">BACK</h5>
+      <h5 class="card-title mt-2" align="right">
+        <font-awesome-icon icon="server"></font-awesome-icon> BACK
+      </h5>
     </div>
     <div class="card-body bg-light text-black">
       <b>PHP</b>
       <div class="progress">
         <div
-          class="progress-bar progress-bar-striped progress-bar-animated backbars"
+          class="progress-bar progress-bar-striped progress-bar-animated backbars bg-info"
           role="progressbar"
           style="width: 0%"
           aria-valuenow="10"
@@ -16,34 +18,15 @@
         ></div>
       </div>
       <p align="left">
-        I started learning JavaScript in the summer between my first and second
-        year. Having worked with JavaScript through many projects, in both the
-        front and back end, as well as through various frameworks, it is
-        probably the language I'm most comfortable with.
+       In the same summer I learned JavaScript, I began my journey with PHP. Most of my projects
+       with a backend run on PHP. I've used it vanilla, with a framework, with MySQL, with ORM... so by now
+       I pretty much see the world through dollar sign variables.
       </p>
 
       <b>Laravel</b>
       <div class="progress">
         <div
-          class="progress-bar progress-bar-striped bg-secondary progress-bar-animated backbars"
-          role="progressbar"
-           style="width: 0%"
-          aria-valuenow="25"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        ></div>
-      </div>
-      <p align="left">
-        I began with HTML when I was fifteen. It was my introduction to web
-        design and the world of web applications. I have made many webpages
-        since then, but now combined with my skills in JavaScript, I can make
-        interactive, dynamic, and robust webpages for you.
-      </p>
-
-      <b>Eloquent</b>
-      <div class="progress">
-        <div
-          class="progress-bar progress-bar-striped bg-success progress-bar-animated backbars"
+          class="progress-bar progress-bar-striped bg-info progress-bar-animated backbars"
           role="progressbar"
           style="width: 0%"
           aria-valuenow="25"
@@ -52,11 +35,24 @@
         ></div>
       </div>
       <p align="left">
-        Of the big three in front end programming, CSS is probably my weakest
-        area. However, I still know the fundamentals and can bring about the
-        designs that I have in mind. I am learning and practicing all the time,
-        and what I lack I have looked to strengthen through other languages and
-        frameworks.
+        Laravel was my introduction to frameworks with routing, controllers, models, middleware, and so on. My second group
+        project uses this framework to manage, process, and handle complex data.
+      </p>
+
+      <b>Eloquent</b>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped bg-info progress-bar-animated backbars"
+          role="progressbar"
+          style="width: 0%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p align="left">
+        Hand in hand with Laravel, I've learned to use Eloquent to help translate the classes of object oriented programming 
+        into the relational databases of MySQL.
       </p>
     </div>
   </div>
@@ -68,9 +64,7 @@ export default {
   },
   methods: {},
   setup() {},
-  mounted() {
-    
-  },
+  mounted() {},
 };
 </script>
 

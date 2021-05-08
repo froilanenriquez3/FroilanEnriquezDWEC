@@ -96,12 +96,9 @@ export default {
             vals = ["90%", "85%", "75%", "65%", "95%", "55%", "80%"];
           break;
           case 'backbars':
-              vals = ["95%", "92%", "87%", "60", "50", "50"]; 
+              vals = ["95%", "92%", "87%", "60%", "50%", "50%"]; 
             break;
       }
-
-     
-     
       let bars = document.getElementsByClassName(className);
 
       bars.forEach((bar, i) => {
@@ -163,7 +160,7 @@ span {
 }
 .navBtn {
   height: 5vh;
-  margin-top: 50vh;
+  margin-top: 70vh;
   z-index: 1;
 }
 

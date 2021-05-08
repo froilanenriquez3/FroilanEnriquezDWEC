@@ -1,7 +1,7 @@
 <template>
   <div class="card m-1 cardcom">
     <div class="card-header bg-primary text-white">
-      <h5 class="card-title mt-2" align="left">END</h5>
+      <h5 class="card-title mt-2" align="left">END<font-awesome-icon icon="user" class="ml-1"></font-awesome-icon></h5>
     </div>
     <div class="card-body bg-white text-black">
 
@@ -50,8 +50,8 @@
           ></div>
         </div>
         <p align="left">
-          As the latest framework I've picked up, I still have much to learn with React. However, I've learned how to use JSX for components, 
-          the React Router for fast applications, and how to integrate Material UI.
+          As the latest framework I've picked up, I still have much to learn with React. However, I've learned how to use JSX, the React Router, 
+          and how to integrate Material UI.
         </p>
 
 
