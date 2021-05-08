@@ -54,7 +54,17 @@ export default {
   methods: {
     scrollDown() {
       document.getElementById("markerOne").scrollIntoView({block: "start", inline: "nearest"});
+      this.fillBars();
     },
+    fillBars(){
+      let vals = ["90%", "85%", "75%", 
+                  "65%", "95%", "55%", "80%"];
+      let bars = document.getElementsByClassName('frontbars');
+
+      bars.forEach((bar, i) => {
+        setTimeout(() => {bar.style.width = vals[i]}, 1000);
+      });
+    }
   },
 };
 </script>
