@@ -128,7 +128,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 10vh;
+  margin-top: 5vh;
   background-image: url("../../assets/img/sky.jpg");
   background-color: #cccccc;
   background-size: cover;
