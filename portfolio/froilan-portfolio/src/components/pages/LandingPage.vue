@@ -1,5 +1,6 @@
 <template>
   <div id="landingPage">
+     
     <img src="../../assets/img/grayplane.svg" alt="" id="plane" />
     <!-- <div id="plane">
       <font-awesome-icon icon="fighter-jet" size="10x" class="fa-rotate-270"></font-awesome-icon>
@@ -75,6 +76,7 @@ import BackEndCard2 from '../BackEndCard2';
 import Email from "../Email.vue";
 import FrontEndCard from "../FrontEndCard.vue";
 import FrontEndCard2 from "../FrontEndCard2.vue";
+// import Navbar from "../Navbar.vue";
 import SafetyVideo from "../SafetyVideo.vue";
 
 export default {
@@ -86,6 +88,7 @@ export default {
     Email,
     FrontEndCard,
     FrontEndCard2,
+
     SafetyVideo,
   },
   methods: {

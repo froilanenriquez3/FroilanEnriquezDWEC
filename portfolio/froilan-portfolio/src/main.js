@@ -12,9 +12,6 @@ library.add(faCaretDown, faEnvelope, faFighterJet, faServer, faUser, faPlay, faP
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-
-
-
 Vue.config.productionTip = false
 Vue.use(BootstrapVue);
 
