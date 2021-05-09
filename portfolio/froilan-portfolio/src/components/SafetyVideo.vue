@@ -7,18 +7,16 @@
 
     <div class="card-body row">
       <div class="col-md-3 mt-5">
-        <button class="btn btn-secondary m-1 col-10" @click="playSection(0,10)">Introduction</button>
-        <button class="btn btn-secondary m-1 col-10">About me</button>
-        <button class="btn btn-secondary m-1 col-10">Languages</button>
+        <button class="btn btn-secondary m-1 col-10" @click="playSection(0,8)">Introduction</button>
+        <button class="btn btn-secondary m-1 col-10" @click="playSection(8.1,23)">About me</button>
+        <button class="btn btn-secondary m-1 col-10" @click="playSection(23,40)">Languages</button>
       </div>
 
       <div class="col-md-6">
         <p class="card-text">Click a button to go to a specific section</p>
         <!-- <img src="../assets/img/froilan.jpeg" alt="" id="image" /> -->
         <video
-          muted
           id="myVideo"
-          controls
           @timeupdate="changeProgress($event)"
           @canplay="changeProgress($event)"
         >
@@ -43,6 +41,11 @@
           <div id="videoBar" @click="setProgress($event)" class="progress-range bg-primary ml-1">
             <div id="videoBarBar" class="progress-bar bg-info "></div>
           </div>
+          <button @click="toggleMute" class="btn btn-primary m-1">
+            <font-awesome-icon v-show="mute === true" id="muteIcon"  icon="volume-mute"></font-awesome-icon>
+            <font-awesome-icon v-show="mute === false" id="muteIcon"  icon="volume-up"></font-awesome-icon>
+          </button>
+           
         </div>
 
         <p class="mt-3">
@@ -52,15 +55,15 @@
       </div>
 
       <div class="col-md-3 mt-5">
-        <button class="btn btn-secondary m-1 col-10">Frameworks</button>
-        <button class="btn btn-secondary m-1 col-10">Experience</button>
-        <button class="btn btn-secondary m-1 col-10">Soft skills</button>
+        <button class="btn btn-secondary m-1 col-10" @click="playSection(40.5,50.7)">Frameworks</button>
+        <button class="btn btn-secondary m-1 col-10" @click="playSection(51,63)">Experience</button>
+        <button class="btn btn-secondary m-1 col-10" @click="playSection(63,79)">Soft skills</button>
       </div>
     </div>
     <div class="card-footer">
       <button class="btn btn-primary m-2" @click="scrollDown()">
         <font-awesome-icon icon="caret-down" />
-        Take off!
+        TAKE OFF!
         <font-awesome-icon icon="caret-down" />
       </button>
     </div>
@@ -70,6 +73,7 @@
 export default {
   data() {
     return {
+      mute: false,
       play: true,
       timestamp: null,
       videoId: "#myVideo",
@@ -97,7 +101,7 @@ export default {
     pauseAtTimestamp() {
       //If you dont want video to pause from fast fowarding, remove greater than
       if (this.video.currentTime >= this.timestamp) {
-        this.video.pause();
+        this.pauseVideo();
         this.video.removeEventListener("timeupdate", this.pauseAtTimestamp);
       }
     },
@@ -144,6 +148,12 @@ export default {
       progressBar.style.width = newTime * 100 + "%";
       // Cambiamos punto del video en el que estamos.
       this.video.currentTime = newTime * this.video.duration;
+    },
+     toggleMute(){
+        // let muteIcon= document.querySelector('#muteIcon');
+        this.video.muted = !this.video.muted;
+
+        this.mute = !this.mute;
     },
   },
   mounted() {
