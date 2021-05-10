@@ -53,10 +53,18 @@ html{
   /* color: #2c3e50; */
   /* margin-top: 60px; */
   background-color: #00AEDC;
+  overflow: hidden
 }
 
 #landing{
   animation: fadeIn 5s;
+}
+header{
+  box-sizing: border-box;
+  width: 100vw;
+}
+.nav{
+  padding: 0px;
 }
 @keyframes fadeIn {
   0% {

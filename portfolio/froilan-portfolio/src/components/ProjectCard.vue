@@ -7,9 +7,21 @@
     <div class="card-body">
       <div id="carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" class="active bg-secondary"></li>
-          <li data-target="#carousel" data-slide-to="1" class="bg-secondary"></li>
-          <li data-target="#carousel" data-slide-to="2" class="bg-secondary"></li>
+          <li
+            data-target="#carousel"
+            data-slide-to="0"
+            class="active bg-secondary"
+          ></li>
+          <li
+            data-target="#carousel"
+            data-slide-to="1"
+            class="bg-secondary"
+          ></li>
+          <li
+            data-target="#carousel"
+            data-slide-to="2"
+            class="bg-secondary"
+          ></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -19,7 +31,9 @@
                 Some representative placeholder content for the first slide.
               </p>
             </div>
-            <img src="../assets/img/restore.png" class="d-block" alt="..." />
+            <a role="button" data-toggle="modal" data-target="#project1"
+              ><img src="../assets/img/restore.png" class="d-block" alt="..."
+            /></a>
           </div>
           <div class="carousel-item">
             <div class="d-none d-md-block">
@@ -28,7 +42,9 @@
                 Some representative placeholder content for the second slide.
               </p>
             </div>
-            <img src="../assets/img/broggi.png" class="d-block" alt="..." />
+            <a role="button" data-toggle="modal" data-target="#project2"
+              ><img src="../assets/img/broggi.png" class="d-block" alt="..."
+            /></a>
           </div>
           <div class="carousel-item">
             <div class="d-none d-md-block">
@@ -37,7 +53,9 @@
                 Some representative placeholder content for the third slide.
               </p>
             </div>
-            <img src="../assets/img/broggi.png" class="d-block" alt="..." />
+            <a role="button" data-toggle="modal" data-target="#project3"
+              ><img src="../assets/img/inception.png" class="d-block" alt="..."
+            /></a>
           </div>
         </div>
         <a
@@ -46,7 +64,11 @@
           role="button"
           data-slide="prev"
         >
-          <font-awesome-icon icon="angle-left" size="3x" class="text-secondary" />
+          <font-awesome-icon
+            icon="angle-left"
+            size="3x"
+            class="text-secondary"
+          />
           <span class="sr-only">Previous</span>
         </a>
         <a
@@ -55,9 +77,126 @@
           role="button"
           data-slide="next"
         >
-          <font-awesome-icon icon="angle-right" size="3x" class="text-secondary" />
+          <font-awesome-icon
+            icon="angle-right"
+            size="3x"
+            class="text-secondary"
+          />
           <span class="sr-only">Next</span>
         </a>
+      </div>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div
+      class="modal fade"
+      id="project1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="project1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project1">Project one</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+
+    <div
+      class="modal fade"
+      id="project2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="project2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project2">Project 2</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+
+    <div
+      class="modal fade"
+      id="project3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="project3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project3">Project 3</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>

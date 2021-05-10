@@ -1,5 +1,7 @@
 <template>
-    <div id="projectOnePage"></div>
+    <div id="projectOnePage">
+        
+    </div>
 </template>
 <script>
 export default ({
