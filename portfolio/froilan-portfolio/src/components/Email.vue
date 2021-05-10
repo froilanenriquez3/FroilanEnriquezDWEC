@@ -99,6 +99,7 @@ export default {
     sendEmail() {
       if (this.body != null && this.subject != null && this.email != null) {
         this.incomplete = false;
+        this.body += `%0D%0A Reply to me at:  ${this.email}`;
         window.open(
           `mailto:froilanenriquez3@gmail.com?subject=${this.subject}&body=${this.body}`
         );

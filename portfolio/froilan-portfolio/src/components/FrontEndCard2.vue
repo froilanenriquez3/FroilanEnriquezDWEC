@@ -1,7 +1,7 @@
 <template>
   <div class="card m-1 cardcom">
     <div class="card-header bg-primary text-white">
-      <h5 class="card-title mt-2" align="left">END<font-awesome-icon icon="user" class="ml-1"></font-awesome-icon></h5>
+      <h5 class="card-title mt-2" align="right"><font-awesome-icon icon="user" class="ml-1"></font-awesome-icon></h5>
     </div>
     <div class="card-body bg-white text-black">
 

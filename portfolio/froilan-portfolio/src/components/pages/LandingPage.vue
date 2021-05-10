@@ -1,6 +1,5 @@
 <template>
   <div id="landingPage">
-     
     <img src="../../assets/img/grayplane.svg" alt="" id="plane" />
     <!-- <div id="plane">
       <font-awesome-icon icon="fighter-jet" size="10x" class="fa-rotate-270"></font-awesome-icon>
@@ -15,13 +14,18 @@
         <div data-aos="fade-right" data-aos-duration="1000">
           <FrontEndCard />
         </div>
-        <button
-          class="btn btn-secondary navBtn"
-          id="btnFront"
-          @click="scrollSection('markerTwo'), fillBars('backbars')"
-        >
-          Next stop!
-        </button>
+        <div>
+          <div class="card-header bg-primary text-white m-1 secLabel ">
+            <h5 class="mt-2">FRONT END</h5>
+          </div>
+          <button
+            class="btn btn-secondary navBtn"
+            id="btnFront"
+            @click="scrollSection('markerTwo'), fillBars('backbars')"
+          >
+            Next stop!
+          </button>
+        </div>
 
         <div data-aos="fade-left" data-aos-duration="1000">
           <FrontEndCard2 />
@@ -32,21 +36,27 @@
         <div data-aos="fade-up" data-aos-duration="750">
           <BackEndCard />
         </div>
-        <button
-          class="btn btn-secondary navBtn"
-          id="btnBack"
-          @click="scrollSection('markerThree')"
-        >
-          Next stop!
-        </button>
+        <div>
+          <div class="card-header bg-info text-white m-1 secLabel">
+            <h5 class="mt-2">BACK END</h5>
+          </div>
+          <button
+            class="btn btn-secondary navBtn"
+            id="btnBack"
+            @click="scrollSection('markerThree')"
+          >
+            Next stop!
+          </button>
+        </div>
 
         <div data-aos="fade-up" data-aos-duration="750">
           <BackEndCard2 />
         </div>
       </section>
 
-      <span id="projects"></span>
       <section id="markerThree"></section>
+
+      <span id="projects"></span>
 
       <span id="contact"></span>
       <section>
@@ -71,8 +81,8 @@
 </template>
 <script>
 // import Card from "../Card.vue";
-import BackEndCard from '../BackEndCard';
-import BackEndCard2 from '../BackEndCard2';
+import BackEndCard from "../BackEndCard";
+import BackEndCard2 from "../BackEndCard2";
 import Email from "../Email.vue";
 import FrontEndCard from "../FrontEndCard.vue";
 import FrontEndCard2 from "../FrontEndCard2.vue";
@@ -94,13 +104,13 @@ export default {
   methods: {
     fillBars(className) {
       let vals = [];
-      switch(className){
-        case 'frontbars':
-            vals = ["90%", "85%", "75%", "65%", "95%", "55%", "80%"];
+      switch (className) {
+        case "frontbars":
+          vals = ["90%", "85%", "75%", "65%", "95%", "55%", "80%"];
           break;
-          case 'backbars':
-              vals = ["95%", "92%", "87%", "60%", "50%", "50%"]; 
-            break;
+        case "backbars":
+          vals = ["95%", "92%", "87%", "60%", "50%", "50%"];
+          break;
       }
       let bars = document.getElementsByClassName(className);
 
@@ -123,7 +133,6 @@ export default {
         .scrollIntoView({ block: "start", inline: "nearest" });
     },
   },
-  
 };
 </script>
 <style scoped>
@@ -162,12 +171,28 @@ span {
   /* margin-bottom: 10vh; */
 }
 .navBtn {
+  position: relative;
   height: 5vh;
-  margin-top: 70vh;
+  /* margin-top: 65vh; */
   z-index: 1;
 }
 
 #about {
   margin-bottom: 0;
+}
+
+#markerTwo {
+  padding-top: 7%;
+}
+#btnFront {
+  margin-top: 65vh;
+}
+
+#btnBack {
+  margin-top: 60vh;
+}
+.secLabel {
+  position: relative;
+  z-index: 100;
 }
 </style>

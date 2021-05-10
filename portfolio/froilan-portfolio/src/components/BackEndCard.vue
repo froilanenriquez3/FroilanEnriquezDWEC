@@ -1,8 +1,8 @@
 <template>
   <div class="card m-1 cardcom">
     <div class="card-header bg-info text-white">
-      <h5 class="card-title mt-2" align="right">
-        <font-awesome-icon icon="server"></font-awesome-icon> BACK
+      <h5 class="card-title mt-2" align="left">
+        <font-awesome-icon icon="server"></font-awesome-icon>
       </h5>
     </div>
     <div class="card-body bg-light text-black">
