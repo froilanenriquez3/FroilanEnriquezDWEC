@@ -1,5 +1,5 @@
 <template>
-    <div class="container"></div>
+    <div id="projectOnePage"></div>
 </template>
 <script>
 export default ({
@@ -9,5 +9,7 @@ export default ({
 })
 </script>
 <style scoped>
-
+#projectOnePage{
+    background-color: red;
+}
 </style>

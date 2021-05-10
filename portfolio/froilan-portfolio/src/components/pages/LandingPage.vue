@@ -12,10 +12,10 @@
 
       <section id="markerOne" @mouseover="fillBars('frontbars')">
         <div data-aos="fade-right" data-aos-duration="1000">
-          <FrontEndCard />
+          <FrontEndCard class="col-sm-12" />
         </div>
-        <div>
-          <div class="card-header bg-primary text-white m-1 secLabel ">
+        <div >
+          <div class="card-header bg-primary text-white mt-1 secLabel ">
             <h5 class="mt-2">FRONT END</h5>
           </div>
           <button
@@ -23,7 +23,7 @@
             id="btnFront"
             @click="scrollSection('markerTwo'), fillBars('backbars')"
           >
-            Next stop!
+            <font-awesome-icon icon="caret-down" /> Next stop! <font-awesome-icon icon="caret-down" />
           </button>
         </div>
 
@@ -37,15 +37,15 @@
           <BackEndCard />
         </div>
         <div>
-          <div class="card-header bg-info text-white m-1 secLabel">
+          <div class="card-header bg-info text-white mt-1 secLabel">
             <h5 class="mt-2">BACK END</h5>
           </div>
           <button
-            class="btn btn-secondary navBtn"
+            class="btn btn-secondary navBtn "
             id="btnBack"
             @click="scrollSection('markerThree')"
           >
-            Next stop!
+            <font-awesome-icon icon="caret-down" /> Next stop! <font-awesome-icon icon="caret-down" />
           </button>
         </div>
 
@@ -54,7 +54,9 @@
         </div>
       </section>
 
-      <section id="markerThree"></section>
+      <section id="markerThree">
+        <ProjectCard />
+      </section>
 
       <span id="projects"></span>
 
@@ -87,6 +89,7 @@ import Email from "../Email.vue";
 import FrontEndCard from "../FrontEndCard.vue";
 import FrontEndCard2 from "../FrontEndCard2.vue";
 // import Navbar from "../Navbar.vue";
+import ProjectCard from "../ProjectCard.vue";
 import SafetyVideo from "../SafetyVideo.vue";
 
 export default {
@@ -98,7 +101,7 @@ export default {
     Email,
     FrontEndCard,
     FrontEndCard2,
-
+    ProjectCard,
     SafetyVideo,
   },
   methods: {
@@ -193,6 +196,7 @@ span {
 }
 .secLabel {
   position: relative;
-  z-index: 100;
+  width: 20vw;
+  z-index: 1;
 }
 </style>

@@ -7,9 +7,9 @@
 
     <div class="card-body row">
       <div class="col-md-3 mt-5">
-        <button class="btn btn-secondary m-1 col-10" @click="playSection(0,8)">Introduction</button>
-        <button class="btn btn-secondary m-1 col-10" @click="playSection(8.1,23)">About me</button>
-        <button class="btn btn-secondary m-1 col-10" @click="playSection(23,40)">Languages</button>
+        <button class="btn btn-secondary m-1 col-12" @click="playSection(0,8)">Introduction</button>
+        <button class="btn btn-secondary m-1 col-12" @click="playSection(8.1,23)">About me</button>
+        <button class="btn btn-secondary m-1 col-12" @click="playSection(23,40)">Languages</button>
       </div>
 
       <div class="col-md-6">
@@ -55,9 +55,9 @@
       </div>
 
       <div class="col-md-3 mt-5">
-        <button class="btn btn-secondary m-1 col-10" @click="playSection(40.5,50.7)">Frameworks</button>
-        <button class="btn btn-secondary m-1 col-10" @click="playSection(51,63)">Experience</button>
-        <button class="btn btn-secondary m-1 col-10" @click="playSection(63,79)">Soft skills</button>
+        <button class="btn btn-secondary m-1 col-12" @click="playSection(40.5,50.7)">Frameworks</button>
+        <button class="btn btn-secondary m-1 col-12" @click="playSection(51,63)">Experience</button>
+        <button class="btn btn-secondary m-1 col-12" @click="playSection(63,79)">Soft skills</button>
       </div>
     </div>
     <div class="card-footer">
