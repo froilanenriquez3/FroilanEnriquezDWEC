@@ -1,19 +1,18 @@
 <template>
   <div class="card mt-5" id="safetyVideo">
     <div class="card-header bg-primary text-white">
-      <h5 class="card-title mt-2">Pre-flight Safety Video</h5>
-      <h6 class="card-subtitle">About Me</h6>
+      <h5 class="card-title mt-2 translate" id="preFlight">Before your flight...</h5>
     </div>
 
     <div class="card-body row">
-      <div class="col-lg-3 mt-5">
-        <button class="btn btn-secondary m-1 col-12" @click="playSection(0,8)">Introduction</button>
-        <button class="btn btn-secondary m-1 col-12" @click="playSection(8.1,23)">About me</button>
-        <button class="btn btn-secondary m-1 col-12" @click="playSection(23,40)">Languages</button>
+      <div class="col-lg-3" id="controls1">
+        <button class="btn btn-secondary m-1 col-10 translate" id="introduction" @click="playSection(0,8)">Introduction</button>
+        <button class="btn btn-secondary m-1 col-10 translate" id="aboutMe2" @click="playSection(8.1,23)">About Me</button>
+        <button class="btn btn-secondary m-1 col-10 translate" id="language" @click="playSection(23,40)">Languages</button>
       </div>
 
       <div class="col-lg-6">
-        <p class="card-text">Click a button to go to a specific section</p>
+        <p class="card-text translate" id="clickABtn">Click a button to go to a specific section</p>
         <!-- <img src="../assets/img/froilan.jpeg" alt="" id="image" /> -->
         <video
           id="myVideo"
@@ -48,22 +47,21 @@
            
         </div>
 
-        <p class="mt-3">
-          All ready? Now let's get ready for our flight. Click the button below
-          to go to our first stop!
+        <p class="mt-3 translate" id="ready">
+          All ready? Now let's begin our flight. Click the button below to go to our first stop!
         </p>
       </div>
 
-      <div class="col-lg-3 mt-5">
-        <button class="btn btn-secondary m-1 col-12" @click="playSection(40.5,50.7)">Frameworks</button>
-        <button class="btn btn-secondary m-1 col-12" @click="playSection(51,63)">Experience</button>
-        <button class="btn btn-secondary m-1 col-12" @click="playSection(63,79)">Soft skills</button>
+      <div class="col-lg-3" id="controls2">
+        <button class="btn btn-secondary m-1 col-10 translate" id="frameworks" @click="playSection(40.5,50.7)">Frameworks</button>
+        <button class="btn btn-secondary m-1 col-10 translate" id="experience" @click="playSection(51,63)">Experience</button>
+        <button class="btn btn-secondary m-1 col-10 translate" id="softSkills" @click="playSection(63,79)">Soft Skills</button>
       </div>
     </div>
     <div class="card-footer">
       <button class="btn btn-primary m-2" @click="scrollDown()">
         <font-awesome-icon icon="caret-down" />
-        TAKE OFF!
+          <span id="takeOff" class="translate"> TAKE OFF! </span>
         <font-awesome-icon icon="caret-down" />
       </button>
     </div>
@@ -163,7 +161,7 @@ export default {
 </script>
 <style scoped>
 #safetyVideo {
-  width: 70vw;
+  width: 65vw;
   margin: 1%;
 }
 #image {
@@ -190,5 +188,9 @@ export default {
     height: 100%;
     border-radius: 10px;
     transition: all 0.3s ease;
+}
+
+#controls1, #controls2{
+  margin-top: 10%;
 }
 </style>

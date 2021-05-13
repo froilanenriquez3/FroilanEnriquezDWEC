@@ -1,6 +1,6 @@
 <template>
-  <b-navbar toggleable="md" type="dark" variant="primary" class="fixed-top">
-    <b-navbar-brand href="#">
+  <b-navbar toggleable="md" type="dark" variant="primary" class="fixed-top" id="maNavbar">
+    <b-navbar-brand href="#about">
       <div class="bg-white rounded-circle" height="60">
         <img src="../assets/img/logo.svg" alt="" height="40" />
       </div>
@@ -11,52 +11,132 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto text-white ">
-        <b-navbar-nav >
-          <b-nav-item href="#about">
-            <p class="text-white">About me</p>
+      <b-navbar-nav class="ml-auto text-white" >
+        <b-nav>
+          <b-nav-item href="#about" >
+            <p class="text-white translate" id="aboutMe">About Me</p>
           </b-nav-item>
-          <b-nav-item href="#skills">
-            <p class="text-white">Skills</p>
+          <b-nav-item href="#skillsSec">
+            <p class="text-white translate" id="skills">Skills</p>
           </b-nav-item>
           <b-nav-item href="#projects">
-            <p class="text-white">Projects</p>
+            <p class="text-white translate" id="projectsText">Projects</p>
           </b-nav-item>
           <b-nav-item href="#contact">
-            <p class="text-white">Contact Me</p>
+            <p class="text-white translate" id="contactMe">Contact Me</p>
           </b-nav-item>
-        </b-navbar-nav>
+        </b-nav>
 
-        <b-nav-item-dropdown text="LANG"  right>
-          <b-dropdown-item @click="changeLang">
+        <b-nav-item-dropdown :text="language" right>
+          <b-dropdown-item @click="changeLangEng">
             <span v-if="isEng" class="text-primary">EN</span>
             <span v-else>EN</span>
-            </b-dropdown-item>
-          <b-dropdown-item @click="changeLang">
+          </b-dropdown-item>
+          <b-dropdown-item @click="changeLangEsp">
             <span v-if="!isEng" class="text-primary">ES</span>
             <span v-else>ES</span>
           </b-dropdown-item>
         </b-nav-item-dropdown>
-
       </b-navbar-nav>
-
     </b-collapse>
   </b-navbar>
 </template>
 <script>
 export default {
+  props: {
+    textArray:{
+      required: true
+    },
+  },
   data() {
     return {
-      isEng: true
+      isEng: true,
+      eng: {
+        aboutMe: "About Me",
+        aboutMe2: "About Me",
+        skills: "Skills",
+        projectsText: "Projects",
+        contactMe: "Contact Me",
+        preFlight: "Before your flight...",
+        introduction: "Introduction",
+        language: "Languages",
+        frameworks: "Frameworks",
+        experience: "Experience",
+        softSkills: "Soft skills",
+        takeOff: " TAKE OFF! ",
+        clickABtn: "Click a button to go to a specific section",
+        ready: "All ready? Now let's begin our flight. Click the button below to go to our first stop!",
+        next1: " Next stop! ",
+        next2: " Next stop! ",
+        next3: " Final stop! ",
+        thankYou: "Thank you for flying with us!",
+        getInTouch: "Get in touch",
+        email: "Email address",
+        subject: "Subject",
+        bodyText: "Body",
+        sendEmail: "Send"
+      },
+      esp: {
+        aboutMe: "Sobre Mi",
+        aboutMe2: "Sobre Mi",
+        skills: "Habilidades",
+        projectsText: "Proyectos",
+        contactMe: "Contacto",
+        preFlight: "Antes de volar...",
+        introduction: "Introducción",
+        language: "Lenguajes",
+        frameworks: "Frameworks",
+        experience: "Experiencia",
+        softSkills: "Soft skills",
+        takeOff: " ¡DESPEGUEMOS! ",
+        clickABtn: "Clica un botón para ir a una sección específica",
+        ready: "¿Preparado? Iniciamos el despegue. Clica el botón de abajo para ir a nuestro primer destino!",
+        next1: " ¡Proximo destino! ",
+        next2: " ¡Proximo destino! ",
+        next3: " ¡Ultimo destino! ",
+        thankYou: "¡Gracias por volar con nosotros!",
+        getInTouch: "Contáctame",
+        email: "Correo electrónico",
+        subject: "Asunto",
+        bodyText: "Mensaje",
+        sendEmail: "Enviar"
+      },
+      language: 'English'
     };
   },
   methods: {
-    changeLang(){
-      this.isEng = !this.isEng;
-    }
+    changeLangEsp() {
+      this.isEng = false;
+      let lang = this.esp;
+      this.language = "Spanish";
+
+      for (const textItem of this.textArray) {
+        this.changeText(textItem.id, lang);
+      }
+    },
+    changeLangEng() {
+      this.isEng = true;
+      let lang = this.eng;
+      this.language = "English";
+
+      for (const textItem of this.textArray) {
+        this.changeText(textItem.id, lang);
+      }
+
+    },
+    changeText(stringID, lang) {
+      // console.log('change text running');
+      // console.log(stringID);
+      // console.log(lang);
+      // console.log(document.getElementById(stringID).innerHTML);
+      // console.log(lang.stringID);
+
+      document.getElementById(stringID).innerHTML = lang[stringID];
+    },
+  },
+  mounted() {
   },
   setup() {},
-
 };
 </script>
 
@@ -64,8 +144,10 @@ export default {
 p {
   margin: 0;
 }
-#dropdownMenuButton{
+#dropdownMenuButton {
   margin-top: 2px;
 }
-
+.active {
+  background-color: red;
+}
 </style>

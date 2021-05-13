@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron bg-white text-black" id="emailSection">
     <div class="row">
-      <h1 class="display-6" align="left">Thank you for flying with us!</h1>
+      <h1 class="display-6 translate" align="left" id="thankYou">Thank you for flying with us!</h1>
       <div class="col" align="right">
         <div data-aos="flip-down" data-aos-duration="750">
           <font-awesome-icon
@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <h2 align="left">Get in touch</h2>
+    <h2 align="left" class="translate" id="getInTouch">Get in touch</h2>
     <hr class="my-4 bg-secondary" />
 
     <div v-show="incomplete" class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -44,7 +44,7 @@
 
 
     <div class="row" id="emailDiv">
-      <label for="inEmail">Email address</label>
+      <label for="inEmail" id="email" class="translate">Email address</label>
     </div>
 
     <div class="row">
@@ -58,7 +58,7 @@
     </div>
 
     <div class="row mt-2">
-      <label for="inSubject">Subject</label>
+      <label for="inSubject" class="translate" id="subject">Subject</label>
     </div>
 
     <div class="row">
@@ -72,15 +72,15 @@
     </div>
 
     <div class="row mt-2">
-      <label for="emailBody">Body</label>
+      <label for="emailBody" id="bodyText" class="translate">Body</label>
     </div>
 
     <div class="form-group row">
       <textarea class="form-control" id="emailBody" v-model="body" />
     </div>
 
-    <button class="btn btn-lg bg-secondary text-white" @click="sendEmail">
-      Email
+    <button class="btn btn-lg bg-secondary text-white translate" @click="sendEmail" id="sendEmail">
+      Send
     </button>
   </div>
 </template>

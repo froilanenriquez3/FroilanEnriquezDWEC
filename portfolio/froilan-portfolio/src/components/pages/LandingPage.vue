@@ -1,13 +1,17 @@
 <template>
-  <div id="landingPage">
+  <div id="landingPage"  ref="content">
+    <header>
+      <Navbar :textArray="textArray"  />
+      <span id="about"></span>
+    </header>
     <img src="../../assets/img/grayplane.svg" alt="" id="plane" />
     <!-- <div id="plane">
       <font-awesome-icon icon="fighter-jet" size="10x" class="fa-rotate-270"></font-awesome-icon>
     </div> -->
-    <main>
+    <main >
       <SafetyVideo />
 
-      <span id="skills"></span>
+      <span id="skillsSec"></span>
 
       <section id="markerOne" @mouseover="fillBars('frontbars')">
         <div data-aos="fade-right" data-aos-duration="1000">
@@ -22,7 +26,8 @@
             id="btnFront"
             @click="scrollSection('markerTwo'), fillBars('backbars')"
           >
-            <font-awesome-icon icon="caret-down" /> Next stop!
+            <font-awesome-icon icon="caret-down" />
+            <span class="translate" id="next1"> Next stop! </span>
             <font-awesome-icon icon="caret-down" />
           </button>
         </div>
@@ -45,7 +50,8 @@
             id="btnBack"
             @click="scrollSection('markerThree')"
           >
-            <font-awesome-icon icon="caret-down" /> Next stop!
+            <font-awesome-icon icon="caret-down" />
+            <span class="translate" id="next2"> Next stop! </span>
             <font-awesome-icon icon="caret-down" />
           </button>
         </div>
@@ -58,16 +64,15 @@
       <span id="projects"></span>
 
       <section id="markerThree">
-
-          <ProjectCard />
-
+        <ProjectCard />
 
         <button
           class="btn btn-secondary navBtn m-1"
           id="btnProject"
           @click="scrollSection('markerFour')"
         >
-          <font-awesome-icon icon="caret-down" /> Final stop!
+          <font-awesome-icon icon="caret-down" />
+          <span class="translate" id="next3"> Final stop! </span>
           <font-awesome-icon icon="caret-down" />
         </button>
       </section>
@@ -78,7 +83,7 @@
       </section>
     </main>
 
-    <footer id="footer" class="bg-white">
+    <footer id="footer" class="bg-white p-1">
       <div class="mt-1 mb-1">
         Icons made by <a href="" title="monkik">monkik</a> from
         <a href="https://www.flaticon.com/" title="Flaticon"
@@ -100,7 +105,7 @@ import BackEndCard2 from "../BackEndCard2";
 import Email from "../Email.vue";
 import FrontEndCard from "../FrontEndCard.vue";
 import FrontEndCard2 from "../FrontEndCard2.vue";
-// import Navbar from "../Navbar.vue";
+import Navbar from "../Navbar.vue";
 import ProjectCard from "../ProjectCard.vue";
 import SafetyVideo from "../SafetyVideo.vue";
 
@@ -113,8 +118,14 @@ export default {
     Email,
     FrontEndCard,
     FrontEndCard2,
+    Navbar,
     ProjectCard,
     SafetyVideo,
+  },
+  data() {
+    return {
+      textArray: [],
+    };
   },
   methods: {
     fillBars(className) {
@@ -148,9 +159,18 @@ export default {
         .scrollIntoView({ block: "start", inline: "nearest" });
     },
   },
+  mounted() {
+    console.log("Landing page mounted");
+    this.textArray = document.getElementsByClassName("translate");
+  },
 };
 </script>
 <style scoped>
+#landingPage {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+}
 main {
   display: flex;
   justify-content: center;

@@ -2,10 +2,7 @@
   <div id="app"> 
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <header>
-      <Navbar />
-            <span id="about"></span>
-    </header>
+   
     <LoadingPage id="loading" v-if="page == 'loading' " />
     <LandingPage id="landing" v-if="page == 'landing' " />
    
@@ -17,23 +14,23 @@
 // import Card from "./components/Card.vue";
 import LandingPage from "./components/pages/LandingPage";
 import LoadingPage from "./components/pages/LoadingPage";
-import Navbar from "./components/Navbar";
+
 
 export default {
   name: "App",
   components: {
     LandingPage,
     LoadingPage,
-    Navbar
   },
   data() {
     return {
        loaded: false,
-       page: "loading"
+       page: "loading",
+       textArray: [],
     } 
   },
   mounted (){
-    setTimeout(()=> this.page = 'landing', 3000)
+    setTimeout(()=> this.page = 'landing', 3000);
   }
 };
 </script>
