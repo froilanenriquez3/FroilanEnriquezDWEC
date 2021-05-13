@@ -5,7 +5,6 @@
       <font-awesome-icon icon="fighter-jet" size="10x" class="fa-rotate-270"></font-awesome-icon>
     </div> -->
     <main>
-      <span id="about"></span>
       <SafetyVideo />
 
       <span id="skills"></span>
@@ -14,8 +13,8 @@
         <div data-aos="fade-right" data-aos-duration="1000">
           <FrontEndCard class="col-sm-12" />
         </div>
-        <div >
-          <div class="card-header bg-primary text-white mt-1 secLabel ">
+        <div>
+          <div class="card-header bg-primary text-white mt-1 secLabel">
             <h5 class="mt-2">FRONT END</h5>
           </div>
           <button
@@ -23,7 +22,8 @@
             id="btnFront"
             @click="scrollSection('markerTwo'), fillBars('backbars')"
           >
-            <font-awesome-icon icon="caret-down" /> Next stop! <font-awesome-icon icon="caret-down" />
+            <font-awesome-icon icon="caret-down" /> Next stop!
+            <font-awesome-icon icon="caret-down" />
           </button>
         </div>
 
@@ -41,11 +41,12 @@
             <h5 class="mt-2">BACK END</h5>
           </div>
           <button
-            class="btn btn-secondary navBtn "
+            class="btn btn-secondary navBtn"
             id="btnBack"
             @click="scrollSection('markerThree')"
           >
-            <font-awesome-icon icon="caret-down" /> Next stop! <font-awesome-icon icon="caret-down" />
+            <font-awesome-icon icon="caret-down" /> Next stop!
+            <font-awesome-icon icon="caret-down" />
           </button>
         </div>
 
@@ -54,19 +55,30 @@
         </div>
       </section>
 
-      <section id="markerThree">
-        <ProjectCard />
-      </section>
-
       <span id="projects"></span>
 
+      <section id="markerThree">
+
+          <ProjectCard />
+
+
+        <button
+          class="btn btn-secondary navBtn m-1"
+          id="btnProject"
+          @click="scrollSection('markerFour')"
+        >
+          <font-awesome-icon icon="caret-down" /> Final stop!
+          <font-awesome-icon icon="caret-down" />
+        </button>
+      </section>
+
       <span id="contact"></span>
-      <section>
+      <section id="markerFour">
         <Email />
       </section>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" class="bg-white">
       <div class="mt-1 mb-1">
         Icons made by <a href="" title="monkik">monkik</a> from
         <a href="https://www.flaticon.com/" title="Flaticon"
@@ -175,7 +187,7 @@ span {
 }
 .navBtn {
   position: relative;
-  height: 5vh;
+  height: 7vh;
   /* margin-top: 65vh; */
   z-index: 1;
 }
@@ -198,5 +210,12 @@ span {
   position: relative;
   width: 20vw;
   z-index: 1;
+}
+#markerThree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 </style>

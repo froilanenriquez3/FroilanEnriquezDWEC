@@ -4,6 +4,7 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <header>
       <Navbar />
+            <span id="about"></span>
     </header>
     <LoadingPage id="loading" v-if="page == 'loading' " />
     <LandingPage id="landing" v-if="page == 'landing' " />

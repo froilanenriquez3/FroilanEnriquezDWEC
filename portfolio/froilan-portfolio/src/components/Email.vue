@@ -3,11 +3,13 @@
     <div class="row">
       <h1 class="display-6" align="left">Thank you for flying with us!</h1>
       <div class="col" align="right">
-        <font-awesome-icon
-          icon="envelope"
-          size="5x"
-          id="envelope"
-        ></font-awesome-icon>
+        <div data-aos="flip-down" data-aos-duration="750">
+          <font-awesome-icon
+            icon="envelope"
+            size="5x"
+            id="envelope"
+          ></font-awesome-icon>
+        </div>
       </div>
     </div>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="card mt-3" id="projects">
+  <div class="card mt-3" id="projects" >
     <div class="card-header bg-secondary text-white">
       <h5 class="card-title mt-2 mb-0">Projects</h5>
     </div>
@@ -96,10 +96,11 @@
       aria-labelledby="project1"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="project1">Project one</h5>
+          <div class="modal-header bg-primary">
+            <h5 class="modal-title" id="project1">Project One (Restore)</h5>
+
             <button
               type="button"
               class="close"
@@ -109,16 +110,11 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body"><ProjectOnePage /></div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-dismiss="modal"
-            >
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
               Close
             </button>
-
           </div>
         </div>
       </div>
@@ -134,29 +130,28 @@
       aria-labelledby="project2"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header bg-secondary text-white">
             <h5 class="modal-title" id="project2">Project 2</h5>
             <button
               type="button"
-              class="close"
+              class="close text-white"
               data-dismiss="modal"
               aria-label="Close"
             >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body"><ProjectTwoPage /></div>
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn btn-secondary"
               data-dismiss="modal"
             >
               Close
             </button>
-
           </div>
         </div>
       </div>
@@ -172,7 +167,7 @@
       aria-labelledby="project3"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="project3">Project 3</h5>
@@ -187,14 +182,9 @@
           </div>
           <div class="modal-body">...</div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-dismiss="modal"
-            >
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
               Close
             </button>
-
           </div>
         </div>
       </div>
@@ -202,16 +192,29 @@
   </div>
 </template>
 <script>
+import ProjectOnePage from "./pages/ProjectOnePage";
+import ProjectTwoPage from "./pages/ProjectTwoPage";
+
 export default {
+  components: {
+    ProjectOnePage,
+    ProjectTwoPage,
+  },
   setup() {},
 };
 </script>
 <style scoped>
+#projects {
+  width: 60vw;
+}
 #carousel {
-  max-width: 60vw;
+  /* max-width: 60vw; */
+  width: 100%;
 }
 img {
-  width: 60vw;
+  /* width: 60vw; */
+  /* width: 90vw; */
+  width: 100%;
 }
 .carousel-caption {
   color: black;
