@@ -1,14 +1,14 @@
 <template>
-  <div id="landingPage"  ref="content">
+  <div id="landingPage">
     <header>
-      <Navbar :textArray="textArray"  />
-      <span id="about"></span>
+      <Navbar :textArray="textArray" />
     </header>
+
     <img src="../../assets/img/grayplane.svg" alt="" id="plane" />
     <!-- <div id="plane">
       <font-awesome-icon icon="fighter-jet" size="10x" class="fa-rotate-270"></font-awesome-icon>
     </div> -->
-    <main >
+    <main>
       <SafetyVideo />
 
       <span id="skillsSec"></span>
@@ -26,9 +26,9 @@
             id="btnFront"
             @click="scrollSection('markerTwo'), fillBars('backbars')"
           >
-            <font-awesome-icon icon="caret-down" />
+            <font-awesome-icon icon="globe-europe" />
             <span class="translate" id="next1"> Next stop! </span>
-            <font-awesome-icon icon="caret-down" />
+            <font-awesome-icon icon="globe-europe" />
           </button>
         </div>
 
@@ -50,9 +50,9 @@
             id="btnBack"
             @click="scrollSection('markerThree')"
           >
-            <font-awesome-icon icon="caret-down" />
+            <font-awesome-icon icon="globe-europe" />
             <span class="translate" id="next2"> Next stop! </span>
-            <font-awesome-icon icon="caret-down" />
+            <font-awesome-icon icon="globe-europe" />
           </button>
         </div>
 
@@ -65,20 +65,45 @@
 
       <section id="markerThree">
         <ProjectCard />
-
         <button
-          class="btn btn-secondary navBtn m-1"
+          class="btn btn-secondary navBtn"
           id="btnProject"
           @click="scrollSection('markerFour')"
         >
-          <font-awesome-icon icon="caret-down" />
-          <span class="translate" id="next3"> Final stop! </span>
-          <font-awesome-icon icon="caret-down" />
+          <font-awesome-icon icon="globe-europe" />
+          <span class="translate" id="next3"> Next stop! </span>
+          <font-awesome-icon icon="globe-europe" />
         </button>
       </section>
 
-      <span id="contact"></span>
+       <span id="softSkillsSec"></span>
+
       <section id="markerFour">
+        <div data-aos="fade-up" data-aos-duration="750">
+          <SoftSkills />
+        </div>
+        <div>
+          <div class="card-header bg-info text-white mt-1 secLabel">
+            <h5 class="mt-2">SOFT SKILLS</h5>
+          </div>
+          <button
+            class="btn btn-secondary navBtn"
+            id="btnSoft"
+            @click="scrollSection('markerFive')"
+          >
+            <font-awesome-icon icon="plane-arrival" />
+            <span class="translate" id="next4"> Final stop! </span>
+            <font-awesome-icon icon="plane-arrival" />
+          </button>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="750">
+          <SoftSkills2 />
+        </div>
+      </section>
+
+      <span id="contact"></span>
+      <section id="markerFive">
         <Email />
       </section>
     </main>
@@ -108,6 +133,8 @@ import FrontEndCard2 from "../FrontEndCard2.vue";
 import Navbar from "../Navbar.vue";
 import ProjectCard from "../ProjectCard.vue";
 import SafetyVideo from "../SafetyVideo.vue";
+import SoftSkills from "../SoftSkills.vue";
+import SoftSkills2 from "../SoftSkills2.vue";
 
 export default {
   setup() {},
@@ -121,6 +148,8 @@ export default {
     Navbar,
     ProjectCard,
     SafetyVideo,
+    SoftSkills,
+    SoftSkills2,
   },
   data() {
     return {
@@ -226,6 +255,13 @@ span {
 #btnBack {
   margin-top: 60vh;
 }
+#btnProject {
+  margin-top: 1%;
+}
+#btnSoft{
+  margin-top: 60vh;
+  /* font-size: 1.5em; */
+}
 .secLabel {
   position: relative;
   width: 20vw;
@@ -237,5 +273,8 @@ span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+#markerFour {
+  padding-top:15vh;
 }
 </style>

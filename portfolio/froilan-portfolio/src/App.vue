@@ -1,5 +1,6 @@
 <template>
-  <div id="app"> 
+  <div id="app" data-spy="scroll" data-target="#maNavbar" data-offset="0"> 
+    <span id="about"></span>
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
    
@@ -51,7 +52,11 @@ html{
   /* color: #2c3e50; */
   /* margin-top: 60px; */
   background-color: #00AEDC;
-  overflow: hidden
+  overflow: hidden;
+
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 #landing{

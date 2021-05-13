@@ -8,13 +8,15 @@ import { BootstrapVue } from "bootstrap-vue";
 import "./styles/app.scss";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCaretDown, faEnvelope, faFighterJet, faServer, faUser, faPlay, faPause, 
-  faVolumeMute, faVolumeUp, faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons'
+  faVolumeMute, faVolumeUp, faAngleLeft, faAngleRight, faPeopleCarry, faPlaneDeparture, 
+  faPlaneArrival, faGlobeEurope} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueRouter from 'vue-router';
 
 
 library.add(faCaretDown, faEnvelope, faFighterJet, faServer, faUser, faPlay, faPause, 
-  faVolumeMute, faVolumeUp, faAngleLeft, faAngleRight)
+  faVolumeMute, faVolumeUp, faAngleLeft, faAngleRight, faPeopleCarry, faPlaneDeparture, 
+  faPlaneArrival, faGlobeEurope)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

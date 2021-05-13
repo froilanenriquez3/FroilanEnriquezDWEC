@@ -1,8 +1,14 @@
 <template>
-  <b-navbar toggleable="md" type="dark" variant="primary" class="fixed-top" id="maNavbar">
+  <b-navbar
+    toggleable="md"
+    type="dark"
+    variant="primary"
+    class="fixed-top nav"
+    id="maNavbar"
+  >
     <b-navbar-brand href="#about">
       <div class="bg-white rounded-circle" height="60">
-        <img src="../assets/img/logo.svg" alt="" height="40" />
+        <img src="../assets/img/logo.svg" alt="Logo" height="40" />
       </div>
     </b-navbar-brand>
     <h4 class="text-white">Froilan Enriquez</h4>
@@ -11,21 +17,36 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto text-white" >
-        <b-nav>
-          <b-nav-item href="#about" >
-            <p class="text-white translate" id="aboutMe">About Me</p>
-          </b-nav-item>
-          <b-nav-item href="#skillsSec">
-            <p class="text-white translate" id="skills">Skills</p>
-          </b-nav-item>
-          <b-nav-item href="#projects">
-            <p class="text-white translate" id="projectsText">Projects</p>
-          </b-nav-item>
-          <b-nav-item href="#contact">
-            <p class="text-white translate" id="contactMe">Contact Me</p>
-          </b-nav-item>
-        </b-nav>
+      <b-navbar-nav class="ml-auto text-white">
+        <!-- <b-navbar-nav class="nav"> -->
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">
+              <p class="translate" id="aboutMe">About Me</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skillsSec">
+              <p class="translate" id="skills">Skills</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">
+              <p class="translate" id="projectsText">Projects</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              <p class="translate" id="contactMe">Contact Me</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#softSkillsSec">
+              <p class="translate" id="softSkillsLink">Soft Skills</p>
+            </a>
+          </li>
+        </ul>
+        <!-- </b-navbar-nav> -->
 
         <b-nav-item-dropdown :text="language" right>
           <b-dropdown-item @click="changeLangEng">
@@ -44,8 +65,8 @@
 <script>
 export default {
   props: {
-    textArray:{
-      required: true
+    textArray: {
+      required: true,
     },
   },
   data() {
@@ -65,16 +86,18 @@ export default {
         softSkills: "Soft skills",
         takeOff: " TAKE OFF! ",
         clickABtn: "Click a button to go to a specific section",
-        ready: "All ready? Now let's begin our flight. Click the button below to go to our first stop!",
+        ready:
+          "All ready? Click the button below to go to our first stop!",
         next1: " Next stop! ",
         next2: " Next stop! ",
-        next3: " Final stop! ",
+        next3: " Next stop! ",
+        next4: " Final stop! ",
         thankYou: "Thank you for flying with us!",
         getInTouch: "Get in touch",
         email: "Email address",
         subject: "Subject",
         bodyText: "Body",
-        sendEmail: "Send"
+        sendEmail: "Send",
       },
       esp: {
         aboutMe: "Sobre Mi",
@@ -90,18 +113,20 @@ export default {
         softSkills: "Soft skills",
         takeOff: " ¡DESPEGUEMOS! ",
         clickABtn: "Clica un botón para ir a una sección específica",
-        ready: "¿Preparado? Iniciamos el despegue. Clica el botón de abajo para ir a nuestro primer destino!",
+        ready:
+          "¿Preparado? Clica el botón de abajo para ir a nuestro primer destino!",
         next1: " ¡Proximo destino! ",
         next2: " ¡Proximo destino! ",
-        next3: " ¡Ultimo destino! ",
+        next3: " ¡Proximo destino! ",
+        next4: " ¡Ultimo destino! ",
         thankYou: "¡Gracias por volar con nosotros!",
         getInTouch: "Contáctame",
         email: "Correo electrónico",
         subject: "Asunto",
         bodyText: "Mensaje",
-        sendEmail: "Enviar"
+        sendEmail: "Enviar",
       },
-      language: 'English'
+      language: "English",
     };
   },
   methods: {
@@ -122,7 +147,6 @@ export default {
       for (const textItem of this.textArray) {
         this.changeText(textItem.id, lang);
       }
-
     },
     changeText(stringID, lang) {
       // console.log('change text running');
@@ -134,8 +158,7 @@ export default {
       document.getElementById(stringID).innerHTML = lang[stringID];
     },
   },
-  mounted() {
-  },
+  mounted() {},
   setup() {},
 };
 </script>

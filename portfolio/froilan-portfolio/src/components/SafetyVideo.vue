@@ -6,9 +6,9 @@
 
     <div class="card-body row">
       <div class="col-lg-3" id="controls1">
-        <button class="btn btn-secondary m-1 col-10 translate" id="introduction" @click="playSection(0,8)">Introduction</button>
-        <button class="btn btn-secondary m-1 col-10 translate" id="aboutMe2" @click="playSection(8.1,23)">About Me</button>
-        <button class="btn btn-secondary m-1 col-10 translate" id="language" @click="playSection(23,40)">Languages</button>
+        <button class="btn btn-primary m-1 col-10 translate" id="introduction" @click="playSection(0,8)">Introduction</button>
+        <button class="btn btn-primary m-1 col-10 translate" id="aboutMe2" @click="playSection(8.1,23)">About Me</button>
+        <button class="btn btn-primary m-1 col-10 translate" id="language" @click="playSection(23,40)">Languages</button>
       </div>
 
       <div class="col-lg-6">
@@ -48,21 +48,22 @@
         </div>
 
         <p class="mt-3 translate" id="ready">
-          All ready? Now let's begin our flight. Click the button below to go to our first stop!
+          All ready? Click the button below to go to our first stop!
         </p>
       </div>
 
       <div class="col-lg-3" id="controls2">
-        <button class="btn btn-secondary m-1 col-10 translate" id="frameworks" @click="playSection(40.5,50.7)">Frameworks</button>
-        <button class="btn btn-secondary m-1 col-10 translate" id="experience" @click="playSection(51,63)">Experience</button>
-        <button class="btn btn-secondary m-1 col-10 translate" id="softSkills" @click="playSection(63,79)">Soft Skills</button>
+        <button class="btn btn-primary m-1 col-10 translate" id="frameworks" @click="playSection(40.5,50.7)">Frameworks</button>
+        <button class="btn btn-primary m-1 col-10 translate" id="experience" @click="playSection(51,63)">Experience</button>
+        <button class="btn btn-primary m-1 col-10 translate" id="softSkills" @click="playSection(63,79)">Soft Skills</button>
       </div>
     </div>
     <div class="card-footer">
-      <button class="btn btn-primary m-2" @click="scrollDown()">
-        <font-awesome-icon icon="caret-down" />
+      
+      <button class="btn btn-secondary m-2" id="btnTakeOff" @click="scrollDown()">
+         <font-awesome-icon icon="plane-departure" />
           <span id="takeOff" class="translate"> TAKE OFF! </span>
-        <font-awesome-icon icon="caret-down" />
+         <font-awesome-icon icon="plane-departure" />
       </button>
     </div>
   </div>
@@ -192,5 +193,8 @@ export default {
 
 #controls1, #controls2{
   margin-top: 10%;
+}
+#btnTakeOff{
+  font-size: 2em;
 }
 </style>
