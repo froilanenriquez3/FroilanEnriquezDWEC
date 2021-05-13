@@ -22,27 +22,28 @@
         <ul class="nav navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#about">
-              <p class="translate" id="aboutMe">About Me</p>
+              <p class="translate text-white" id="aboutMe">About Me</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#skillsSec">
-              <p class="translate" id="skills">Skills</p>
+              <p class="translate text-white" id="skills">Skills</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">
-              <p class="translate" id="projectsText">Projects</p>
+              <p class="translate text-white" id="projectsText">Projects</p>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#softSkillsSec">
+              <p class="translate text-white" id="softSkillsLink">Soft Skills</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">
-              <p class="translate" id="contactMe">Contact Me</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#softSkillsSec">
-              <p class="translate" id="softSkillsLink">Soft Skills</p>
+              <p class="translate text-white" id="contactMe">Contact Me</p>
             </a>
           </li>
         </ul>
@@ -98,6 +99,7 @@ export default {
         subject: "Subject",
         bodyText: "Body",
         sendEmail: "Send",
+        softSkillsLink: "Soft Skills"
       },
       esp: {
         aboutMe: "Sobre Mi",
@@ -125,6 +127,7 @@ export default {
         subject: "Asunto",
         bodyText: "Mensaje",
         sendEmail: "Enviar",
+        softSkillsLink: "Soft Skills"
       },
       language: "English",
     };
@@ -133,7 +136,7 @@ export default {
     changeLangEsp() {
       this.isEng = false;
       let lang = this.esp;
-      this.language = "Spanish";
+      this.language = "Español";
 
       for (const textItem of this.textArray) {
         this.changeText(textItem.id, lang);

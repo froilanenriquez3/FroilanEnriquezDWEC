@@ -26,9 +26,9 @@
             id="btnFront"
             @click="scrollSection('markerTwo'), fillBars('backbars')"
           >
-            <font-awesome-icon icon="globe-europe" />
+            <font-awesome-icon icon="plane" rotation="90"/>
             <span class="translate" id="next1"> Next stop! </span>
-            <font-awesome-icon icon="globe-europe" />
+            <font-awesome-icon icon="plane" rotation="90"/>
           </button>
         </div>
 
@@ -50,9 +50,9 @@
             id="btnBack"
             @click="scrollSection('markerThree')"
           >
-            <font-awesome-icon icon="globe-europe" />
+            <font-awesome-icon icon="plane" rotation="90"/>
             <span class="translate" id="next2"> Next stop! </span>
-            <font-awesome-icon icon="globe-europe" />
+            <font-awesome-icon icon="plane" rotation="90"/>
           </button>
         </div>
 
@@ -70,9 +70,9 @@
           id="btnProject"
           @click="scrollSection('markerFour')"
         >
-          <font-awesome-icon icon="globe-europe" />
+          <font-awesome-icon icon="plane" rotation="90"/>
           <span class="translate" id="next3"> Next stop! </span>
-          <font-awesome-icon icon="globe-europe" />
+          <font-awesome-icon icon="plane" rotation="90"/>
         </button>
       </section>
 

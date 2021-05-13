@@ -134,7 +134,7 @@ export default {
     },
     scrollDown() {
       document
-        .getElementById("markerOne")
+        .getElementById("skillsSec")
         .scrollIntoView({ block: "start", inline: "nearest" });
       this.fillBars();
     },
