@@ -55,22 +55,41 @@
         </p>
 
 
-       <b>SASS</b>
+       <b>Ionic</b>
       <div class="progress">
         <div
-          class="progress-bar progress-bar-striped bg-success progress-bar-animated bg-danger frontbars"
+          class="progress-bar progress-bar-striped progress-bar-animated frontbars"
           role="progressbar"
            style="width: 0%"
           aria-valuenow="25"
           aria-valuemin="0"
           aria-valuemax="100"
+          id="ionic"
         ></div>
       </div>
       <p align="left">
-        After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like
-        to take advantage of the features SASS provides: variables, mixins, nesting, and more.
+        In my Mobile Programming class, I learned how to make responsive web apps for mobile,
+        working with Angular and React while applying what I learned about creating web apps for other 
+        environments.
       </p>
 
+      <b>Material UI</b>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated frontbars"
+          role="progressbar"
+           style="width: 0%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          id="material"
+        ></div>
+      </div>
+      <p align="left">
+        In my on-the-job training, I helped create a front-end app using React and Material UI.
+        During this project, I became familiar with the different components that this framework
+        has to offer to create functional and good looking interfaces.
+      </p>
 
     </div>
   </div>
@@ -88,5 +107,13 @@ export default {
 .cardcom {
   width: 35vw;
   opacity: 0.95;
+  height: 100%;
+}
+#ionic {
+  background-color: purple;
+}
+
+#material {
+  background-color: brown;
 }
 </style>

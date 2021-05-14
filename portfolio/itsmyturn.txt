@@ -11,6 +11,10 @@ add ionic/bootstrap/material ui
 
 Java / C++
 
+change button of take off
+
+
+change colors last card
 
 
 

@@ -53,6 +53,22 @@
       <p align="left">
         My experience in Sequelize comes from creating models, relationships, and seeders for filling databases with values.
       </p>
+
+      <b>C++</b>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped bg-info progress-bar-animated backbars"
+          role="progressbar"
+          style="width: 0%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p align="left">
+        My first programming language, C++ is where I picked up the basics. I learned from
+        conditionals and loops, up to matrixes, structs, functions and full on CRUD projects.
+      </p>
     </div>
   </div>
 </template>
@@ -71,5 +87,6 @@ export default {
 .cardcom {
   width: 35vw;
   opacity: 0.95;
+    height: 100%;
 }
 </style>

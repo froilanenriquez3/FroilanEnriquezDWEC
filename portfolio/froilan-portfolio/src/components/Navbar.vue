@@ -22,27 +22,32 @@
         <ul class="nav navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#about">
-              <p class="translate text-white" id="aboutMe">About Me</p>
+              <p class="translate text-white" id="intro">Introduction</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skillsSec">
+            <a class="nav-link" href="#markerOne">
               <p class="translate text-white" id="skills">Skills</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">
+            <a class="nav-link" href="#markerThree">
               <p class="translate text-white" id="projectsText">Projects</p>
             </a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="#softSkillsSec">
+            <a class="nav-link" href="#markerFour">
               <p class="translate text-white" id="softSkillsLink">Soft Skills</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">
+            <a class="nav-link" href="#markerFive">
+              <p class="translate text-white" id="aboutMe">About Me</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#markerSix">
               <p class="translate text-white" id="contactMe">Contact Me</p>
             </a>
           </li>
@@ -74,8 +79,10 @@ export default {
     return {
       isEng: true,
       eng: {
+        intro: "Introduction",
         aboutMe: "About Me",
         aboutMe2: "About Me",
+        aboutMe3: "About Me",
         skills: "Skills",
         projectsText: "Projects",
         contactMe: "Contact Me",
@@ -85,14 +92,15 @@ export default {
         frameworks: "Frameworks",
         experience: "Experience",
         softSkills: "Soft skills",
-        takeOff: " TAKE OFF! ",
+        takeOff: " Take Off! ",
         clickABtn: "Click a button to go to a specific section",
         ready:
           "All ready? Click the button below to go to our first stop!",
         next1: " Next stop! ",
         next2: " Next stop! ",
         next3: " Next stop! ",
-        next4: " Final stop! ",
+        next4: " Next stop! ",
+        final: " Final stop! ",
         thankYou: "Thank you for flying with us!",
         getInTouch: "Get in touch",
         email: "Email address",
@@ -102,8 +110,10 @@ export default {
         softSkillsLink: "Soft Skills"
       },
       esp: {
+        intro: "Introducciòn",
         aboutMe: "Sobre Mi",
         aboutMe2: "Sobre Mi",
+        aboutMe3: "Sobre Mi",
         skills: "Habilidades",
         projectsText: "Proyectos",
         contactMe: "Contacto",
@@ -113,14 +123,15 @@ export default {
         frameworks: "Frameworks",
         experience: "Experiencia",
         softSkills: "Soft skills",
-        takeOff: " ¡DESPEGUEMOS! ",
+        takeOff: " ¡Despeguemos! ",
         clickABtn: "Clica un botón para ir a una sección específica",
         ready:
           "¿Preparado? Clica el botón de abajo para ir a nuestro primer destino!",
         next1: " ¡Proximo destino! ",
         next2: " ¡Proximo destino! ",
         next3: " ¡Proximo destino! ",
-        next4: " ¡Ultimo destino! ",
+        next4: " ¡Proximo destino! ",
+        final: " ¡Ultimo destino! ",
         thankYou: "¡Gracias por volar con nosotros!",
         getInTouch: "Contáctame",
         email: "Correo electrónico",

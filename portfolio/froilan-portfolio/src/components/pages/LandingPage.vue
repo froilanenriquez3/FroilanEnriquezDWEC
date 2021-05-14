@@ -11,7 +11,7 @@
     <main>
       <SafetyVideo />
 
-      <span id="skillsSec"></span>
+      <span id="skillsSec" class="secSpan"></span>
 
       <section id="markerOne" @mouseover="fillBars('frontbars')">
         <div data-aos="fade-right" data-aos-duration="1000">
@@ -26,9 +26,9 @@
             id="btnFront"
             @click="scrollSection('markerTwo'), fillBars('backbars')"
           >
-            <font-awesome-icon icon="plane" rotation="90"/>
+            <font-awesome-icon icon="plane" rotation="90" />
             <span class="translate" id="next1"> Next stop! </span>
-            <font-awesome-icon icon="plane" rotation="90"/>
+            <font-awesome-icon icon="plane" rotation="90" />
           </button>
         </div>
 
@@ -50,9 +50,9 @@
             id="btnBack"
             @click="scrollSection('markerThree')"
           >
-            <font-awesome-icon icon="plane" rotation="90"/>
+            <font-awesome-icon icon="plane" rotation="90" />
             <span class="translate" id="next2"> Next stop! </span>
-            <font-awesome-icon icon="plane" rotation="90"/>
+            <font-awesome-icon icon="plane" rotation="90" />
           </button>
         </div>
 
@@ -61,7 +61,7 @@
         </div>
       </section>
 
-      <span id="projects"></span>
+      <span id="projects" class="secSpan"></span>
 
       <section id="markerThree">
         <ProjectCard />
@@ -70,16 +70,16 @@
           id="btnProject"
           @click="scrollSection('markerFour')"
         >
-          <font-awesome-icon icon="plane" rotation="90"/>
+          <font-awesome-icon icon="plane" rotation="90" />
           <span class="translate" id="next3"> Next stop! </span>
-          <font-awesome-icon icon="plane" rotation="90"/>
+          <font-awesome-icon icon="plane" rotation="90" />
         </button>
       </section>
 
-       <span id="softSkillsSec"></span>
+      <span id="softSkillsSec" class="secSpan"></span>
 
       <section id="markerFour">
-        <div data-aos="fade-up" data-aos-duration="750">
+        <div data-aos="fade-up-right" data-aos-duration="750">
           <SoftSkills />
         </div>
         <div>
@@ -91,19 +91,36 @@
             id="btnSoft"
             @click="scrollSection('markerFive')"
           >
-            <font-awesome-icon icon="plane-arrival" />
-            <span class="translate" id="next4"> Final stop! </span>
-            <font-awesome-icon icon="plane-arrival" />
+            <font-awesome-icon icon="plane" rotation="90" />
+            <span class="translate" id="next4"> Next stop! </span>
+            <font-awesome-icon icon="plane" rotation="90" />
           </button>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="750">
+        <div data-aos="fade-up-left" data-aos-duration="750">
           <SoftSkills2 />
         </div>
       </section>
 
-      <span id="contact"></span>
+      <span id="aboutSec" class="secSpan"></span>
       <section id="markerFive">
+        <div data-aos="zoom-out" data-aos-duration="500">
+          <AboutMeCard />
+        </div>
+
+        <button
+          class="btn btn-secondary navBtn"
+          id="btnAbout"
+          @click="scrollSection('markerSix')"
+        >
+          <font-awesome-icon icon="plane-arrival"  />
+          <span class="translate" id="final"> Final stop! </span>
+          <!-- <font-awesome-icon icon="plane-arrival"  /> -->
+        </button>
+      </section>
+
+      <span id="contact" class="secSpan"></span>
+      <section id="markerSix">
         <Email />
       </section>
     </main>
@@ -125,6 +142,7 @@
 </template>
 <script>
 // import Card from "../Card.vue";
+import AboutMeCard from "../AboutMeCard";
 import BackEndCard from "../BackEndCard";
 import BackEndCard2 from "../BackEndCard2";
 import Email from "../Email.vue";
@@ -140,6 +158,7 @@ export default {
   setup() {},
   components: {
     // Card,
+    AboutMeCard,
     BackEndCard,
     BackEndCard2,
     Email,
@@ -161,10 +180,22 @@ export default {
       let vals = [];
       switch (className) {
         case "frontbars":
-          vals = ["90%", "85%", "75%", "65%", "95%", "55%", "80%"];
+          vals = [
+            "90%",
+            "95%",
+            "75%",
+            "80%",
+            "85%",
+            "65%",
+            "95%",
+            "55%",
+            "50%",
+            "70%",
+          ];
           break;
         case "backbars":
-          vals = ["95%", "92%", "87%", "60%", "50%", "50%"];
+          vals = ["95%", "92%", "87%", "90%",
+                "60%", "50%", "50%", "70%"];
           break;
       }
       let bars = document.getElementsByClassName(className);
@@ -229,14 +260,15 @@ section {
 #blank {
   height: 5vh;
 }
-span {
+span.secSpan {
   width: 100vw;
+  padding-top: 15vh;
   /* border: solid black; */
   /* margin-bottom: 10vh; */
 }
 .navBtn {
   position: relative;
-  height: 7vh;
+  /* height: 7vh; */
   /* margin-top: 65vh; */
   z-index: 1;
 }
@@ -244,22 +276,23 @@ span {
 #about {
   margin-bottom: 0;
 }
-
-#markerTwo {
-  padding-top: 7%;
-}
 #btnFront {
-  margin-top: 65vh;
+  margin-top: 130vh;
 }
 
 #btnBack {
-  margin-top: 60vh;
+  margin-top: 100vh;
 }
 #btnProject {
   margin-top: 1%;
 }
-#btnSoft{
-  margin-top: 60vh;
+#btnAbout{
+  margin-top: 1%;
+  font-size: 2em;
+  height: fit-content;
+}
+#btnSoft {
+  margin-top: 88vh;
   /* font-size: 1.5em; */
 }
 .secLabel {
@@ -267,14 +300,14 @@ span {
   width: 20vw;
   z-index: 1;
 }
-#markerThree {
+#markerThree,
+#markerFive {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 2;
 }
-#markerFour {
-  padding-top:15vh;
-}
+
 </style>

@@ -28,6 +28,7 @@ export default {
        loaded: false,
        page: "loading",
        textArray: [],
+      // publicPath: process.env.BASE_URL
     } 
   },
   mounted (){
@@ -53,6 +54,8 @@ html{
   /* margin-top: 60px; */
   background-color: #00AEDC;
   overflow: hidden;
+
+  font-size: 18px;
 
   position: relative;
   height: 100%;

@@ -16,10 +16,10 @@
         ></div>
       </div>
       <p align="left">
-        I started learning JavaScript in the summer between my first and second
-        year. Having worked with JavaScript through many projects, in both the
+        Having worked with JavaScript through many projects, in both the
         front and back end, as well as through various frameworks, it is
-        probably the language I'm most comfortable with.
+        probably the language I'm most comfortable with. I'm confident in using JS
+        for DOM manipulation, calling API's, and making reactive and interactive sites.
       </p>
 
       <b>HTML</b>
@@ -34,10 +34,8 @@
         ></div>
       </div>
       <p align="left">
-        I began with HTML when I was fifteen. It was my introduction to web
-        design and the world of web applications. I have made many webpages
-        since then, but now combined with my skills in JavaScript, I can make
-        interactive, dynamic, and robust webpages for you.
+        I've created many pages with HTML, and through my experience I've learned to make
+        solid layouts, use semantic tags, and integrate HTML well with JavaScript and CSS.
       </p>
 
       <b>CSS</b>
@@ -53,12 +51,45 @@
       </div>
       <p align="left">
         Of the big three in front end programming, CSS is probably my weakest
-        area. However, I still know the fundamentals and can bring about the
-        designs that I have in mind. I am learning and practicing all the time,
-        and what I lack I have looked to strengthen through other languages and
-        frameworks.
+        area. However, I still know the fundamentals, have worked extensively with Flexbox and Grid,
+        and am practicing and learning all the time.
+      </p>
+
+      <b>SASS</b>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped  progress-bar-animated bg-danger frontbars"
+          role="progressbar"
+           style="width: 0%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p align="left">
+        After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like
+        to take advantage of the features SASS provides: variables, mixins, nesting, and more.
+      </p>
+
+      <b>Bootstrap</b>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped  progress-bar-animated  frontbars"
+          role="progressbar"
+           style="width: 0%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          id="bootstrap"
+        ></div>
+      </div>
+      <p align="left">
+        After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like
+        to take advantage of the features SASS provides: variables, mixins, nesting, and more.
       </p>
     </div>
+
+    
   </div>
 </template>
 <script>
@@ -79,5 +110,9 @@ export default {
   width: 35vw;
   opacity: 0.95;
   padding: 0;
+    height: 100%;
+}
+#bootstrap {
+  background-color: pink;
 }
 </style>

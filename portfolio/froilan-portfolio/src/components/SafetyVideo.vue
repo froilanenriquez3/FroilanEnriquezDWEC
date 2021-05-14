@@ -1,11 +1,12 @@
 <template>
-  <div class="card mt-5" id="safetyVideo">
-    <div class="card-header bg-primary text-white">
-      <h5 class="card-title mt-2 translate" id="preFlight">Before your flight...</h5>
+  <div class="card bg-white text-black mt-5" id="safetyVideo">
+    <div class="card-header bg-info text-white">
+      <h3 class="card-title mt-2 translate" id="preFlight">Before your flight...</h3>
     </div>
 
     <div class="card-body row">
-      <div class="col-lg-3" id="controls1">
+      <!-- <div class="row"> -->
+        <div class="col-lg-3" id="controls1">
         <button class="btn btn-primary m-1 col-10 translate" id="introduction" @click="playSection(0,8)">Introduction</button>
         <button class="btn btn-primary m-1 col-10 translate" id="aboutMe2" @click="playSection(8.1,23)">About Me</button>
         <button class="btn btn-primary m-1 col-10 translate" id="language" @click="playSection(23,40)">Languages</button>
@@ -45,7 +46,9 @@
             <font-awesome-icon v-show="mute === false" id="muteIcon"  icon="volume-up"></font-awesome-icon>
           </button>
            
-        </div>
+        <!-- </div> -->
+      </div>
+      
 
         <p class="mt-3 translate" id="ready">
           All ready? Click the button below to go to our first stop!
@@ -58,12 +61,12 @@
         <button class="btn btn-primary m-1 col-10 translate" id="softSkills" @click="playSection(63,79)">Soft Skills</button>
       </div>
     </div>
-    <div class="card-footer">
+    <div class="card-footer bg-info">
       
       <button class="btn btn-secondary m-2" id="btnTakeOff" @click="scrollDown()">
-         <font-awesome-icon icon="plane-departure" />
-          <span id="takeOff" class="translate"> TAKE OFF! </span>
-         <font-awesome-icon icon="plane-departure" />
+         <font-awesome-icon icon="plane-departure" class="mr-2"/>
+          <span id="takeOff" class="translate"> Take Off! </span>
+         <!-- <font-awesome-icon icon="plane-departure" /> -->
       </button>
     </div>
   </div>
@@ -88,7 +91,8 @@ export default {
         (event.target.currentTime / event.target.duration) * 100 + "%";
     },
     fillBars() {
-      let vals = ["90%", "85%", "75%", "65%", "95%", "55%", "80%"];
+      let vals = ["90%", "95%", "75%", "80%", "85%", 
+                  "65%", "95%", "55%", "50%", "70%"];
       let bars = document.getElementsByClassName("frontbars");
 
       bars.forEach((bar, i) => {
@@ -134,7 +138,7 @@ export default {
     },
     scrollDown() {
       document
-        .getElementById("skillsSec")
+        .getElementById("markerOne")
         .scrollIntoView({ block: "start", inline: "nearest" });
       this.fillBars();
     },
@@ -195,6 +199,10 @@ export default {
   margin-top: 10%;
 }
 #btnTakeOff{
-  font-size: 2em;
+  font-size: 1.7em;
+}
+#takeOff{
+  font-size: 1em;
+  margin: 0;
 }
 </style>

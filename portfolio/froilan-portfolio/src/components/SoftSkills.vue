@@ -8,11 +8,23 @@
         <li class="list-group-item active" aria-current="true">
           Teamwork
         </li>
-        <li class="list-group-item">This year, I completed two group projects. Through these projects, I learned how to collaborate and work together with others to fulfill a goal. </li>
+        <li class="list-group-item" align="justify">
+          Through our center's project based learning model, I had the opportunity
+          to work in two group projects. During these projects, I practiced my teamwork 
+          skills and learned how to collaborate with others.
+        </li>
         <li class="list-group-item active">Responsibility</li>
-        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item" align='justify'>
+          I strive to be accountable, dependable, and reliable. I know that when 
+          you are entrusted with something, it is important to keep that trust and not lose it. 
+        </li>
         <li class="list-group-item active">Organization</li>
-        <li class="list-group-item">And a fifth one</li>
+        <li class="list-group-item" align="justify">
+          An important trait when it comes to working is the ability to stay organized.
+          This makes the workflow easier, and so I strive to stay organized in every aspect
+          of my work. Whether it means maintaining my physical workspace, or keeping my
+          projects well structured, organization is smoething I highly value.
+        </li>
       </ul>
     </div>
   </div>
@@ -27,5 +39,6 @@ export default {
 .cardcom {
   width: 35vw;
   opacity: 0.95;
+    height: 100%;
 }
 </style>
