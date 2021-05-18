@@ -7,7 +7,9 @@ From src folder, run 'vue serve'
 TODO:
 Add translations
 
-Add third project
+Add third project (Possibly fourth in rubiks cube one)
+
+Show technologies used for projects
 
 
 

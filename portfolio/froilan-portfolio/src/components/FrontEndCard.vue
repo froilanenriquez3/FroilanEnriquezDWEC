@@ -84,8 +84,8 @@
         ></div>
       </div>
       <p class="translate" id="bootstrapText" align="left">
-        After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like
-        to take advantage of the features SASS provides: variables, mixins, nesting, and more.
+        I began working with Bootstrap together with my PHP Projects. Since then, I've implemented it in many places,
+        on its own or in combination with Bootswatch and Bootstrap Vue. This very site is made with Bootstrap.
       </p>
     </div>
 

@@ -16,7 +16,7 @@
             aria-valuemax="100"
           ></div>
         </div>
-        <p align="left">
+        <p class="translate" id="angularText" align="left">
           Angular was my first JavaScript framework. I created a handful of projects, including a simple SPA that uses
           routers for fast loading.
         </p>
@@ -33,7 +33,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="vueText" align="left">
         If JavaScript is the language I'm most comfortable with, then Vue is the framework I'm most comfortable with.
         My second group project for the year uses Vue for the front end. 
       </p>
@@ -49,7 +49,7 @@
             aria-valuemax="100"
           ></div>
         </div>
-        <p align="left">
+        <p class="translate" id="reactText" align="left">
           As the latest framework I've picked up, I still have much to learn with React. However, I've learned how to use JSX, the React Router, 
           and how to integrate Material UI.
         </p>
@@ -67,7 +67,7 @@
           id="ionic"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="ionicText" align="left">
         In my Mobile Programming class, I learned how to make responsive web apps for mobile,
         working with Angular and React while applying what I learned about creating web apps for other 
         environments.
@@ -85,7 +85,7 @@
           id="material"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="materialText" align="left">
         In my on-the-job training, I helped create a front-end app using React and Material UI.
         During this project, I became familiar with the different components that this framework
         has to offer to create functional and good looking interfaces.

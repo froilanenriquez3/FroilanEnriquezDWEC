@@ -117,9 +117,12 @@ export default {
           "Of the big three in front end programming, CSS is probably my weakest area. However, I still know the fundamentals, have worked extensively with Flexbox and Grid, and am practicing and learning all the time.",
         sassText:
           "After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like to take advantage of the features SASS provides: variables, mixins, nesting, and more.",
-        bootstrapText: "After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like to take advantage of the features SASS provides: variables, mixins, nesting, and more.",
-        angularText: "",
-        
+        bootstrapText: "I began working with Bootstrap together with my PHP Projects. Since then, I've implemented it in many places, on its own or in combination with Bootswatch and Bootstrap Vue. This very site is made with Bootstrap.",
+        angularText: "Angular was my first JavaScript framework. I created a handful of projects, including a simple SPA that uses routers for fast loading.",
+        vueText: "If JavaScript is the language I'm most comfortable with, then Vue is the framework I'm most comfortable with. My second group project for the year uses Vue for the front end.",
+        reactText: "As the latest framework I've picked up, I still have much to learn with React. However, I've learned how to use JSX, the React Router, and how to integrate Material UI.",
+        ionicText: "In my Mobile Programming class, I learned how to make responsive web apps for mobile, working with Angular and React while applying what I learned about creating web apps for other environments.",
+        materialText: "In my on-the-job training, I helped create a front-end app using React and Material UI. During this project, I became familiar with the different components that this framework has to offer to create functional and good looking interfaces.",
       },
       esp: {
         intro: "Introducciòn",
@@ -159,7 +162,12 @@ export default {
           "De los tres grandes en programación de front-end, CSS es probablemente mi área más débil. Sin embargo, todavía conozco los fundamentos, he trabajado mucho con Flexbox y Grid, y estoy practicando y aprendiendo todo el tiempo.",
         sassText:
           "Después de trabajar con CSS durante tanto tiempo, SASS fue como un soplo de aire fresco para mí. Siempre que tengo la oportunidad, me gusta aprovechar las funciones que ofrece SASS: variables, mixins, anidamiento y más.",
-        bootstrapText: "Después de trabajar con CSS durante tanto tiempo, SASS fue como un soplo de aire fresco para mí. Siempre que tengo la oportunidad, me gusta aprovechar las funciones que ofrece SASS: variables, mixins, anidamiento y más.",
+        bootstrapText: "Comencé a trabajar con Bootstrap junto con mis proyectos PHP. Desde entonces, lo he implementado en muchos lugares, solo o en combinación con Bootswatch y Bootstrap Vue. Este mismo sitio está hecho con Bootstrap.",
+        angularText: "Angular fue mi primer marco de JavaScript. Creé varios proyectos, incluido un SPA simple que usa enrutadores para una carga rápida.",
+        vueText: "Si JavaScript es el lenguaje con el que me siento más cómodo, entonces Vue es el marco con el que me siento más cómodo. Mi segundo proyecto grupal del año usa Vue como interfaz.",
+        reactText: "Como último framework que he adquirido, todavía tengo mucho que aprender con React. Sin embargo, aprendí cómo usar JSX, React Router y cómo integrar Material UI.",
+        ionicText: "En mi clase de programación móvil, aprendí cómo crear aplicaciones web receptivas para dispositivos móviles, trabajando con Angular y React mientras aplicaba lo que aprendí sobre la creación de aplicaciones web para otros entornos.",
+        materialText: "En mi capacitación en el trabajo, ayudé a crear una aplicación front-end usando React y Material UI. Durante este proyecto, me familiaricé con los diferentes componentes que este marco tiene para ofrecer para crear interfaces funcionales y atractivas.",
       },
       language: "English",
     };
