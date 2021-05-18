@@ -35,10 +35,12 @@
               <p class="translate text-white" id="projectsText">Projects</p>
             </a>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link" href="#markerFour">
-              <p class="translate text-white" id="softSkillsLink">Soft Skills</p>
+              <p class="translate text-white" id="softSkillsLink">
+                Soft Skills
+              </p>
             </a>
           </li>
           <li class="nav-item">
@@ -94,8 +96,7 @@ export default {
         softSkills: "Soft skills",
         takeOff: " Take Off! ",
         clickABtn: "Click a button to go to a specific section",
-        ready:
-          "All ready? Click the button below to go to our first stop!",
+        ready: "All ready? Click the button below to go to our first stop!",
         next1: " Next stop! ",
         next2: " Next stop! ",
         next3: " Next stop! ",
@@ -107,7 +108,18 @@ export default {
         subject: "Subject",
         bodyText: "Body",
         sendEmail: "Send",
-        softSkillsLink: "Soft Skills"
+        softSkillsLink: "Soft Skills",
+        javaText:
+          "Having worked with JavaScript through many projects, in both the front and back end, as well as through various frameworks, it is probably the language I'm most comfortable with. I'm confident in using JS for DOM manipulation, calling API's, and making reactive and interactive sites.",
+        htmlText:
+          "I've created many pages with HTML, and through my experience I've learned to make solid layouts, use semantic tags, and integrate HTML well with JavaScript and CSS.",
+        cssText:
+          "Of the big three in front end programming, CSS is probably my weakest area. However, I still know the fundamentals, have worked extensively with Flexbox and Grid, and am practicing and learning all the time.",
+        sassText:
+          "After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like to take advantage of the features SASS provides: variables, mixins, nesting, and more.",
+        bootstrapText: "After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like to take advantage of the features SASS provides: variables, mixins, nesting, and more.",
+        angularText: "",
+        
       },
       esp: {
         intro: "Introducciòn",
@@ -138,7 +150,16 @@ export default {
         subject: "Asunto",
         bodyText: "Mensaje",
         sendEmail: "Enviar",
-        softSkillsLink: "Soft Skills"
+        softSkillsLink: "Soft Skills",
+        javaText:
+          "Habiendo trabajado con JavaScript a través de muchos proyectos, tanto en el front como en el back-end, así como a través de varios frameworks, es probablemente el lenguaje con el que me siento más cómodo. Confío en usar JS para la manipulación de DOM, llamar a API y crear sitios reactivos e interactivos.",
+        htmlText:
+          "He creado muchas páginas con HTML y, a través de mi experiencia, he aprendido a hacer diseños sólidos, usar etiquetas semánticas e integrar bien HTML con JavaScript y CSS.",
+        cssText:
+          "De los tres grandes en programación de front-end, CSS es probablemente mi área más débil. Sin embargo, todavía conozco los fundamentos, he trabajado mucho con Flexbox y Grid, y estoy practicando y aprendiendo todo el tiempo.",
+        sassText:
+          "Después de trabajar con CSS durante tanto tiempo, SASS fue como un soplo de aire fresco para mí. Siempre que tengo la oportunidad, me gusta aprovechar las funciones que ofrece SASS: variables, mixins, anidamiento y más.",
+        bootstrapText: "Después de trabajar con CSS durante tanto tiempo, SASS fue como un soplo de aire fresco para mí. Siempre que tengo la oportunidad, me gusta aprovechar las funciones que ofrece SASS: variables, mixins, anidamiento y más.",
       },
       language: "English",
     };

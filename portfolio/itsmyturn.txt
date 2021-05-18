@@ -5,16 +5,9 @@ Vue / Bootstrap Vue
 From src folder, run 'vue serve'
 
 TODO:
-Projects section
+Add translations
 
-add ionic/bootstrap/material ui
-
-Java / C++
-
-change button of take off
-
-
-change colors last card
+Add third project
 
 
 

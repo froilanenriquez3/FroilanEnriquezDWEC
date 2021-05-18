@@ -15,7 +15,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="javaText" align="left">
         Having worked with JavaScript through many projects, in both the
         front and back end, as well as through various frameworks, it is
         probably the language I'm most comfortable with. I'm confident in using JS
@@ -33,7 +33,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="htmlText" align="left">
         I've created many pages with HTML, and through my experience I've learned to make
         solid layouts, use semantic tags, and integrate HTML well with JavaScript and CSS.
       </p>
@@ -49,7 +49,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="cssText" align="left">
         Of the big three in front end programming, CSS is probably my weakest
         area. However, I still know the fundamentals, have worked extensively with Flexbox and Grid,
         and am practicing and learning all the time.
@@ -66,7 +66,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="sassText" align="left">
         After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like
         to take advantage of the features SASS provides: variables, mixins, nesting, and more.
       </p>
@@ -83,7 +83,7 @@
           id="bootstrap"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="bootstrapText" align="left">
         After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like
         to take advantage of the features SASS provides: variables, mixins, nesting, and more.
       </p>
