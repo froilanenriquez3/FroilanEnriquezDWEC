@@ -1,4 +1,6 @@
 module.exports = {
-    publicPath: '/FroilanEnriquezDWEC/portfolio/froilan-portfolio/',
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/froilanenriquez3/'
+  : '/'
 
   } 

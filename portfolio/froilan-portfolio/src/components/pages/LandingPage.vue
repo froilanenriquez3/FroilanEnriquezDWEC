@@ -307,7 +307,7 @@ span.secSpan {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 </style>
