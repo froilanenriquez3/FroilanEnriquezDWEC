@@ -142,7 +142,10 @@ export default {
         diligenceHeader: "Diligence",
         diligenceText: "I've been no stranger to a heavy workload. The key to getting through is patience, endurance, and a willingness to work hard. I do my best to put this into practice and show that I am eager to work.",
         timeHeader: "Time Management",
-        timeText: "Another key to dealing with numerous taks is to manage time well. Having had many responsibilites, I'm accustomed to balancing between different obligations, so that I can always deliver what is required of me in a timely manner."
+        timeText: "Another key to dealing with numerous taks is to manage time well. Having had many responsibilites, I'm accustomed to balancing between different obligations, so that I can always deliver what is required of me in a timely manner.",
+        projectCardHeader: "Projects",
+        projectOneHeader: "Project One (Restore)",
+        projectTwoHeader: "Project Two (Broggi)",
      },
       esp: {
         intro: "Introducciòn",
@@ -207,7 +210,10 @@ export default {
         diligenceHeader: "Diligencia",
         diligenceText: "No he sido ajeno a una gran carga de trabajo. La clave para salir adelante es la paciencia, la resistencia y la voluntad de trabajar duro. Hago todo lo posible para poner esto en práctica y demostrar que tengo muchas ganas de trabajar.",
         timeHeader: "Gestión del tiempo",
-        timeText: "Otra clave para lidiar con numerosas tareas es administrar bien el tiempo. Habiendo tenido muchas responsabilidades, estoy acostumbrado a equilibrar entre diferentes obligaciones, de modo que siempre puedo entregar lo que se me pide en el momento oportuno."
+        timeText: "Otra clave para lidiar con numerosas tareas es administrar bien el tiempo. Habiendo tenido muchas responsabilidades, estoy acostumbrado a equilibrar entre diferentes obligaciones, de modo que siempre puedo entregar lo que se me pide en el momento oportuno.",
+         projectCardHeader: "Proyectos",
+        projectOneHeader: "Proyecto Uno (Restore)",
+        projectTwoHeader: "Proyecto Dos (Broggi)",
       },
       language: "English",
     };

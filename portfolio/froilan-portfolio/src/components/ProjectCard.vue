@@ -1,7 +1,7 @@
 <template>
   <div class="card mt-3" id="projects" >
     <div class="card-header bg-secondary text-white">
-      <h5 class="card-title mt-2 mb-0">Projects</h5>
+      <h5 class="card-title mt-2 mb-0 translate" id="projectCardHeader">Projects</h5>
     </div>
 
     <div class="card-body">
@@ -26,10 +26,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-none d-md-block">
-              <h6>First slide label</h6>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+              <h6 class="translate" id="projectOneHeader">Project One (Restore)</h6>
             </div>
             <a role="button" data-toggle="modal" data-target="#project1"
               ><img src="../assets/img/restore.png" class="d-block" alt="..."
@@ -37,10 +34,7 @@
           </div>
           <div class="carousel-item">
             <div class="d-none d-md-block">
-              <h6>Second slide label</h6>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+              <h6 class="translate" id="projectTwoHeader">Project Two (Broggi)</h6>
             </div>
             <a role="button" data-toggle="modal" data-target="#project2"
               ><img src="../assets/img/broggi.png" class="d-block" alt="..."
