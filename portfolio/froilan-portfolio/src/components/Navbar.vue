@@ -109,7 +109,7 @@ export default {
         bodyText: "Body",
         sendEmail: "Send",
         softSkillsLink: "Soft Skills",
-        javaText:
+        jsText:
           "Having worked with JavaScript through many projects, in both the front and back end, as well as through various frameworks, it is probably the language I'm most comfortable with. I'm confident in using JS for DOM manipulation, calling API's, and making reactive and interactive sites.",
         htmlText:
           "I've created many pages with HTML, and through my experience I've learned to make solid layouts, use semantic tags, and integrate HTML well with JavaScript and CSS.",
@@ -123,6 +123,14 @@ export default {
         reactText: "As the latest framework I've picked up, I still have much to learn with React. However, I've learned how to use JSX, the React Router, and how to integrate Material UI.",
         ionicText: "In my Mobile Programming class, I learned how to make responsive web apps for mobile, working with Angular and React while applying what I learned about creating web apps for other environments.",
         materialText: "In my on-the-job training, I helped create a front-end app using React and Material UI. During this project, I became familiar with the different components that this framework has to offer to create functional and good looking interfaces.",
+        phpText: "In the same summer I learned JavaScript, I began my journey with PHP. Most of my projects with a backend run on PHP. I've used it vanilla, with a framework, with MySQL, with ORM... so by now I pretty much see the world through dollar sign variables.",
+        laravelText: "Laravel was my introduction to frameworks with routing, controllers, models, middleware, and so on. My second group project uses this framework to manage, process, and handle complex data.",
+        eloquentText: "Hand in hand with Laravel, I've learned to use Eloquent to help translate the classes of object oriented programming into the relational databases of MySQL.",
+        javaText: "Though I've not worked with Java in web apps strictly, I've learned the fundamentals of Object-Oriented Programming, worked with databases both relational and object-oriented, and utilized the JUnit library for unit tests.",
+        nodeText: "",
+        expressText: "",
+        sequelizeText: "",
+        cppText: "",
       },
       esp: {
         intro: "Introducciòn",
@@ -154,7 +162,7 @@ export default {
         bodyText: "Mensaje",
         sendEmail: "Enviar",
         softSkillsLink: "Soft Skills",
-        javaText:
+        jsText:
           "Habiendo trabajado con JavaScript a través de muchos proyectos, tanto en el front como en el back-end, así como a través de varios frameworks, es probablemente el lenguaje con el que me siento más cómodo. Confío en usar JS para la manipulación de DOM, llamar a API y crear sitios reactivos e interactivos.",
         htmlText:
           "He creado muchas páginas con HTML y, a través de mi experiencia, he aprendido a hacer diseños sólidos, usar etiquetas semánticas e integrar bien HTML con JavaScript y CSS.",
@@ -168,6 +176,14 @@ export default {
         reactText: "Como último framework que he adquirido, todavía tengo mucho que aprender con React. Sin embargo, aprendí cómo usar JSX, React Router y cómo integrar Material UI.",
         ionicText: "En mi clase de programación móvil, aprendí cómo crear aplicaciones web receptivas para dispositivos móviles, trabajando con Angular y React mientras aplicaba lo que aprendí sobre la creación de aplicaciones web para otros entornos.",
         materialText: "En mi capacitación en el trabajo, ayudé a crear una aplicación front-end usando React y Material UI. Durante este proyecto, me familiaricé con los diferentes componentes que este marco tiene para ofrecer para crear interfaces funcionales y atractivas.",
+        phpText: "El mismo verano que aprendí JavaScript, comencé mi viaje con PHP. La mayoría de mis proyectos con backend se ejecutan en PHP. Lo he usado vainilla, con un marco, con MySQL, con ORM ... así que ahora veo el mundo a través de variables de signo de dólar.",
+        laravelText: "Laravel fue mi introducción a los marcos con enrutamiento, controladores, modelos, middleware, etc. Mi segundo proyecto grupal usa este marco para administrar, procesar y manejar datos complejos.",
+        eloquentText: "De la mano de Laravel, he aprendido a usar Eloquent para ayudar a traducir las clases de programación orientada a objetos a las bases de datos relacionales de MySQL.",
+        javaText: "Aunque no he trabajado estrictamente con Java en aplicaciones web, aprendí los fundamentos de la programación orientada a objetos, trabajé con bases de datos tanto relacionales como orientadas a objetos, y utilicé la biblioteca JUnit para pruebas unitarias.",
+        nodeText: "",
+        expressText: "",
+        sequelizeText: "",
+        cppText: "",
       },
       language: "English",
     };

@@ -15,7 +15,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p class="translate" id="javaText" align="left">
+      <p class="translate" id="jsText" align="left">
         Having worked with JavaScript through many projects, in both the
         front and back end, as well as through various frameworks, it is
         probably the language I'm most comfortable with. I'm confident in using JS

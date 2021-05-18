@@ -17,7 +17,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="phpText" align="left">
         In the same summer I learned JavaScript, I began my journey with PHP.
         Most of my projects with a backend run on PHP. I've used it vanilla,
         with a framework, with MySQL, with ORM... so by now I pretty much see
@@ -35,7 +35,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="laravelText" align="left">
         Laravel was my introduction to frameworks with routing, controllers,
         models, middleware, and so on. My second group project uses this
         framework to manage, process, and handle complex data.
@@ -52,7 +52,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="eloquentText" align="left">
         Hand in hand with Laravel, I've learned to use Eloquent to help
         translate the classes of object oriented programming into the relational
         databases of MySQL.
@@ -69,7 +69,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="javaText" align="left">
         Though I've not worked with Java in web apps strictly, I've learned the
         fundamentals of Object-Oriented Programming, worked with databases both
         relational and object-oriented, and utilized the JUnit library for unit
