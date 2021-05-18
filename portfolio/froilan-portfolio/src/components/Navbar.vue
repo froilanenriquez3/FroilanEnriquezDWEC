@@ -137,6 +137,12 @@ export default {
         responsibilityText: "I strive to be accountable, dependable, and reliable. I know that when you are entrusted with something, it is important to keep that trust and not lose it.",
         organizationHeader: "Organization",
         organizationText: "An important trait when it comes to working is the ability to stay organized. This makes the workflow easier, and so I strive to stay organized in every aspect of my work. Whether it means maintaining my physical workspace, or keeping my projects well structured, organization is smoething I highly value.",
+        flexHeader: "Flexibility",
+        flexText: "I've spent all my life adapting to different situations, having moved from place to place every couple of years. I know the value of being able to pivot to confront whatever the current situation brings. I apply this mindset to whatever challenge I face.",
+        diligenceHeader: "Diligence",
+        diligenceText: "I've been no stranger to a heavy workload. The key to getting through is patience, endurance, and a willingness to work hard. I do my best to put this into practice and show that I am eager to work.",
+        timeHeader: "Time Management",
+        timeText: "Another key to dealing with numerous taks is to manage time well. Having had many responsibilites, I'm accustomed to balancing between different obligations, so that I can always deliver what is required of me in a timely manner."
      },
       esp: {
         intro: "Introducciòn",
@@ -196,6 +202,12 @@ export default {
         responsibilityText: "Me esfuerzo por ser responsable, confiable y confiable. Sé que cuando se te confía algo, es importante mantener esa confianza y no perderla.",
         organizationHeader: "Organización",
         organizationText: "Un rasgo importante cuando se trata de trabajar es la capacidad de mantenerse organizado. Esto facilita el flujo de trabajo, por lo que me esfuerzo por mantenerme organizado en todos los aspectos de mi trabajo. Ya sea que signifique mantener mi espacio de trabajo físico o mantener bien estructurados mis proyectos, la organización es algo que valoro mucho.",
+        flexHeader: "Flexibilidad",
+        flexText: "He pasado toda mi vida adaptándome a diferentes situaciones, trasladándome de un lugar a otro cada dos años. Conozco el valor de poder girar para afrontar lo que sea que nos depare la situación actual. Aplico esta mentalidad a cualquier desafío que enfrente",
+        diligenceHeader: "Diligencia",
+        diligenceText: "No he sido ajeno a una gran carga de trabajo. La clave para salir adelante es la paciencia, la resistencia y la voluntad de trabajar duro. Hago todo lo posible para poner esto en práctica y demostrar que tengo muchas ganas de trabajar.",
+        timeHeader: "Gestión del tiempo",
+        timeText: "Otra clave para lidiar con numerosas tareas es administrar bien el tiempo. Habiendo tenido muchas responsabilidades, estoy acostumbrado a equilibrar entre diferentes obligaciones, de modo que siempre puedo entregar lo que se me pide en el momento oportuno."
       },
       language: "English",
     };
