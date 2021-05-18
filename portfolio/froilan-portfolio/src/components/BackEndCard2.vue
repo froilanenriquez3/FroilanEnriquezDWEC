@@ -17,7 +17,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="nodeText" align="left">
        Although my first experiences with Node were through the Angular, Ionic, and Vue frameworks, I mainly started using 
        Node JS proper for back end during my on-the-job training. I learned to convert what I had learned
        about back end into the world of JS and Node. 
@@ -34,7 +34,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="expressText" align="left">
         I first used Node JS through the framework Express, along with the Sequelize ORM. I've had much practice creating
         routes and controllers for the back end of a data-heavy application.
       </p>
@@ -50,7 +50,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="sequelizeText" align="left">
         My experience in Sequelize comes from creating models, relationships, and seeders for filling databases with values.
       </p>
 
@@ -65,7 +65,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p align="left">
+      <p class="translate" id="cppText" align="left">
         My first programming language, C++ is where I picked up the basics. I learned from
         conditionals and loops, up to matrixes, structs, functions and full on CRUD projects.
       </p>
