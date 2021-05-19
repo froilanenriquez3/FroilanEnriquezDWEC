@@ -51,7 +51,7 @@
       
 
         <p class="mt-3 translate" id="ready">
-          All ready? Click the button below to go to our first stop!
+          All ready? Click below to go to our first stop!
         </p>
       </div>
 

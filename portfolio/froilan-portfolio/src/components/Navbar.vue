@@ -96,7 +96,7 @@ export default {
         softSkills: "Soft skills",
         takeOff: " Take Off! ",
         clickABtn: "Click a button to go to a specific section",
-        ready: "All ready? Click the button below to go to our first stop!",
+        ready: "All ready? Click below to go to our first stop!",
         next1: " Next stop! ",
         next2: " Next stop! ",
         next3: " Next stop! ",
