@@ -107,7 +107,7 @@ export default {
         email: "Email address",
         subject: "Subject",
         bodyText: "Body",
-        sendEmail: "Send",
+        sendEmail: "Send ",
         softSkillsLink: "Soft Skills",
         jsText:
           "Having worked with JavaScript through many projects, in both the front and back end, as well as through various frameworks, it is probably the language I'm most comfortable with. I'm confident in using JS for DOM manipulation, calling API's, and making reactive and interactive sites.",

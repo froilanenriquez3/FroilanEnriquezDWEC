@@ -43,9 +43,6 @@
           <div class="carousel-item">
             <div class="d-none d-md-block">
               <h6>Third slide label</h6>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
             </div>
             <a role="button" data-toggle="modal" data-target="#project3"
               ><img src="../assets/img/inception.png" class="d-block" alt="..."

@@ -1,5 +1,49 @@
 <template>
   <div id="projectOnePage" class="p-2">
+    <div class="flex-row d-flex justify-content-around mb-3">
+      <i class="m-1">
+        <img
+          src="../../assets/icons/tech-html.svg"
+          alt="HTML icon"
+          class="langIcons"
+        />
+      </i>
+      <i class="m-1">
+        <img
+          src="../../assets/icons/tech-css.svg"
+          alt="CSS icon"
+          class="langIcons"
+        />
+      </i>
+      <i class="m-1">
+        <img
+          src="../../assets/icons/tech-bootstrap.svg"
+          alt="Bootstrap icon"
+          class="langIcons"
+        />
+      </i>
+      <i class="m-1">
+        <img
+          src="../../assets/icons/js.svg"
+          alt="JS icon"
+          class="langIcons"
+        />
+      </i>
+      <i class="m-1">
+        <img
+          src="../../assets/icons/php.svg"
+          alt="PHP icon"
+          class="langIcons"
+        />
+      </i>
+      <i class="m-1">
+        <img
+          src="../../assets/icons/tech-mysql.svg"
+          alt="mySQL icon"
+          class="langIcons"
+        />
+      </i>
+    </div>
     <div class="row mb-4 ml-1">
       <iframe
         id="videoOne"
@@ -21,7 +65,7 @@
       <small>Breakdown of project + demo</small>
     </div>
 
-    <div class="row">
+    <div class="row" id="content2">
       <p class="col-6" align="justify">
         As a part of the project, each of the group members had to create a
         minigame, incorporating certain technical competencies of JavaScript.
@@ -48,11 +92,15 @@
     <div align="left" class="mt-4">
       <p>
         Link to
-        <a href="https://github.com/froilanenriquez3/Project1" target="_blank">Github</a>
+        <a href="https://github.com/froilanenriquez3/Project1" target="_blank"
+          >Github</a
+        >
       </p>
       <p>
         Link to
-        <a href="https://froilanenriquez3.github.io/Project1/" target="_blank">Github Pages</a>
+        <a href="https://froilanenriquez3.github.io/Project1/" target="_blank"
+          >Github Pages</a
+        >
       </p>
     </div>
   </div>
@@ -69,11 +117,16 @@ export default {
 }
 #game:hover {
   opacity: 0.75;
-  width: 37vw;
+  width: 36vw;
 }
 #videoOne {
   width: 35vw;
   height: 40vh;
-
+}
+#content2 {
+  height: 38vh;
+}
+.langIcons {
+  height: 13vh;
 }
 </style>
