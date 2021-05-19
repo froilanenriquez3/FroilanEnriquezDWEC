@@ -8,7 +8,7 @@
             icon="envelope"
             size="5x"
             id="envelope"
-          ></font-awesome-icon>
+          />
         </div>
       </div>
     </div>
@@ -79,8 +79,11 @@
       <textarea class="form-control" id="emailBody" v-model="body" />
     </div>
 
-    <button class="btn btn-lg bg-secondary text-white translate" @click="sendEmail" id="sendEmail">
-      Send
+    <button class="btn btn-lg bg-secondary text-white" @click="sendEmail" >
+     <span class="translate" id="sendEmail">Send </span>
+      <font-awesome-icon
+            icon="paper-plane"
+          />
     </button>
   </div>
 </template>

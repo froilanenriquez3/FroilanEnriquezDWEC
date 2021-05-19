@@ -166,7 +166,8 @@ export default {
         projectCardHeader: "Projects",
         projectOneHeader: "Project One (Restore)",
         projectTwoHeader: "Project Two (Broggi)",
-        aboutMeText: "",
+        aboutMeText: "I am a web app development student from the US but newly a resident of Barcelona. I play the organ for the choir at my church and when I'm not programming, I'm noodling on the guitar, spending time with my girlfriend, or playing chess online.",
+        download: "Download curriculum ",
       },
       esp: {
         intro: "Introducción",
@@ -196,7 +197,7 @@ export default {
         email: "Correo electrónico",
         subject: "Asunto",
         bodyText: "Mensaje",
-        sendEmail: "Enviar",
+        sendEmail: "Enviar ",
         softSkillsLink: "Soft Skills",
         jsText:
           "Habiendo trabajado con JavaScript a través de muchos proyectos, tanto en el front como en el back-end, así como a través de varios frameworks, es probablemente el lenguaje con el que me siento más cómodo. Confío en usar JS para la manipulación de DOM, llamar a API y crear sitios reactivos e interactivos.",
@@ -256,6 +257,7 @@ export default {
         projectOneHeader: "Proyecto Uno (Restore)",
         projectTwoHeader: "Proyecto Dos (Broggi)",
         aboutMeText:"Soy un estudiante de desarrollo de aplicaciones web de Estados Unidos pero resido en Barcelona. Soy organista para el coro de mi iglesia y cuando no estoy programando, toco la guitarra, paso tiempo con mi novia e juego al ajedrez en linea.",
+        download: "Descargar curriculum ",
       },
       language: "English",
     };
@@ -285,8 +287,9 @@ export default {
       // console.log(lang);
       // console.log(document.getElementById(stringID).innerHTML);
       // console.log(lang.stringID);
-
-      document.getElementById(stringID).innerHTML = lang[stringID];
+      if(document.getElementById(stringID) == null){
+        console.log(stringID);
+      } else document.getElementById(stringID).innerHTML = lang[stringID];
     },
   },
   mounted() {},
