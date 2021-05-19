@@ -201,6 +201,7 @@ export default {
 #carousel {
   /* max-width: 60vw; */
   width: 100%;
+  height: 60vh;
 }
 img {
   /* width: 60vw; */
