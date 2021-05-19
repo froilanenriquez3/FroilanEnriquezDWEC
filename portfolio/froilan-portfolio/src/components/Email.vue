@@ -3,7 +3,7 @@
     <div class="row">
       <h1 class="display-6 translate" align="left" id="thankYou">Thank you for flying with us!</h1>
       <div class="col" align="right">
-        <div data-aos="flip-down" data-aos-duration="750">
+        <div data-aos="flip-down" data-aos-duration="1000">
           <font-awesome-icon
             icon="envelope"
             size="5x"

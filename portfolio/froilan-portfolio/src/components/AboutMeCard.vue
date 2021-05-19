@@ -20,7 +20,7 @@
           <font-awesome-icon icon="chess-knight" />
         </div>
       </div>
-      <p class="card-text m-1" align="justify">
+      <p class="card-text m-1 translate" align="justify" id="aboutMeText">
         I am a web app development student from the US but newly a resident of
         Barcelona. I play the organ for the choir at my church and when I'm not
         programming, I'm noodling on the guitar, spending time with my

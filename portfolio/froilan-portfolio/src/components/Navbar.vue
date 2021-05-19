@@ -117,38 +117,59 @@ export default {
           "Of the big three in front end programming, CSS is probably my weakest area. However, I still know the fundamentals, have worked extensively with Flexbox and Grid, and am practicing and learning all the time.",
         sassText:
           "After working with CSS for so long, SASS came as breath of fresh air to me. Whenever I am given the chance, I like to take advantage of the features SASS provides: variables, mixins, nesting, and more.",
-        bootstrapText: "I began working with Bootstrap together with my PHP Projects. Since then, I've implemented it in many places, on its own or in combination with Bootswatch and Bootstrap Vue. This very site is made with Bootstrap.",
-        angularText: "Angular was my first JavaScript framework. I created a handful of projects, including a simple SPA that uses routers for fast loading.",
-        vueText: "If JavaScript is the language I'm most comfortable with, then Vue is the framework I'm most comfortable with. My second group project for the year uses Vue for the front end.",
-        reactText: "As the latest framework I've picked up, I still have much to learn with React. However, I've learned how to use JSX, the React Router, and how to integrate Material UI.",
-        ionicText: "In my Mobile Programming class, I learned how to make responsive web apps for mobile, working with Angular and React while applying what I learned about creating web apps for other environments.",
-        materialText: "In my on-the-job training, I helped create a front-end app using React and Material UI. During this project, I became familiar with the different components that this framework has to offer to create functional and good looking interfaces.",
-        phpText: "In the same summer I learned JavaScript, I began my journey with PHP. Most of my projects with a backend run on PHP. I've used it vanilla, with a framework, with MySQL, with ORM... so by now I pretty much see the world through dollar sign variables.",
-        laravelText: "Laravel was my introduction to frameworks with routing, controllers, models, middleware, and so on. My second group project uses this framework to manage, process, and handle complex data.",
-        eloquentText: "Hand in hand with Laravel, I've learned to use Eloquent to help translate the classes of object oriented programming into the relational databases of MySQL.",
-        javaText: "Though I've not worked with Java in web apps strictly, I've learned the fundamentals of Object-Oriented Programming, worked with databases both relational and object-oriented, and utilized the JUnit library for unit tests.",
-        nodeText: "Although my first experiences with Node were through the Angular, Ionic, and Vue frameworks, I mainly started using Node JS proper for back end during my on-the-job training. I learned to convert what I had learned about back end into the world of JS and Node.",
-        expressText: "I first used Node JS through the framework Express, along with the Sequelize ORM. I've had much practice creating routes and controllers for the back end of a data-heavy application.",
-        sequelizeText: "My experience in Sequelize comes from creating models, relationships, and seeders for filling databases with values.",
-        cppText: "My first programming language, C++ is where I picked up the basics. I learned from conditionals and loops, up to matrices, structs, functions and full on CRUD projects.",
+        bootstrapText:
+          "I began working with Bootstrap together with my PHP Projects. Since then, I've implemented it in many places, on its own or in combination with Bootswatch and Bootstrap Vue. This very site is made with Bootstrap.",
+        angularText:
+          "Angular was my first JavaScript framework. I created a handful of projects, including a simple SPA that uses routers for fast loading.",
+        vueText:
+          "If JavaScript is the language I'm most comfortable with, then Vue is the framework I'm most comfortable with. My second group project for the year uses Vue for the front end.",
+        reactText:
+          "As the latest framework I've picked up, I still have much to learn with React. However, I've learned how to use JSX, the React Router, and how to integrate Material UI.",
+        ionicText:
+          "In my Mobile Programming class, I learned how to make responsive web apps for mobile, working with Angular and React while applying what I learned about creating web apps for other environments.",
+        materialText:
+          "In my on-the-job training, I helped create a front-end app using React and Material UI. During this project, I became familiar with the different components that this framework has to offer to create functional and good looking interfaces.",
+        phpText:
+          "In the same summer I learned JavaScript, I began my journey with PHP. Most of my projects with a backend run on PHP. I've used it vanilla, with a framework, with MySQL, with ORM... so by now I pretty much see the world through dollar sign variables.",
+        laravelText:
+          "Laravel was my introduction to frameworks with routing, controllers, models, middleware, and so on. My second group project uses this framework to manage, process, and handle complex data.",
+        eloquentText:
+          "Hand in hand with Laravel, I've learned to use Eloquent to help translate the classes of object oriented programming into the relational databases of MySQL.",
+        javaText:
+          "Though I've not worked with Java in web apps strictly, I've learned the fundamentals of Object-Oriented Programming, worked with databases both relational and object-oriented, and utilized the JUnit library for unit tests.",
+        nodeText:
+          "Although my first experiences with Node were through the Angular, Ionic, and Vue frameworks, I mainly started using Node JS proper for back end during my on-the-job training. I learned to convert what I had learned about back end into the world of JS and Node.",
+        expressText:
+          "I first used Node JS through the framework Express, along with the Sequelize ORM. I've had much practice creating routes and controllers for the back end of a data-heavy application.",
+        sequelizeText:
+          "My experience in Sequelize comes from creating models, relationships, and seeders for filling databases with values.",
+        cppText:
+          "My first programming language, C++ is where I picked up the basics. I learned from conditionals and loops, up to matrices, structs, functions and full on CRUD projects.",
         teamworkHeader: "Teamwork",
-        teamworkText: "Through our center's project based learning model, I had the opportunity to work in two group projects. During these projects, I practiced my teamwork skills and learned how to collaborate with others.",
+        teamworkText:
+          "Through our center's project based learning model, I had the opportunity to work in two group projects. During these projects, I practiced my teamwork skills and learned how to collaborate with others.",
         responsibilityHeader: "Responsibility",
-        responsibilityText: "I strive to be accountable, dependable, and reliable. I know that when you are entrusted with something, it is important to keep that trust and not lose it.",
+        responsibilityText:
+          "I strive to be accountable, dependable, and reliable. I know that when you are entrusted with something, it is important to keep that trust and not lose it.",
         organizationHeader: "Organization",
-        organizationText: "An important trait when it comes to working is the ability to stay organized. This makes the workflow easier, and so I strive to stay organized in every aspect of my work. Whether it means maintaining my physical workspace, or keeping my projects well structured, organization is smoething I highly value.",
+        organizationText:
+          "An important trait when it comes to working is the ability to stay organized. This makes the workflow easier, and so I strive to stay organized in every aspect of my work. Whether it means maintaining my physical workspace, or keeping my projects well structured, organization is smoething I highly value.",
         flexHeader: "Flexibility",
-        flexText: "I've spent all my life adapting to different situations, having moved from place to place every couple of years. I know the value of being able to pivot to confront whatever the current situation brings. I apply this mindset to whatever challenge I face.",
+        flexText:
+          "I've spent all my life adapting to different situations, having moved from place to place every couple of years. I know the value of being able to pivot to confront whatever the current situation brings. I apply this mindset to whatever challenge I face.",
         diligenceHeader: "Diligence",
-        diligenceText: "I've been no stranger to a heavy workload. The key to getting through is patience, endurance, and a willingness to work hard. I do my best to put this into practice and show that I am eager to work.",
+        diligenceText:
+          "I've been no stranger to a heavy workload. The key to getting through is patience, endurance, and a willingness to work hard. I do my best to put this into practice and show that I am eager to work.",
         timeHeader: "Time Management",
-        timeText: "Another key to dealing with numerous taks is to manage time well. Having had many responsibilites, I'm accustomed to balancing between different obligations, so that I can always deliver what is required of me in a timely manner.",
+        timeText:
+          "Another key to dealing with numerous taks is to manage time well. Having had many responsibilites, I'm accustomed to balancing between different obligations, so that I can always deliver what is required of me in a timely manner.",
         projectCardHeader: "Projects",
         projectOneHeader: "Project One (Restore)",
         projectTwoHeader: "Project Two (Broggi)",
-     },
+        aboutMeText: "",
+      },
       esp: {
-        intro: "Introducciòn",
+        intro: "Introducción",
         aboutMe: "Sobre Mi",
         aboutMe2: "Sobre Mi",
         aboutMe3: "Sobre Mi",
@@ -185,35 +206,56 @@ export default {
           "De los tres grandes en programación de front-end, CSS es probablemente mi área más débil. Sin embargo, todavía conozco los fundamentos, he trabajado mucho con Flexbox y Grid, y estoy practicando y aprendiendo todo el tiempo.",
         sassText:
           "Después de trabajar con CSS durante tanto tiempo, SASS fue como un soplo de aire fresco para mí. Siempre que tengo la oportunidad, me gusta aprovechar las funciones que ofrece SASS: variables, mixins, anidamiento y más.",
-        bootstrapText: "Comencé a trabajar con Bootstrap junto con mis proyectos PHP. Desde entonces, lo he implementado en muchos lugares, solo o en combinación con Bootswatch y Bootstrap Vue. Este mismo sitio está hecho con Bootstrap.",
-        angularText: "Angular fue mi primer marco de JavaScript. Creé varios proyectos, incluido un SPA simple que usa enrutadores para una carga rápida.",
-        vueText: "Si JavaScript es el lenguaje con el que me siento más cómodo, entonces Vue es el marco con el que me siento más cómodo. Mi segundo proyecto grupal del año usa Vue como interfaz.",
-        reactText: "Como último framework que he adquirido, todavía tengo mucho que aprender con React. Sin embargo, aprendí cómo usar JSX, React Router y cómo integrar Material UI.",
-        ionicText: "En mi clase de programación móvil, aprendí cómo crear aplicaciones web receptivas para dispositivos móviles, trabajando con Angular y React mientras aplicaba lo que aprendí sobre la creación de aplicaciones web para otros entornos.",
-        materialText: "En mi capacitación en el trabajo, ayudé a crear una aplicación front-end usando React y Material UI. Durante este proyecto, me familiaricé con los diferentes componentes que este marco tiene para ofrecer para crear interfaces funcionales y atractivas.",
-        phpText: "El mismo verano que aprendí JavaScript, comencé mi viaje con PHP. La mayoría de mis proyectos con backend se ejecutan en PHP. Lo he usado vainilla, con un marco, con MySQL, con ORM ... así que ahora veo el mundo a través de variables de signo de dólar.",
-        laravelText: "Laravel fue mi introducción a los marcos con enrutamiento, controladores, modelos, middleware, etc. Mi segundo proyecto grupal usa este marco para administrar, procesar y manejar datos complejos.",
-        eloquentText: "De la mano de Laravel, he aprendido a usar Eloquent para ayudar a traducir las clases de programación orientada a objetos a las bases de datos relacionales de MySQL.",
-        javaText: "Aunque no he trabajado estrictamente con Java en aplicaciones web, aprendí los fundamentos de la programación orientada a objetos, trabajé con bases de datos tanto relacionales como orientadas a objetos, y utilicé la biblioteca JUnit para pruebas unitarias.",
-        nodeText: "Aunque mis primeras experiencias con Node fueron a través de los marcos Angular, Ionic y Vue, principalmente comencé a usar Node JS adecuado para back-end durante mi capacitación en el trabajo. Aprendí a convertir lo que había aprendido sobre back-end en el mundo de JS y Node.",
-        expressText: "Primero usé Node JS a través del framework Express, junto con Sequelize ORM. He tenido mucha práctica creando rutas y controladores para el back-end de una aplicación con muchos datos.",
-        sequelizeText: "Mi experiencia en Sequelize proviene de la creación de modelos, relaciones y sembradoras para llenar bases de datos con valores.",
-        cppText: "Mi primer lenguaje de programación, C ++, es donde aprendí los conceptos básicos. Aprendí de condicionales y bucles, hasta matrices, estructuras, funciones y proyectos CRUD completos.",
+        bootstrapText:
+          "Comencé a trabajar con Bootstrap junto con mis proyectos PHP. Desde entonces, lo he implementado en muchos lugares, solo o en combinación con Bootswatch y Bootstrap Vue. Este mismo sitio está hecho con Bootstrap.",
+        angularText:
+          "Angular fue mi primer marco de JavaScript. Creé varios proyectos, incluido un SPA simple que usa enrutadores para una carga rápida.",
+        vueText:
+          "Si JavaScript es el lenguaje con el que me siento más cómodo, entonces Vue es el marco con el que me siento más cómodo. Mi segundo proyecto grupal del año usa Vue como interfaz.",
+        reactText:
+          "Como último framework que he adquirido, todavía tengo mucho que aprender con React. Sin embargo, aprendí cómo usar JSX, React Router y cómo integrar Material UI.",
+        ionicText:
+          "En mi clase de programación móvil, aprendí cómo crear aplicaciones web receptivas para dispositivos móviles, trabajando con Angular y React mientras aplicaba lo que aprendí sobre la creación de aplicaciones web para otros entornos.",
+        materialText:
+          "En mi capacitación en el trabajo, ayudé a crear una aplicación front-end usando React y Material UI. Durante este proyecto, me familiaricé con los diferentes componentes que este marco tiene para ofrecer para crear interfaces funcionales y atractivas.",
+        phpText:
+          "El mismo verano que aprendí JavaScript, comencé mi viaje con PHP. La mayoría de mis proyectos con backend se ejecutan en PHP. Lo he usado vainilla, con un marco, con MySQL, con ORM ... así que ahora veo el mundo a través de variables de signo de dólar.",
+        laravelText:
+          "Laravel fue mi introducción a los marcos con enrutamiento, controladores, modelos, middleware, etc. Mi segundo proyecto grupal usa este marco para administrar, procesar y manejar datos complejos.",
+        eloquentText:
+          "De la mano de Laravel, he aprendido a usar Eloquent para ayudar a traducir las clases de programación orientada a objetos a las bases de datos relacionales de MySQL.",
+        javaText:
+          "Aunque no he trabajado estrictamente con Java en aplicaciones web, aprendí los fundamentos de la programación orientada a objetos, trabajé con bases de datos tanto relacionales como orientadas a objetos, y utilicé la biblioteca JUnit para pruebas unitarias.",
+        nodeText:
+          "Aunque mis primeras experiencias con Node fueron a través de los marcos Angular, Ionic y Vue, principalmente comencé a usar Node JS adecuado para back-end durante mi capacitación en el trabajo. Aprendí a convertir lo que había aprendido sobre back-end en el mundo de JS y Node.",
+        expressText:
+          "Primero usé Node JS a través del framework Express, junto con Sequelize ORM. He tenido mucha práctica creando rutas y controladores para el back-end de una aplicación con muchos datos.",
+        sequelizeText:
+          "Mi experiencia en Sequelize proviene de la creación de modelos, relaciones y sembradoras para llenar bases de datos con valores.",
+        cppText:
+          "Mi primer lenguaje de programación, C ++, es donde aprendí los conceptos básicos. Aprendí de condicionales y bucles, hasta matrices, estructuras, funciones y proyectos CRUD completos.",
         teamworkHeader: "Trabajo en equipo",
-        teamworkText: "A través del modelo de aprendizaje basado en proyectos de nuestro centro, tuve la oportunidad de trabajar en dos proyectos grupales. Durante estos proyectos, practiqué mis habilidades de trabajo en equipo y aprendí a colaborar con otros.",
+        teamworkText:
+          "A través del modelo de aprendizaje basado en proyectos de nuestro centro, tuve la oportunidad de trabajar en dos proyectos grupales. Durante estos proyectos, practiqué mis habilidades de trabajo en equipo y aprendí a colaborar con otros.",
         responsibilityHeader: "Responsabilidad",
-        responsibilityText: "Me esfuerzo por ser responsable, confiable y confiable. Sé que cuando se te confía algo, es importante mantener esa confianza y no perderla.",
+        responsibilityText:
+          "Me esfuerzo por ser responsable, confiable y confiable. Sé que cuando se te confía algo, es importante mantener esa confianza y no perderla.",
         organizationHeader: "Organización",
-        organizationText: "Un rasgo importante cuando se trata de trabajar es la capacidad de mantenerse organizado. Esto facilita el flujo de trabajo, por lo que me esfuerzo por mantenerme organizado en todos los aspectos de mi trabajo. Ya sea que signifique mantener mi espacio de trabajo físico o mantener bien estructurados mis proyectos, la organización es algo que valoro mucho.",
+        organizationText:
+          "Un rasgo importante cuando se trata de trabajar es la capacidad de mantenerse organizado. Esto facilita el flujo de trabajo, por lo que me esfuerzo por mantenerme organizado en todos los aspectos de mi trabajo. Ya sea que signifique mantener mi espacio de trabajo físico o mantener bien estructurados mis proyectos, la organización es algo que valoro mucho.",
         flexHeader: "Flexibilidad",
-        flexText: "He pasado toda mi vida adaptándome a diferentes situaciones, trasladándome de un lugar a otro cada dos años. Conozco el valor de poder girar para afrontar lo que sea que nos depare la situación actual. Aplico esta mentalidad a cualquier desafío que enfrente",
+        flexText:
+          "He pasado toda mi vida adaptándome a diferentes situaciones, trasladándome de un lugar a otro cada dos años. Conozco el valor de poder girar para afrontar lo que sea que nos depare la situación actual. Aplico esta mentalidad a cualquier desafío que enfrente",
         diligenceHeader: "Diligencia",
-        diligenceText: "No he sido ajeno a una gran carga de trabajo. La clave para salir adelante es la paciencia, la resistencia y la voluntad de trabajar duro. Hago todo lo posible para poner esto en práctica y demostrar que tengo muchas ganas de trabajar.",
+        diligenceText:
+          "No he sido ajeno a una gran carga de trabajo. La clave para salir adelante es la paciencia, la resistencia y la voluntad de trabajar duro. Hago todo lo posible para poner esto en práctica y demostrar que tengo muchas ganas de trabajar.",
         timeHeader: "Gestión del tiempo",
-        timeText: "Otra clave para lidiar con numerosas tareas es administrar bien el tiempo. Habiendo tenido muchas responsabilidades, estoy acostumbrado a equilibrar entre diferentes obligaciones, de modo que siempre puedo entregar lo que se me pide en el momento oportuno.",
-         projectCardHeader: "Proyectos",
+        timeText:
+          "Otra clave para lidiar con numerosas tareas es administrar bien el tiempo. Habiendo tenido muchas responsabilidades, estoy acostumbrado a equilibrar entre diferentes obligaciones, de modo que siempre puedo entregar lo que se me pide en el momento oportuno.",
+        projectCardHeader: "Proyectos",
         projectOneHeader: "Proyecto Uno (Restore)",
         projectTwoHeader: "Proyecto Dos (Broggi)",
+        aboutMeText:"Soy un estudiante de desarrollo de aplicaciones web de Estados Unidos pero resido en Barcelona. Soy organista para el coro de mi iglesia y cuando no estoy programando, toco la guitarra, paso tiempo con mi novia e juego al ajedrez en linea.",
       },
       language: "English",
     };

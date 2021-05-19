@@ -79,7 +79,7 @@
       <span id="softSkillsSec" class="secSpan"></span>
 
       <section id="markerFour">
-        <div data-aos="fade-up-right" data-aos-duration="750">
+        <div data-aos="fade-up-right" data-aos-duration="1000">
           <SoftSkills />
         </div>
         <div>
@@ -97,14 +97,14 @@
           </button>
         </div>
 
-        <div data-aos="fade-up-left" data-aos-duration="750">
+        <div data-aos="fade-up-left" data-aos-duration="1000">
           <SoftSkills2 />
         </div>
       </section>
 
       <span id="aboutSec" class="secSpan"></span>
       <section id="markerFive">
-        <div data-aos="zoom-out" data-aos-duration="500">
+        <div data-aos="zoom-out" data-aos-duration="1000">
           <AboutMeCard />
         </div>
 
