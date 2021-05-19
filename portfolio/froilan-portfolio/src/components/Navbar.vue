@@ -166,8 +166,10 @@ export default {
         projectCardHeader: "Projects",
         projectOneHeader: "Project One (Restore)",
         projectTwoHeader: "Project Two (Broggi)",
-        aboutMeText: "I am a web app development student from the US but newly a resident of Barcelona. I play the organ for the choir at my church and when I'm not programming, I'm noodling on the guitar, spending time with my girlfriend, or playing chess online.",
+        aboutMeText:
+          "I am a web app development student from the US but newly a resident of Barcelona. I play the organ for the choir at my church and when I'm not programming, I'm noodling on the guitar, spending time with my girlfriend, or playing chess online.",
         download: "Download curriculum ",
+        familiarity: "",
       },
       esp: {
         intro: "Introducción",
@@ -256,8 +258,10 @@ export default {
         projectCardHeader: "Proyectos",
         projectOneHeader: "Proyecto Uno (Restore)",
         projectTwoHeader: "Proyecto Dos (Broggi)",
-        aboutMeText:"Soy un estudiante de desarrollo de aplicaciones web de Estados Unidos pero resido en Barcelona. Soy organista para el coro de mi iglesia y cuando no estoy programando, toco la guitarra, paso tiempo con mi novia e juego al ajedrez en linea.",
+        aboutMeText:
+          "Soy un estudiante de desarrollo de aplicaciones web de Estados Unidos pero resido en Barcelona. Soy organista para el coro de mi iglesia y cuando no estoy programando, toco la guitarra, paso tiempo con mi novia e juego al ajedrez en linea.",
         download: "Descargar curriculum ",
+        familiarity: "*Indicadores de familiaridad y competencia básica",
       },
       language: "English",
     };
@@ -287,7 +291,7 @@ export default {
       // console.log(lang);
       // console.log(document.getElementById(stringID).innerHTML);
       // console.log(lang.stringID);
-      if(document.getElementById(stringID) == null){
+      if (document.getElementById(stringID) == null) {
         console.log(stringID);
       } else document.getElementById(stringID).innerHTML = lang[stringID];
     },

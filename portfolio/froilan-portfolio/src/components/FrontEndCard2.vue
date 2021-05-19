@@ -91,6 +91,8 @@
         has to offer to create functional and good looking interfaces.
       </p>
 
+       <small class="translate" id="familiarity">*Indicators of familiarity and basic competency</small>
+
     </div>
   </div>
 </template>
