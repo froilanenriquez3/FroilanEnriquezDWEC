@@ -56,7 +56,7 @@
               <h6 class="translate" id="projectThreeHeader">Froilex Song QR Code Generator</h6>
             </div>
             <a role="button" data-toggle="modal" data-target="#project3"
-              ><img src="../assets/img/tempQr.png" class="d-block" alt="..."
+              ><img src="../assets/img/ionqr.png" class="d-block" alt="..."
             /></a>
           </div>
           <div class="carousel-item">
@@ -144,108 +144,7 @@
       </div>
     </div>
 
-    <!-- PROJECT 1 -->
-    <!-- <div
-      class="modal fade"
-      id="project1"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="project1"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <div class="modal-header bg-primary">
-            <h5 class="modal-title" id="project1">Project One (Restore)</h5>
 
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body"><ProjectOnePage /></div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- PROJECT 2 -->
-
-    <!-- <div
-      class="modal fade"
-      id="project2"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="project2"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <div class="modal-header bg-secondary text-white">
-            <h5 class="modal-title" id="project2">Project 2</h5>
-            <button
-              type="button"
-              class="close text-white"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body"><ProjectTwoPage /></div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- PROJECT 3 -->
-
-    <!-- <div
-      class="modal fade"
-      id="project3"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="project3"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="project3">Project 3</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 <script>
@@ -303,6 +202,7 @@ img {
   /* width: 60vw; */
   /* width: 90vw; */
   width: 100%;
+    height: 55vh;
 }
 .carousel-caption {
   color: black;
