@@ -38,7 +38,7 @@
               </h6>
             </div>
             <a role="button" data-toggle="modal" data-target="#project1"
-              ><img src="../assets/img/restore.png" class="d-block" alt="..."
+              ><img src="../assets/img/restore.png" class="d-block" alt="Restore image"
             /></a>
           </div>
           <div class="carousel-item">
@@ -48,7 +48,7 @@
               </h6>
             </div>
             <a role="button" data-toggle="modal" data-target="#project2"
-              ><img src="../assets/img/broggi.png" class="d-block" alt="..."
+              ><img src="../assets/img/broggi.png" class="d-block" alt="Broggi image"
             /></a>
           </div>
           <div class="carousel-item">
@@ -56,7 +56,7 @@
               <h6 class="translate" id="projectThreeHeader">Froilex Song QR Code Generator</h6>
             </div>
             <a role="button" data-toggle="modal" data-target="#project3"
-              ><img src="../assets/img/ionqr.png" class="d-block" alt="..."
+              ><img src="../assets/img/ionqr.png" class="d-block" alt="Ion image"
             /></a>
           </div>
           <div class="carousel-item">
@@ -64,7 +64,7 @@
               <h6 class="translate" id="projectFourHeader">Speed Cubes SPA</h6>
             </div>
             <a role="button" data-toggle="modal" data-target="#project4"
-              ><img src="../assets/img/rubiks.png" class="d-block" alt="..."
+              ><img src="../assets/img/rubiks.png" class="d-block" alt="Rubiks image"
             /></a>
           </div>
         </div>
@@ -191,18 +191,19 @@ export default {
 </script>
 <style scoped>
 #projects {
-  width: 60vw;
+  width: 60vw; 
+  /* transition: height 4s linear; */
 }
 #carousel {
-  /* max-width: 60vw; */
   width: 100%;
-  height: 60vh;
+  /* height: auto; */
+  height: 63vh;
 }
+.carousel-item{
+  height: 100%;
+  }
 img {
-  /* width: 60vw; */
-  /* width: 90vw; */
   width: 100%;
-    height: 55vh;
 }
 .carousel-caption {
   color: black;

@@ -33,7 +33,7 @@
 
     <div class="row mt-4" id="content4">
         <a
-        class="col-5"
+        class="col-5 ml-3"
         href="https://froilanenriquezcubing.netlify.app/"
         target="_blank"
       >
@@ -79,7 +79,9 @@ export default {
   opacity: 0.75;
   width: 36vw;
 }
-
+#content4{
+  height: 35vh;
+}
 .langIcons {
   height: 13vh;
 }
