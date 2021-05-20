@@ -197,13 +197,14 @@ export default {
 #carousel {
   width: 100%;
   /* height: auto; */
-  height: 63vh;
+  height: 60vh;
 }
 .carousel-item{
   height: 100%;
   }
 img {
   width: 100%;
+  height: 50vh;
 }
 .carousel-caption {
   color: black;

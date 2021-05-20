@@ -5,12 +5,8 @@ Vue / Bootstrap Vue
 From src folder, run 'vue serve'
 
 TODO:
-Add translations
-
-Add third project (Possibly fourth in rubiks cube one)
-
-Show technologies used for projects
-
+responsive for mobile
+accessibility
 
 
 Scratch: 
@@ -65,8 +61,19 @@ Logo color: #e62e57
 
 $primary: #00AEDC;
 $secondary: #e62e57;
+$info: #369
 
 Use scrollspy for navbar
 
 
 make cards into clouds
+
+
+
+accessibility: 
+text resize 
+color contrast (info)
+keyboard input
+
+
+https://wave.webaim.org/report#/https://froilanenriquez3.github.io/froilanenriquez3/
