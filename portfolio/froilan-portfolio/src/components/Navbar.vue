@@ -153,7 +153,7 @@ export default {
           "I strive to be accountable, dependable, and reliable. I know that when you are entrusted with something, it is important to keep that trust and not lose it.",
         organizationHeader: "Organization",
         organizationText:
-          "An important trait when it comes to working is the ability to stay organized. This makes the workflow easier, and so I strive to stay organized in every aspect of my work. Whether it means maintaining my physical workspace, or keeping my projects well structured, organization is smoething I highly value.",
+          "An important trait when it comes to working is the ability to stay organized. This makes the workflow easier, and so I strive to stay organized in every aspect of my work. Whether it means maintaining my physical workspace, or keeping my projects well structured, organization is something I highly value.",
         flexHeader: "Flexibility",
         flexText:
           "I've spent all my life adapting to different situations, having moved from place to place every couple of years. I know the value of being able to pivot to confront whatever the current situation brings. I apply this mindset to whatever challenge I face.",
@@ -191,11 +191,11 @@ export default {
         clickABtn: "Clica un botón para ir a una sección específica",
         ready:
           "¿Preparado? Clica el botón de abajo para ir a nuestro primer destino!",
-        next1: " ¡Proximo destino! ",
-        next2: " ¡Proximo destino! ",
-        next3: " ¡Proximo destino! ",
-        next4: " ¡Proximo destino! ",
-        final: " ¡Ultimo destino! ",
+        next1: " ¡Próximo destino! ",
+        next2: " ¡Próximo destino! ",
+        next3: " ¡Próximo destino! ",
+        next4: " ¡Próximo destino! ",
+        final: " ¡Último destino! ",
         thankYou: "¡Gracias por volar con nosotros!",
         getInTouch: "Contáctame",
         email: "Correo electrónico",
@@ -224,46 +224,46 @@ export default {
         materialText:
           "En mi capacitación en el trabajo, ayudé a crear una aplicación front-end usando React y Material UI. Durante este proyecto, me familiaricé con los diferentes componentes que este marco tiene para ofrecer para crear interfaces funcionales y atractivas.",
         phpText:
-          "El mismo verano que aprendí JavaScript, comencé mi viaje con PHP. La mayoría de mis proyectos con backend se ejecutan en PHP. Lo he usado vainilla, con un marco, con MySQL, con ORM ... así que ahora veo el mundo a través de variables de signo de dólar.",
+          "El mismo verano que aprendí Javascript, empecé mi viaje con PHP. La mayoría de mis proyectos que contienen back-end están realizados con este lenguaje. Lo he utilizado tanto solo como con un framework, con mysql, ORM, etc. de modo que ahora veo el mundo a través de las variables con signo de dólar. ",
         laravelText:
-          "Laravel fue mi introducción a los marcos con enrutamiento, controladores, modelos, middleware, etc. Mi segundo proyecto grupal usa este marco para administrar, procesar y manejar datos complejos.",
+          "Laravel ha sido mi introducción a los frameworks con enrutamiento, controladores, modelos, middleware, etc. Lo utilizo en el segundo proyecto en grupo que hice para administrar, procesar y manejar datos complejos. ",
         eloquentText:
-          "De la mano de Laravel, he aprendido a usar Eloquent para ayudar a traducir las clases de programación orientada a objetos a las bases de datos relacionales de MySQL.",
+          "De la mano de Laravel, he aprendido a usar Eloquent para ayudar a traducir las clases de programación orientadas a objetos a las bases de datos relacionales de MySQL.",
         javaText:
-          "Aunque no he trabajado estrictamente con Java en aplicaciones web, aprendí los fundamentos de la programación orientada a objetos, trabajé con bases de datos tanto relacionales como orientadas a objetos, y utilicé la biblioteca JUnit para pruebas unitarias.",
+          "Aunque no he trabajado con Java como tal en aplicaciones web, he aprendido los fundamentos de la programación orientada a objetos, he trabajado con bases de datos tanto relacionales como orientadas a objetos y he utilizado la biblioteca JUnit para hacer pruebas unitarias. ",
         nodeText:
-          "Aunque mis primeras experiencias con Node fueron a través de los marcos Angular, Ionic y Vue, principalmente comencé a usar Node JS adecuado para back-end durante mi capacitación en el trabajo. Aprendí a convertir lo que había aprendido sobre back-end en el mundo de JS y Node.",
+          "Aunque mis primeras experiencias con Node fueron a través de los frameworks Angular, Ionic y Vue, lo he empezado a utilizar más a fondo para el back-end durante mis practicas escolares. He aprendido a transformar lo que había aprendido sobre back-end al mundo de JS y Node.   ",
         expressText:
-          "Primero usé Node JS a través del framework Express, junto con Sequelize ORM. He tenido mucha práctica creando rutas y controladores para el back-end de una aplicación con muchos datos.",
+          "He utilizado NodeJs a través del framework Express junto con Sequelize ORM. Tengo mucha práctica creando rutas y controladores para el back-end de aplicaciones con muchos datos. ",
         sequelizeText:
-          "Mi experiencia en Sequelize proviene de la creación de modelos, relaciones y sembradoras para llenar bases de datos con valores.",
+          "Con Sequelize he creado modelos, relaciones y seeders para llenar las bases de datos con valores",
         cppText:
-          "Mi primer lenguaje de programación, C ++, es donde aprendí los conceptos básicos. Aprendí de condicionales y bucles, hasta matrices, estructuras, funciones y proyectos CRUD completos.",
+          "C++ fue mi primer lenguaje de programación y con el que aprendí los conceptos básicos como los condicionales y los bucles, las matrices, estructuras, funciones y proyectos CRUD completos.",
         teamworkHeader: "Trabajo en equipo",
         teamworkText:
           "A través del modelo de aprendizaje basado en proyectos de nuestro centro, tuve la oportunidad de trabajar en dos proyectos grupales. Durante estos proyectos, practiqué mis habilidades de trabajo en equipo y aprendí a colaborar con otros.",
         responsibilityHeader: "Responsabilidad",
         responsibilityText:
-          "Me esfuerzo por ser responsable, confiable y confiable. Sé que cuando se te confía algo, es importante mantener esa confianza y no perderla.",
+          "Soy consciente del valor de la confianza y procuro dar lo mejor de mi en todas las situaciones. ",
         organizationHeader: "Organización",
         organizationText:
-          "Un rasgo importante cuando se trata de trabajar es la capacidad de mantenerse organizado. Esto facilita el flujo de trabajo, por lo que me esfuerzo por mantenerme organizado en todos los aspectos de mi trabajo. Ya sea que signifique mantener mi espacio de trabajo físico o mantener bien estructurados mis proyectos, la organización es algo que valoro mucho.",
+          "Una cualidad importante cuando se trata de trabajar es la capacidad de organización ya que facilita el flujo de trabajo. Por eso me esfuerzo por mantenerme organizado en todos los aspectos de mi trabajo, ya sea mantener mi espacio de trabajo o tener bien estructurados mis proyectos.",
         flexHeader: "Flexibilidad",
         flexText:
-          "He pasado toda mi vida adaptándome a diferentes situaciones, trasladándome de un lugar a otro cada dos años. Conozco el valor de poder girar para afrontar lo que sea que nos depare la situación actual. Aplico esta mentalidad a cualquier desafío que enfrente",
+          "Durante mi vida me he adaptado a diferentes situaciones dado que me he trasladado de un lugar a otro cada dos años. Esto me ha dado herramientas para afrontar los cambios con los que me encuentre. Esto también se aplica a cualquier desafío con el que me enfrente.  ",
         diligenceHeader: "Diligencia",
         diligenceText:
-          "No he sido ajeno a una gran carga de trabajo. La clave para salir adelante es la paciencia, la resistencia y la voluntad de trabajar duro. Hago todo lo posible para poner esto en práctica y demostrar que tengo muchas ganas de trabajar.",
+          "No me asustan las grandes cargas de trabajo. La clave para salir adelante es la paciencia, la resistencia y la voluntad de trabajar duro. Hago todo lo posible para poner esto en práctica y demostrar mis ganas de trabajar o superar cualquier reto con el que me encuentre. ",
         timeHeader: "Gestión del tiempo",
         timeText:
-          "Otra clave para lidiar con numerosas tareas es administrar bien el tiempo. Habiendo tenido muchas responsabilidades, estoy acostumbrado a equilibrar entre diferentes obligaciones, de modo que siempre puedo entregar lo que se me pide en el momento oportuno.",
+          "Considero que la gestión del tiempo es importante para lidiar con varias tareas. Habiendo tenido muchas responsabilidades, estoy acostumbrado a encontrar el equilibrio entre diversas obligaciones, de modo que puedo entregar lo que se necesita en el momento oportuno.   ",
         projectCardHeader: "Proyectos",
         projectOneHeader: "Proyecto Uno (Restore)",
         projectTwoHeader: "Proyecto Dos (Broggi)",
         projectThreeHeader: "Froilex Generador de Código QR de Canción",
         projectFourHeader: "Speed Cubes SPA",
         aboutMeText:
-          "Soy un estudiante de desarrollo de aplicaciones web de Estados Unidos pero resido en Barcelona. Soy organista para el coro de mi iglesia y cuando no estoy programando, toco la guitarra, paso tiempo con mi novia e juego al ajedrez en linea.",
+          "Soy un estudiante de desarrollo de aplicaciones web de Estados Unidos pero resido en Barcelona. Soy organista para el coro de mi iglesia y cuando no estoy programando, toco la guitarra, paso tiempo con mi novia e juego al ajedrez en línea.",
         download: "Descargar curriculum ",
         familiarity: "*Indicadores de familiaridad y competencia básica",
       },
