@@ -1,10 +1,11 @@
 <template>
-  <div id="landingPage">
+  <div id="landingPage" data-spy="scroll" data-target="#maNavbar">
     <header>
-      <Navbar :textArray="textArray" />
+      <!-- <Navbar :textArray="textArray" /> -->
+      <NewNavbar :textArray="textArray" />
     </header>
 
-    <img src="../../assets/img/grayplane.svg" alt="" id="plane" />
+    <img src="../../assets/img/grayplane.svg" alt="Plane" id="plane" />
     <!-- <div id="plane">
       <font-awesome-icon icon="fighter-jet" size="10x" class="fa-rotate-270"></font-awesome-icon>
     </div> -->
@@ -113,7 +114,7 @@
           id="btnAbout"
           @click="scrollSection('markerSix')"
         >
-          <font-awesome-icon icon="plane-arrival"  />
+          <font-awesome-icon icon="plane-arrival" />
           <span class="translate" id="final"> Final stop! </span>
           <!-- <font-awesome-icon icon="plane-arrival"  /> -->
         </button>
@@ -148,7 +149,8 @@ import BackEndCard2 from "../BackEndCard2";
 import Email from "../Email.vue";
 import FrontEndCard from "../FrontEndCard.vue";
 import FrontEndCard2 from "../FrontEndCard2.vue";
-import Navbar from "../Navbar.vue";
+// import Navbar from "../Navbar.vue";
+import NewNavbar from "../NewNavbar.vue";
 import ProjectCard from "../ProjectCard.vue";
 import SafetyVideo from "../SafetyVideo.vue";
 import SoftSkills from "../SoftSkills.vue";
@@ -164,7 +166,8 @@ export default {
     Email,
     FrontEndCard,
     FrontEndCard2,
-    Navbar,
+    // Navbar,
+    NewNavbar,
     ProjectCard,
     SafetyVideo,
     SoftSkills,
@@ -173,6 +176,17 @@ export default {
   data() {
     return {
       textArray: [],
+      sectionArr: [
+        { id: "safetyVideo", link: "intro" },
+        { id: "markerOne", link: "skills" },
+        // { id: "markerTwo", link: "skills" },
+        { id: "markerThree", link: "projectsText" },
+        { id: "markerFour", link: "softSkillsLink" },
+        { id: "markerFive", link: "aboutMe" },
+        { id: "markerSix", link: "contactMe" },
+      ],
+      activeLink: null,
+      activeLinkId: "intro",
     };
   },
   methods: {
@@ -194,8 +208,7 @@ export default {
           ];
           break;
         case "backbars":
-          vals = ["95%", "92%", "87%", "90%",
-                "60%", "50%", "50%", "70%"];
+          vals = ["95%", "92%", "87%", "90%", "60%", "50%", "50%", "70%"];
           break;
       }
       let bars = document.getElementsByClassName(className);
@@ -218,20 +231,86 @@ export default {
         .getElementById(id)
         .scrollIntoView({ block: "start", inline: "nearest" });
     },
+    initScrollSpy() {
+      // console.log("Init scroll spy");
+      this.sectionsArr.forEach((sec) => {
+        let section = document.getElementById(sec.id);
+        section.addEventListener("mouseover", () => {
+          this.workingScrollSpy(sec);
+        });
+        section.addEventListener("mouseout", () => {
+          this.revertColor(sec);
+        });
+      });
+    },
+    workingScrollSpy(section) {
+      this.activeLink = document.getElementById(section.link);
+      this.activeLink.className = "nav-link translate text-dark";
+    },
+    revertColor(section) {
+      this.activeLink = document.getElementById(section.link);
+      this.activeLink.className = "nav-link translate text-white";
+    },
+    initScroll() {
+      let sections = [];
+      const sectionMargin = 200;
+      let menu_links = document.querySelectorAll(".customScroll");
+
+      let currentActive = 0;
+
+      this.sectionArr.forEach((sec) => {
+        let section = document.getElementById(sec.id);
+        sections.push(section);
+      });
+
+      
+      const makeActive = (link) => menu_links[link].className = "customScroll nav-link translate text-dark";
+      const removeActive = (link) => {
+        link.className = "customScroll nav-link translate text-white";
+      };
+
+      const removeAllActive = () => {
+        menu_links.forEach((link) => removeActive(link));
+      };
+
+      window.addEventListener("scroll", () => {
+        const current =
+        sections.length -
+        [...sections]
+          .reverse()
+          .findIndex(
+            (section) => window.scrollY >= section.offsetTop - sectionMargin
+          ) -
+        1;
+        if (current !== currentActive) {
+          removeAllActive();
+          currentActive = current;
+          makeActive(current);
+        }
+      });
+    },
   },
   mounted() {
     console.log("Landing page mounted");
     this.textArray = document.getElementsByClassName("translate");
+    // this.initScrollSpy();
+    this.initScroll();
   },
 };
 </script>
 <style scoped>
 #landingPage {
   position: relative;
-  height: 100%;
-  overflow-y: scroll;
+  height: auto;
+  width: 100%;
+  overflow-y: none;
 }
 main {
+  position: relative;
+  /* height: 100%; */
+    width: 100%;
+  /* overflow-y: none; */
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -239,6 +318,8 @@ main {
   background-image: url("../../assets/img/sky.jpg");
   background-color: #cccccc;
   background-size: cover;
+
+  /* z-index: -2; */
 }
 #plane {
   position: fixed;
@@ -247,6 +328,7 @@ main {
   transform: translate(-50%, -50%) scale(-1, -1);
   font-size: 30px;
   width: 30vw;
+  z-index: 1;
   /* background-color: cyan; */
 }
 section {
@@ -255,6 +337,7 @@ section {
   display: flex;
   justify-content: space-around;
   width: 100vw;
+  /* z-index: -1; */
   /* background-color: cyan; */
 }
 #blank {
@@ -286,7 +369,7 @@ span.secSpan {
 #btnProject {
   margin-top: 1%;
 }
-#btnAbout{
+#btnAbout {
   margin-top: 1%;
   font-size: 2em;
   height: fit-content;
@@ -310,5 +393,7 @@ span.secSpan {
   /* z-index: 2; */
 }
 
-
+div{
+  z-index: 2;
+}
 </style>

@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BootstrapVue } from "bootstrap-vue";
+// import { BootstrapVue } from "bootstrap-vue";
 import "./styles/app.scss";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
@@ -25,7 +25,7 @@ library.add(faCaretDown, faEnvelope, faFighterJet, faServer, faUser, faPlay, faP
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
-Vue.use(BootstrapVue);
+// Vue.use(BootstrapVue);
 Vue.use(VueRouter);
 
 new Vue({

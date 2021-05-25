@@ -192,6 +192,7 @@ export default {
 <style scoped>
 #projects {
   width: 60vw; 
+  z-index: 2;
   /* transition: height 4s linear; */
 }
 #carousel {

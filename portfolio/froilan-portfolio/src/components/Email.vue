@@ -130,7 +130,7 @@ export default {
 #emailSection {
   width: 80vw;
   opacity: 1;
-  z-index: 1;
+  z-index: 2;
   padding-left: 7%;
   padding-right: 7%;
 }

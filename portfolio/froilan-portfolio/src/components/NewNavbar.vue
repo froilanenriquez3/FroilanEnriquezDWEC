@@ -1,73 +1,92 @@
 <template>
-  <b-navbar
-    toggleable="md"
-    type="dark"
-    variant="primary"
-    class="fixed-top nav"
-  >
-    <b-navbar-brand href="#about">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="maNavbar">
+    <a class="navbar-brand" href="#">
       <div class="bg-white rounded-circle" height="60">
         <img src="../assets/img/logo.svg" alt="Logo" height="40" />
       </div>
-    </b-navbar-brand>
+    </a>
     <h4 class="text-white">Froilan Enriquez</h4>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navDiv"
+      aria-controls="navDiv"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <div class="collapse navbar-collapse" id="navDiv">
+      <ul class="nav navbar-nav ml-auto text-white" id="navBarr">
+        <li class="nav-item">
+          <a class="customScroll nav-link translate text-white" href="#about" id="intro">
+            Introduction
+            <!-- <p class="translate" id="intro">Introduction</p> -->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="customScroll nav-link translate text-white" href="#markerOne" id="skills">
+            Skills
+            <!-- <p class="translate" id="skills">Skills</p> -->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="customScroll nav-link translate text-white" href="#markerThree" id="projectsText">
+            Projects
+            <!-- <p class="translate" >Projects</p> -->
+          </a>
+        </li>
 
-    <b-collapse id="nav-collapse" is-nav>
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto text-white">
-        <!-- <b-navbar-nav class="nav"> -->
-        <ul class="nav navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">
-              <p class="translate text-white" id="intro">Introduction</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#markerOne">
-              <p class="translate text-white" id="skills">Skills</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#markerThree">
-              <p class="translate text-white" id="projectsText">Projects</p>
-            </a>
-          </li>
+        <li class="nav-item">
+          <a class="customScroll nav-link translate text-white" href="#markerFour" id="softSkillsLink">
+            Soft Skills
+            <!-- <p class="translate" >Soft Skills</p> -->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="customScroll nav-link translates text-white" href="#markerFive" id="aboutMe">
+            About Me
+            <!-- <p class="translate" >About Me</p> -->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="customScroll nav-link translate text-white" href="#markerSix" id="contactMe">
+            Contact Me
+            <!-- <p class="translate" id="contactMe">Contact Me</p> -->
+          </a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#markerFour">
-              <p class="translate text-white" id="softSkillsLink">
-                Soft Skills
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#markerFive">
-              <p class="translate text-white" id="aboutMe">About Me</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#markerSix">
-              <p class="translate text-white" id="contactMe">Contact Me</p>
-            </a>
-          </li>
-        </ul>
-        <!-- </b-navbar-nav> -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-white"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+          {{ language }}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <button class="dropdown-item" @click="changeLangEng">
+              <span v-if="isEng" class="text-primary">EN</span>
+              <span v-else>EN</span>
+            </button>
+            <button class="dropdown-item" @click="changeLangEsp">
+              <span v-if="!isEng" class="text-primary">ES</span>
+              <span v-else>ES</span>
+            </button>
+          </div>
+        </li>
 
-        <b-nav-item-dropdown :text="language" right>
-          <b-dropdown-item @click="changeLangEng">
-            <span v-if="isEng" class="text-primary">EN</span>
-            <span v-else>EN</span>
-          </b-dropdown-item>
-          <b-dropdown-item @click="changeLangEsp">
-            <span v-if="!isEng" class="text-primary">ES</span>
-            <span v-else>ES</span>
-          </b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+      </ul>
+    </div>
+
+
+  </nav>
 </template>
 <script>
 export default {
@@ -299,7 +318,9 @@ export default {
       } else document.getElementById(stringID).innerHTML = lang[stringID];
     },
   },
-  mounted() {},
+  mounted() {
+    console.log("Navbar mounted");
+  },
   setup() {},
 };
 </script>
@@ -312,6 +333,7 @@ p {
   margin-top: 2px;
 }
 .active {
+  color: black;
   background-color: red;
 }
 </style>

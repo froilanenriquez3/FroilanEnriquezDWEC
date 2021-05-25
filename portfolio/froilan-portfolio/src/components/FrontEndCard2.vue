@@ -110,6 +110,7 @@ export default {
   width: 35vw;
   opacity: 0.95;
   height: 100%;
+  z-index: 2;
 }
 #ionic {
   background-color: purple;

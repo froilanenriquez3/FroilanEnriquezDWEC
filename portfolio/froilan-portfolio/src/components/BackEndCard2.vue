@@ -18,9 +18,10 @@
         ></div>
       </div>
       <p class="translate" id="nodeText" align="left">
-       Although my first experiences with Node were through the Angular, Ionic, and Vue frameworks, I mainly started using 
-       Node JS proper for back end during my on-the-job training. I learned to convert what I had learned
-       about back end into the world of JS and Node. 
+        Although my first experiences with Node were through the Angular, Ionic,
+        and Vue frameworks, I mainly started using Node JS proper for back end
+        during my on-the-job training. I learned to convert what I had learned
+        about back end into the world of JS and Node.
       </p>
 
       <b>Express</b>
@@ -35,8 +36,9 @@
         ></div>
       </div>
       <p class="translate" id="expressText" align="left">
-        I first used Node JS through the framework Express, along with the Sequelize ORM. I've had much practice creating
-        routes and controllers for the back end of a data-heavy application.
+        I first used Node JS through the framework Express, along with the
+        Sequelize ORM. I've had much practice creating routes and controllers
+        for the back end of a data-heavy application.
       </p>
 
       <b>Sequelize</b>
@@ -51,7 +53,8 @@
         ></div>
       </div>
       <p class="translate" id="sequelizeText" align="left">
-        My experience in Sequelize comes from creating models, relationships, and seeders for filling databases with values.
+        My experience in Sequelize comes from creating models, relationships,
+        and seeders for filling databases with values.
       </p>
 
       <b>C++</b>
@@ -66,8 +69,9 @@
         ></div>
       </div>
       <p class="translate" id="cppText" align="left">
-        My first programming language, C++ is where I picked up the basics. I learned from
-        conditionals and loops, up to matrixes, structs, functions and full on CRUD projects.
+        My first programming language, C++ is where I picked up the basics. I
+        learned from conditionals and loops, up to matrixes, structs, functions
+        and full on CRUD projects.
       </p>
     </div>
   </div>
@@ -87,6 +91,7 @@ export default {
 .cardcom {
   width: 35vw;
   opacity: 0.95;
-    height: 100%;
+  height: 100%;
+  z-index: 2;
 }
 </style>

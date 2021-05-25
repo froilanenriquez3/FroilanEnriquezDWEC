@@ -168,6 +168,7 @@ export default {
 #safetyVideo {
   width: 65vw;
   margin: 1%;
+  z-index: 2;
 }
 #image {
   width: 20vw;

@@ -47,7 +47,9 @@ export default {
 </script>
 <style scoped>
 .cardcom {
+  position: relative;
   width: 50vw;
+  z-index: 2;
   /* height: 70vh; */
 }
 #fe3 {
