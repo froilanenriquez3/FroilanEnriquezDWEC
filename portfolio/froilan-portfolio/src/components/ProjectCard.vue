@@ -1,99 +1,117 @@
 <template>
-  <div class="card mt-3" id="projects">
-    <div class="card-header bg-secondary text-white">
-      <h5 class="card-title mt-2 mb-0 translate" id="projectCardHeader">
-        Projects
-      </h5>
-    </div>
+  <div id="projectsContainer">
+    <div class="card mt-3" id="projects">
+      <div class="card-header bg-secondary text-white">
+        <h5 class="card-title mt-2 mb-0 translate" id="projectCardHeader">
+          Projects
+        </h5>
+      </div>
 
-    <div class="card-body">
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carousel"
-            data-slide-to="0"
-            class="active bg-secondary"
-          ></li>
-          <li
-            data-target="#carousel"
-            data-slide-to="1"
-            class="bg-secondary"
-          ></li>
-          <li
-            data-target="#carousel"
-            data-slide-to="2"
-            class="bg-secondary"
-          ></li>
-          <li
-            data-target="#carousel"
-            data-slide-to="3"
-            class="bg-secondary"
-          ></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-none d-md-block">
-              <h6 class="translate" id="projectOneHeader">
-                Project One (Restore)
-              </h6>
+      <div class="card-body">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carousel"
+              data-slide-to="0"
+              class="active bg-secondary"
+            ></li>
+            <li
+              data-target="#carousel"
+              data-slide-to="1"
+              class="bg-secondary"
+            ></li>
+            <li
+              data-target="#carousel"
+              data-slide-to="2"
+              class="bg-secondary"
+            ></li>
+            <li
+              data-target="#carousel"
+              data-slide-to="3"
+              class="bg-secondary"
+            ></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-none d-md-block">
+                <h6 class="translate" id="projectOneHeader">
+                  Project One (Restore)
+                </h6>
+              </div>
+              <a role="button" data-toggle="modal" data-target="#project1"
+                ><img
+                  src="../assets/img/restore.png"
+                  class="d-block"
+                  alt="Restore image"
+              /></a>
             </div>
-            <a role="button" data-toggle="modal" data-target="#project1"
-              ><img src="../assets/img/restore.png" class="d-block" alt="Restore image"
-            /></a>
-          </div>
-          <div class="carousel-item">
-            <div class="d-none d-md-block">
-              <h6 class="translate" id="projectTwoHeader">
-                Project Two (Broggi)
-              </h6>
+            <div class="carousel-item">
+              <div class="d-none d-md-block">
+                <h6 class="translate" id="projectTwoHeader">
+                  Project Two (Broggi)
+                </h6>
+              </div>
+              <a role="button" data-toggle="modal" data-target="#project2"
+                ><img
+                  src="../assets/img/broggi.png"
+                  class="d-block"
+                  alt="Broggi image"
+              /></a>
             </div>
-            <a role="button" data-toggle="modal" data-target="#project2"
-              ><img src="../assets/img/broggi.png" class="d-block" alt="Broggi image"
-            /></a>
-          </div>
-          <div class="carousel-item">
-            <div class="d-none d-md-block">
-              <h6 class="translate" id="projectThreeHeader">Froilex Song QR Code Generator</h6>
+            <div class="carousel-item">
+              <div class="d-none d-md-block">
+                <h6 class="translate" id="projectThreeHeader">
+                  Froilex Song QR Code Generator
+                </h6>
+              </div>
+              <a role="button" data-toggle="modal" data-target="#project3"
+                ><img
+                  src="../assets/img/ionqr.png"
+                  class="d-block"
+                  alt="Ion image"
+              /></a>
             </div>
-            <a role="button" data-toggle="modal" data-target="#project3"
-              ><img src="../assets/img/ionqr.png" class="d-block" alt="Ion image"
-            /></a>
-          </div>
-          <div class="carousel-item">
-            <div class="d-none d-md-block">
-              <h6 class="translate" id="projectFourHeader">Speed Cubes SPA</h6>
+            <div class="carousel-item">
+              <div class="d-none d-md-block">
+                <h6 class="translate" id="projectFourHeader">
+                  Speed Cubes SPA
+                </h6>
+              </div>
+              <a role="button" data-toggle="modal" data-target="#project4"
+                ><img
+                  src="../assets/img/rubiks.png"
+                  class="d-block"
+                  alt="Rubiks image"
+              /></a>
             </div>
-            <a role="button" data-toggle="modal" data-target="#project4"
-              ><img src="../assets/img/rubiks.png" class="d-block" alt="Rubiks image"
-            /></a>
           </div>
+          <a
+            class="carousel-control-prev"
+            href="#carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <font-awesome-icon
+              icon="angle-left"
+              size="3x"
+              class="text-secondary"
+            />
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carousel"
+            role="button"
+            data-slide="next"
+          >
+            <font-awesome-icon
+              icon="angle-right"
+              size="3x"
+              class="text-secondary"
+            />
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carousel"
-          role="button"
-          data-slide="prev"
-        >
-          <font-awesome-icon
-            icon="angle-left"
-            size="3x"
-            class="text-secondary"
-          />
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carousel"
-          role="button"
-          data-slide="next"
-        >
-          <font-awesome-icon
-            icon="angle-right"
-            size="3x"
-            class="text-secondary"
-          />
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
 
@@ -143,8 +161,6 @@
         </div>
       </div>
     </div>
-
-
   </div>
 </template>
 <script>
@@ -191,7 +207,7 @@ export default {
 </script>
 <style scoped>
 #projects {
-  width: 60vw; 
+  width: 60vw;
   z-index: 2;
   /* transition: height 4s linear; */
 }
@@ -200,14 +216,17 @@ export default {
   /* height: auto; */
   height: 60vh;
 }
-.carousel-item{
+.carousel-item {
   height: 100%;
-  }
+}
 img {
   width: 100%;
   height: 50vh;
 }
 .carousel-caption {
   color: black;
+}
+.modal {
+  z-index: 1050;
 }
 </style>

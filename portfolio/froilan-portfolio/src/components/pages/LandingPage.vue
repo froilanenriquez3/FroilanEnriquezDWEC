@@ -15,7 +15,7 @@
       <span id="skillsSec" class="secSpan"></span>
 
       <section id="markerOne" @mouseover="fillBars('frontbars')">
-        <div data-aos="fade-right" data-aos-duration="1000">
+        <div class="cardHolder" data-aos="fade-right" data-aos-duration="1000">
           <FrontEndCard class="col-sm-12" />
         </div>
         <div>
@@ -33,13 +33,13 @@
           </button>
         </div>
 
-        <div data-aos="fade-left" data-aos-duration="1000">
+        <div  class="cardHolder" data-aos="fade-left" data-aos-duration="1000">
           <FrontEndCard2 />
         </div>
       </section>
 
       <section id="markerTwo" @mouseover="fillBars('backbars')">
-        <div data-aos="fade-up" data-aos-duration="750">
+        <div class="cardHolder" data-aos="fade-up" data-aos-duration="750">
           <BackEndCard />
         </div>
         <div>
@@ -57,7 +57,7 @@
           </button>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="750">
+        <div class="cardHolder" data-aos="fade-up" data-aos-duration="750">
           <BackEndCard2 />
         </div>
       </section>
@@ -80,7 +80,7 @@
       <span id="softSkillsSec" class="secSpan"></span>
 
       <section id="markerFour">
-        <div data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="cardHolder" data-aos="fade-up-right" data-aos-duration="1000">
           <SoftSkills />
         </div>
         <div>
@@ -98,14 +98,14 @@
           </button>
         </div>
 
-        <div data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="cardHolder" data-aos="fade-up-left" data-aos-duration="1000">
           <SoftSkills2 />
         </div>
       </section>
 
       <span id="aboutSec" class="secSpan"></span>
       <section id="markerFive">
-        <div data-aos="zoom-out" data-aos-duration="1000">
+        <div class="cardHolder" data-aos="zoom-out" data-aos-duration="1000">
           <AboutMeCard />
         </div>
 
@@ -393,7 +393,7 @@ span.secSpan {
   /* z-index: 2; */
 }
 
-div{
+.cardHolder{
   z-index: 2;
 }
 
