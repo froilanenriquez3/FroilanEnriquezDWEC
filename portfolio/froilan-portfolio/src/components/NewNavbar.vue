@@ -60,7 +60,7 @@
 
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle text-white"
+            class="nav-link dropdown-toggle text-white btn btn-info"
             href="#"
             id="navbarDropdown"
             role="button"
