@@ -264,9 +264,9 @@ export default {
       });
 
       
-      const makeActive = (link) => menu_links[link].className = "customScroll nav-link translate text-dark";
+      const makeActive = (link) => menu_links[link].className = "customScroll nav-link translate text-white active";
       const removeActive = (link) => {
-        link.className = "customScroll nav-link translate text-white";
+        link.className = "customScroll nav-link translate text-white ";
       };
 
       const removeAllActive = () => {
@@ -395,5 +395,11 @@ span.secSpan {
 
 div{
   z-index: 2;
+}
+
+a.nav-link, a.active{
+  /* border-bottom: solid white 3px; */
+  border-radius: 5px;
+  background-color: #369;
 }
 </style>

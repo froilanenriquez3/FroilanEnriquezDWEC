@@ -19,7 +19,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navDiv">
-      <ul class="nav navbar-nav ml-auto text-white" id="navBarr">
+      <ul class="nav navbar-nav ml-auto " id="navBarr">
         <li class="nav-item">
           <a class="customScroll nav-link translate text-white" href="#about" id="intro">
             Introduction
@@ -46,7 +46,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="customScroll nav-link translates text-white" href="#markerFive" id="aboutMe">
+          <a class="customScroll nav-link translate text-white" href="#markerFive" id="aboutMe">
             About Me
             <!-- <p class="translate" >About Me</p> -->
           </a>
@@ -332,8 +332,9 @@ p {
 #dropdownMenuButton {
   margin-top: 2px;
 }
-.active {
-  color: black;
-  background-color: red;
+a.active{
+  border-bottom: solid white 3px;
+  /* border-radius: 5px; */
+  /* background-color: #369; */
 }
 </style>
