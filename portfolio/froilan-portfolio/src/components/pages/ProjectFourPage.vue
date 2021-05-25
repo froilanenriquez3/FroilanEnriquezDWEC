@@ -15,6 +15,13 @@
           class="langIcons"
         />
       </i>
+       <i class="m-1">
+        <img
+          src="../../assets/icons/tech-bootstrap.svg"
+          alt="Bootstrap icon"
+          class="langIcons"
+        />
+      </i>
       <i class="m-1">
         <img
           src="../../assets/icons/js.svg"
