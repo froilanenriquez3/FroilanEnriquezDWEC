@@ -70,14 +70,14 @@
           >
           {{ language }}
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu dropdown-menu-right bg-primary" id="customDropdown" aria-labelledby="navbarDropdown">
             <button class="dropdown-item" @click="changeLangEng">
-              <span v-if="isEng" class="text-primary">EN</span>
-              <span v-else>EN</span>
+              <span v-if="isEng" class="text-dark">EN</span>
+              <span v-else class="text-white">EN</span>
             </button>
             <button class="dropdown-item" @click="changeLangEsp">
-              <span v-if="!isEng" class="text-primary">ES</span>
-              <span v-else>ES</span>
+              <span v-if="!isEng" class="text-dark">ES</span>
+              <span v-else class="text-white">ES</span>
             </button>
           </div>
         </li>
@@ -336,5 +336,8 @@ a.active{
   border-bottom: solid white 3px;
   /* border-radius: 5px; */
   /* background-color: #369; */
+}
+#customDropdown {
+  width: 1vw;
 }
 </style>

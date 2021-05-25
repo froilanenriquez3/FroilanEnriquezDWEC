@@ -1,27 +1,55 @@
 <template>
   <div class="card bg-white text-black mt-5" id="safetyVideo">
     <div class="card-header bg-info text-white">
-      <h3 class="card-title mt-2 translate" id="preFlight">Before your flight...</h3>
+      <h3 class="card-title mt-2 translate" id="preFlight">
+        Before your flight...
+      </h3>
     </div>
 
     <div class="card-body row">
       <!-- <div class="row"> -->
-        <div class="col-lg-3" id="controls1">
-        <button class="btn btn-primary m-1 col-10 translate" id="introduction" @click="playSection(0,8)">Introduction</button>
-        <button class="btn btn-primary m-1 col-10 translate" id="aboutMe2" @click="playSection(8.1,23)">About Me</button>
-        <button class="btn btn-primary m-1 col-10 translate" id="language" @click="playSection(23,40)">Languages</button>
+      <div class="col-lg-3" id="controls1">
+        <button
+          class="btn btn-primary m-1 col-10 translate"
+          id="introduction"
+          @click="playSection(0, 8)"
+        >
+          Introduction
+        </button>
+        <button
+          class="btn btn-primary m-1 col-10 translate"
+          id="aboutMe2"
+          @click="playSection(8.1, 23)"
+        >
+          About Me
+        </button>
+        <button
+          class="btn btn-primary m-1 col-10 translate"
+          id="language"
+          @click="playSection(23, 40)"
+        >
+          Languages
+        </button>
       </div>
 
       <div class="col-lg-6">
-        <p class="card-text translate" id="clickABtn">Click a button to go to a specific section</p>
-        <!-- <img src="../assets/img/froilan.jpeg" alt="" id="image" /> -->
+        <p class="card-text translate" id="clickABtn">
+          Click a button to go to a specific section
+        </p>
+        <div v-if="!videoReady" id="spinner">
+          <div class="spinner-border text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
         <video
+        v-show="videoReady"
           id="myVideo"
           @timeupdate="changeProgress($event)"
           @canplay="changeProgress($event)"
         >
           <source src="../assets/videos/video.mp4" type="video/mp4" />
-          Your navigator does not support this video
+          <!-- Your navigator does not support this video -->
         </video>
 
         <div id="controls">
@@ -38,17 +66,28 @@
             ></span>
           </button>
 
-          <div id="videoBar" @click="setProgress($event)" class="progress-range bg-primary ml-1">
-            <div id="videoBarBar" class="progress-bar bg-info "></div>
+          <div
+            id="videoBar"
+            @click="setProgress($event)"
+            class="progress-range bg-primary ml-1"
+          >
+            <div id="videoBarBar" class="progress-bar bg-info"></div>
           </div>
           <button @click="toggleMute" class="btn btn-primary m-1">
-            <font-awesome-icon v-show="mute === true" id="muteIcon"  icon="volume-mute"></font-awesome-icon>
-            <font-awesome-icon v-show="mute === false" id="muteIcon"  icon="volume-up"></font-awesome-icon>
+            <font-awesome-icon
+              v-show="mute === true"
+              id="muteIcon"
+              icon="volume-mute"
+            ></font-awesome-icon>
+            <font-awesome-icon
+              v-show="mute === false"
+              id="muteIcon"
+              icon="volume-up"
+            ></font-awesome-icon>
           </button>
-           
-        <!-- </div> -->
-      </div>
-      
+
+          <!-- </div> -->
+        </div>
 
         <p class="mt-3 translate" id="ready">
           All ready? Click below to go to our first stop!
@@ -56,17 +95,38 @@
       </div>
 
       <div class="col-lg-3" id="controls2">
-        <button class="btn btn-primary m-1 col-10 translate" id="frameworks" @click="playSection(40.5,50.7)">Frameworks</button>
-        <button class="btn btn-primary m-1 col-10 translate" id="experience" @click="playSection(51,63)">Experience</button>
-        <button class="btn btn-primary m-1 col-10 translate" id="softSkills" @click="playSection(63,79)">Soft Skills</button>
+        <button
+          class="btn btn-primary m-1 col-10 translate"
+          id="frameworks"
+          @click="playSection(40.5, 50.7)"
+        >
+          Frameworks
+        </button>
+        <button
+          class="btn btn-primary m-1 col-10 translate"
+          id="experience"
+          @click="playSection(51, 63)"
+        >
+          Experience
+        </button>
+        <button
+          class="btn btn-primary m-1 col-10 translate"
+          id="softSkills"
+          @click="playSection(63, 79)"
+        >
+          Soft Skills
+        </button>
       </div>
     </div>
     <div class="card-footer bg-info">
-      
-      <button class="btn btn-secondary m-2" id="btnTakeOff" @click="scrollDown()">
-         <font-awesome-icon icon="plane-departure" class="mr-2"/>
-          <span id="takeOff" class="translate"> Take Off! </span>
-         <!-- <font-awesome-icon icon="plane-departure" /> -->
+      <button
+        class="btn btn-secondary m-2"
+        id="btnTakeOff"
+        @click="scrollDown()"
+      >
+        <font-awesome-icon icon="plane-departure" class="mr-2" />
+        <span id="takeOff" class="translate"> Take Off! </span>
+        <!-- <font-awesome-icon icon="plane-departure" /> -->
       </button>
     </div>
   </div>
@@ -80,6 +140,7 @@ export default {
       timestamp: null,
       videoId: "#myVideo",
       video: "",
+      videoReady: false,
     };
   },
   setup() {},
@@ -91,8 +152,18 @@ export default {
         (event.target.currentTime / event.target.duration) * 100 + "%";
     },
     fillBars() {
-      let vals = ["90%", "95%", "75%", "80%", "85%", 
-                  "65%", "95%", "55%", "50%", "70%"];
+      let vals = [
+        "90%",
+        "95%",
+        "75%",
+        "80%",
+        "85%",
+        "65%",
+        "95%",
+        "55%",
+        "50%",
+        "70%",
+      ];
       let bars = document.getElementsByClassName("frontbars");
 
       bars.forEach((bar, i) => {
@@ -152,16 +223,22 @@ export default {
       // Cambiamos punto del video en el que estamos.
       this.video.currentTime = newTime * this.video.duration;
     },
-     toggleMute(){
-        // let muteIcon= document.querySelector('#muteIcon');
-        this.video.muted = !this.video.muted;
+    toggleMute() {
+      // let muteIcon= document.querySelector('#muteIcon');
+      this.video.muted = !this.video.muted;
 
-        this.mute = !this.mute;
+      this.mute = !this.mute;
     },
   },
   mounted() {
     this.video = document.querySelector("#myVideo");
+
+    this.video.addEventListener("canplay", () => {
+       this.videoReady = true;
+      console.log(this.videoReady);
+    })
   },
+  created() {},
 };
 </script>
 <style scoped>
@@ -180,30 +257,42 @@ export default {
   display: flex;
   justify-content: flex-start;
 }
-.progress-range{
-    margin: auto;
-    border-radius: 10px;
-    cursor: pointer;
-    height: 8px;
-    width: 94%;
-    background-color:  rgb(0, 172, 194);
+.progress-range {
+  margin: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 8px;
+  width: 94%;
+  background-color: rgb(0, 172, 194);
 }
-.progress-bar{
-    background: #e1157b9d;
-    width: 20%;
-    height: 100%;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+.progress-bar {
+  background: #e1157b9d;
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
-#controls1, #controls2{
+#controls1,
+#controls2 {
   margin-top: 10%;
 }
-#btnTakeOff{
+#btnTakeOff {
   font-size: 1.7em;
 }
-#takeOff{
+#takeOff {
   font-size: 1em;
   margin: 0;
+}
+.spinner-border {
+  position: relative;
+  z-index: 1000;
+}
+#spinner{
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
 }
 </style>
