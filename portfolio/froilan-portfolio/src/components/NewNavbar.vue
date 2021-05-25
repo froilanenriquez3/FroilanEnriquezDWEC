@@ -21,7 +21,7 @@
     <div class="collapse navbar-collapse" id="navDiv">
       <ul class="nav navbar-nav ml-auto " id="navBarr">
         <li class="nav-item">
-          <a class="customScroll nav-link translate text-white" href="#about" id="intro">
+          <a class="customScroll nav-link translate text-white active" href="#about" id="intro">
             Introduction
             <!-- <p class="translate" id="intro">Introduction</p> -->
           </a>
