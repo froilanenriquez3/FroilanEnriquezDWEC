@@ -154,7 +154,7 @@
       </section>
 
       <span id="contact" class="secSpan"></span>
-      <section id="markerSix">
+      <section id="markerSix" >
         <Email />
       </section>
     </main>
@@ -399,14 +399,7 @@ span.secSpan {
 #about {
   margin-bottom: 0;
 }
-#btnFront {
-  /* margin-top: 130vh; */
-  /* margin-bottom: 1%; */
-}
 
-#btnBack {
-  /* margin-top: 100vh; */
-}
 #btnProject {
   margin-top: 1%;
 }
@@ -415,15 +408,17 @@ span.secSpan {
   font-size: 2em;
   height: fit-content;
 }
-#btnSoft {
-  /* margin-top: 88vh; */
-  /* font-size: 1.5em; */
-}
+
 .secLabel {
   position: relative;
   /* width: 20vw; */
   z-index: 1;
 }
+
+/* #markerThree{
+  padding-top: 35vh;
+} */
+
 #markerThree,
 #markerFive {
   display: flex;
@@ -463,6 +458,10 @@ a.active {
 #skillsSec{
   height: 50vh;
 } 
+
+#markerSix{
+  margin-bottom: 27vh;
+}
 
 /* Large screen styles */
 @media (min-width: 768px) {

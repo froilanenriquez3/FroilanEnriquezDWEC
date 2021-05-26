@@ -1,14 +1,15 @@
 <template>
   <div class="card bg-white text-black mt-5" id="safetyVideo">
+
     <div class="card-header bg-info text-white">
-      <h3 class="card-title mt-2 translate" id="preFlight">
+      <h2 class="card-title mt-2 translate" id="preFlight">
         Before your flight...
-      </h3>
+      </h2>
     </div>
 
     <div class="card-body row" id="videoRow">
       <!-- <div class="row"> -->
-      <div class="col-md-12 col-lg-3" id="controls1">
+      <div class="col-md-12 col-lg-3 mb-5" id="controls1">
         <button
           class="btn btn-primary m-1 col-md-3 col-lg-10 translate"
           id="introduction"
@@ -58,12 +59,12 @@
             id="playButton"
             @click="playVideo"
           >
-            <span v-show="play === true"
-              ><font-awesome-icon icon="play"></font-awesome-icon
-            ></span>
-            <span v-show="play === false"
-              ><font-awesome-icon icon="pause"></font-awesome-icon
-            ></span>
+            <span v-show="play === true">
+              <font-awesome-icon icon="play" size="2x"></font-awesome-icon>
+            </span>
+            <span v-show="play === false">
+              <font-awesome-icon icon="pause" size="2x"></font-awesome-icon>
+            </span>
           </button>
 
           <div
@@ -78,11 +79,13 @@
               v-show="mute === true"
               id="muteIcon"
               icon="volume-mute"
+              size="2x"
             ></font-awesome-icon>
             <font-awesome-icon
               v-show="mute === false"
               id="muteIcon"
               icon="volume-up"
+              size="2x"
             ></font-awesome-icon>
           </button>
 
@@ -94,7 +97,7 @@
         </p>
       </div>
 
-      <div class="col-md-12 col-lg-3" id="controls2">
+      <div class="col-md-12 col-lg-3 mb-5" id="controls2">
         <button
           class="btn btn-primary m-1 col-md-3 col-lg-10 translate"
           id="frameworks"
@@ -264,7 +267,7 @@ export default {
   border-radius: 10px;
   cursor: pointer;
   height: 8px;
-  width: 94%;
+  width: 90%;
   background-color: rgb(0, 172, 194);
 }
 .progress-bar {
@@ -303,6 +306,4 @@ export default {
 #controls2 {
   padding-top: 5%;
 }
-
-
 </style>
