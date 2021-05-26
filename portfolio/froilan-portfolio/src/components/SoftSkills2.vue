@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 .cardcom {
-  width: 35vw;
+  /* width: 35vw; */
   opacity: 0.95;
     height: 100%;
 }

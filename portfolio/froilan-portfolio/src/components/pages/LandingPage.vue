@@ -1,29 +1,36 @@
 <template>
-  <div id="landingPage" data-spy="scroll" data-target="#maNavbar">
+  <div id="landingPage">
     <header>
       <!-- <Navbar :textArray="textArray" /> -->
       <NewNavbar :textArray="textArray" />
     </header>
 
-    <img src="../../assets/img/grayplane.svg" alt="Plane" id="plane" />
+    <img src="../../assets/img/grayplane.svg" alt="Plane" id="plane" class="" />
+
     <!-- <div id="plane">
       <font-awesome-icon icon="fighter-jet" size="10x" class="fa-rotate-270"></font-awesome-icon>
     </div> -->
+
     <main>
-      <SafetyVideo />
+      <SafetyVideo class=" col-md-10 col-8" />
 
       <span id="skillsSec" class="secSpan"></span>
 
-      <section id="markerOne" @mouseover="fillBars('frontbars')">
-        <div class="cardHolder" data-aos="fade-right" data-aos-duration="1000">
-          <FrontEndCard class="col-sm-12" />
+      <section id="markerOne" class="row" @mouseover="fillBars('frontbars')">
+        <div
+          class="cardHolder col-md-11 col-lg-5"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <FrontEndCard />
         </div>
-        <div>
+
+        <div class="col-md-4 col-lg-2 middle-bit ">
           <div class="card-header bg-primary text-white mt-1 secLabel">
             <h5 class="mt-2">FRONT END</h5>
           </div>
           <button
-            class="btn btn-secondary navBtn"
+            class="btn btn-secondary navBtn middleBtn"
             id="btnFront"
             @click="scrollSection('markerTwo'), fillBars('backbars')"
           >
@@ -33,21 +40,30 @@
           </button>
         </div>
 
-        <div  class="cardHolder" data-aos="fade-left" data-aos-duration="1000">
+        <div
+          class="cardHolder col-md-11 col-lg-5"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <FrontEndCard2 />
         </div>
       </section>
 
-      <section id="markerTwo" @mouseover="fillBars('backbars')">
-        <div class="cardHolder" data-aos="fade-up" data-aos-duration="750">
+      <section id="markerTwo" class="row" @mouseover="fillBars('backbars')">
+        <div
+          class="cardHolder col-md-11 col-lg-5"
+          data-aos="fade-up"
+          data-aos-duration="750"
+        >
           <BackEndCard />
         </div>
-        <div>
+
+        <div class="col-md-4 col-lg-2 middle-bit">
           <div class="card-header bg-info text-white mt-1 secLabel">
             <h5 class="mt-2">BACK END</h5>
           </div>
           <button
-            class="btn btn-secondary navBtn"
+            class="btn btn-secondary navBtn "
             id="btnBack"
             @click="scrollSection('markerThree')"
           >
@@ -57,7 +73,11 @@
           </button>
         </div>
 
-        <div class="cardHolder" data-aos="fade-up" data-aos-duration="750">
+        <div
+          class="cardHolder col-md-11 col-lg-5"
+          data-aos="fade-up"
+          data-aos-duration="750"
+        >
           <BackEndCard2 />
         </div>
       </section>
@@ -65,7 +85,7 @@
       <span id="projects" class="secSpan"></span>
 
       <section id="markerThree">
-        <ProjectCard />
+        <ProjectCard class="col-10" />
         <button
           class="btn btn-secondary navBtn"
           id="btnProject"
@@ -79,11 +99,16 @@
 
       <span id="softSkillsSec" class="secSpan"></span>
 
-      <section id="markerFour">
-        <div class="cardHolder" data-aos="fade-up-right" data-aos-duration="1000">
+      <section id="markerFour" class="row">
+        <div
+          class="cardHolder col-md-11 col-lg-5"
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+        >
           <SoftSkills />
         </div>
-        <div>
+
+        <div class="col-md-4 col-lg-2 middle-bit">
           <div class="card-header bg-info text-white mt-1 secLabel">
             <h5 class="mt-2">SOFT SKILLS</h5>
           </div>
@@ -98,15 +123,23 @@
           </button>
         </div>
 
-        <div class="cardHolder" data-aos="fade-up-left" data-aos-duration="1000">
+        <div
+          class="cardHolder col-md-11 col-lg-5"
+          data-aos="fade-up-left"
+          data-aos-duration="1000"
+        >
           <SoftSkills2 />
         </div>
       </section>
 
       <span id="aboutSec" class="secSpan"></span>
       <section id="markerFive">
-        <div class="cardHolder" data-aos="zoom-out" data-aos-duration="1000">
-          <AboutMeCard />
+        <div
+          class="cardHolder row"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+        >
+          <AboutMeCard class="col-8" />
         </div>
 
         <button
@@ -263,8 +296,9 @@ export default {
         sections.push(section);
       });
 
-      
-      const makeActive = (link) => menu_links[link].className = "customScroll nav-link translate text-white active";
+      const makeActive = (link) =>
+        (menu_links[link].className =
+          "customScroll nav-link translate text-white active");
       const removeActive = (link) => {
         link.className = "customScroll nav-link translate text-white ";
       };
@@ -275,13 +309,13 @@ export default {
 
       window.addEventListener("scroll", () => {
         const current =
-        sections.length -
-        [...sections]
-          .reverse()
-          .findIndex(
-            (section) => window.scrollY >= section.offsetTop - sectionMargin
-          ) -
-        1;
+          sections.length -
+          [...sections]
+            .reverse()
+            .findIndex(
+              (section) => window.scrollY >= section.offsetTop - sectionMargin
+            ) -
+          1;
         if (current !== currentActive) {
           removeAllActive();
           currentActive = current;
@@ -291,7 +325,7 @@ export default {
     },
   },
   mounted() {
-    console.log("Landing page mounted");
+    // console.log("Landing page mounted");
     this.textArray = document.getElementsByClassName("translate");
     // this.initScrollSpy();
     this.initScroll();
@@ -300,34 +334,40 @@ export default {
 </script>
 <style scoped>
 #landingPage {
-  position: relative;
-  height: auto;
-  width: 100%;
+  /* position: relative; */
+  /* height: auto; */
+  /* width: 100%; */
   overflow-y: none;
 }
+
 main {
-  position: relative;
+  /* position: relative; */
   /* height: 100%; */
-    width: 100%;
+  width: 100%;
   /* overflow-y: none; */
 
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   margin-top: 5vh;
   background-image: url("../../assets/img/sky.jpg");
   background-color: #cccccc;
   background-size: cover;
 
+  /* padding-top: 25vh; */
+
   /* z-index: -2; */
 }
+
 #plane {
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(-1, -1);
   font-size: 30px;
-  width: 30vw;
+  /* max-width: 30vw; */
+  max-height: 70vh;
   z-index: 1;
   /* background-color: cyan; */
 }
@@ -335,13 +375,13 @@ section {
   margin: 1%;
   padding-top: 10vh;
   display: flex;
-  justify-content: space-around;
-  width: 100vw;
+  justify-content: center;
+  /* width: 100vw; */
   /* z-index: -1; */
   /* background-color: cyan; */
 }
 #blank {
-  height: 5vh;
+  height: 20vh;
 }
 span.secSpan {
   width: 100vw;
@@ -360,11 +400,12 @@ span.secSpan {
   margin-bottom: 0;
 }
 #btnFront {
-  margin-top: 130vh;
+  /* margin-top: 130vh; */
+  /* margin-bottom: 1%; */
 }
 
 #btnBack {
-  margin-top: 100vh;
+  /* margin-top: 100vh; */
 }
 #btnProject {
   margin-top: 1%;
@@ -375,12 +416,12 @@ span.secSpan {
   height: fit-content;
 }
 #btnSoft {
-  margin-top: 88vh;
+  /* margin-top: 88vh; */
   /* font-size: 1.5em; */
 }
 .secLabel {
   position: relative;
-  width: 20vw;
+  /* width: 20vw; */
   z-index: 1;
 }
 #markerThree,
@@ -393,13 +434,45 @@ span.secSpan {
   /* z-index: 2; */
 }
 
-.cardHolder{
+.cardHolder {
   z-index: 2;
+  display: flex;
+  justify-content: center;
 }
 
-a.nav-link, a.active{
+a.nav-link,
+a.active {
   /* border-bottom: solid white 3px; */
   border-radius: 5px;
   background-color: #369;
+}
+
+.middle-bit {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: middle;
+  /* padding: 1%; */
+  padding-right: 1%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+}
+
+
+#skillsSec{
+  height: 50vh;
+} 
+
+/* Large screen styles */
+@media (min-width: 768px) {
+  #skillsSec {
+    height: 10vh;
+  }
+
+  main{
+    padding-top: 0vh;
+  }
+
 }
 </style>

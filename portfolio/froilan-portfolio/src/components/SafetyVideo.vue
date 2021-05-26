@@ -6,25 +6,25 @@
       </h3>
     </div>
 
-    <div class="card-body row">
+    <div class="card-body row" id="videoRow">
       <!-- <div class="row"> -->
-      <div class="col-lg-3" id="controls1">
+      <div class="col-md-12 col-lg-3" id="controls1">
         <button
-          class="btn btn-primary m-1 col-10 translate"
+          class="btn btn-primary m-1 col-md-3 col-lg-10 translate"
           id="introduction"
           @click="playSection(0, 8)"
         >
           Introduction
         </button>
         <button
-          class="btn btn-primary m-1 col-10 translate"
+          class="btn btn-primary m-1 col-md-3 col-lg-10 translate"
           id="aboutMe2"
           @click="playSection(8.1, 23)"
         >
           About Me
         </button>
         <button
-          class="btn btn-primary m-1 col-10 translate"
+          class="btn btn-primary m-1 col-md-3 col-lg-10 translate"
           id="language"
           @click="playSection(23, 40)"
         >
@@ -32,7 +32,7 @@
         </button>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-md-12 col-lg-6">
         <p class="card-text translate" id="clickABtn">
           Click a button to go to a specific section
         </p>
@@ -43,7 +43,7 @@
         </div>
 
         <video
-        v-show="videoReady"
+          v-show="videoReady"
           id="myVideo"
           @timeupdate="changeProgress($event)"
           @canplay="changeProgress($event)"
@@ -94,23 +94,23 @@
         </p>
       </div>
 
-      <div class="col-lg-3" id="controls2">
+      <div class="col-md-12 col-lg-3" id="controls2">
         <button
-          class="btn btn-primary m-1 col-10 translate"
+          class="btn btn-primary m-1 col-md-3 col-lg-10 translate"
           id="frameworks"
           @click="playSection(40.5, 50.7)"
         >
           Frameworks
         </button>
         <button
-          class="btn btn-primary m-1 col-10 translate"
+          class="btn btn-primary m-1 col-md-3 col-lg-10 translate"
           id="experience"
           @click="playSection(51, 63)"
         >
           Experience
         </button>
         <button
-          class="btn btn-primary m-1 col-10 translate"
+          class="btn btn-primary m-1 col-md-3 col-lg-10 translate"
           id="softSkills"
           @click="playSection(63, 79)"
         >
@@ -234,24 +234,26 @@ export default {
     this.video = document.querySelector("#myVideo");
 
     this.video.addEventListener("canplay", () => {
-       this.videoReady = true;
-      console.log(this.videoReady);
-    })
+      this.videoReady = true;
+      // console.log(this.videoReady);
+    });
   },
   created() {},
 };
 </script>
 <style scoped>
 #safetyVideo {
-  width: 65vw;
+  /* width: 65vw; */
   margin: 1%;
   z-index: 2;
+  padding: 0px;
 }
 #image {
   width: 20vw;
 }
 #myVideo {
-  width: 30vw;
+  /* width: 30vw; */
+  width: 100%;
 }
 #controls {
   display: flex;
@@ -273,10 +275,6 @@ export default {
   transition: all 0.3s ease;
 }
 
-#controls1,
-#controls2 {
-  margin-top: 10%;
-}
 #btnTakeOff {
   font-size: 1.7em;
 }
@@ -288,11 +286,23 @@ export default {
   position: relative;
   z-index: 1000;
 }
-#spinner{
+#spinner {
   margin-top: 15vh;
   margin-bottom: 15vh;
   display: flex;
   justify-content: center;
   vertical-align: middle;
 }
+
+#videoRow {
+  display: flex;
+  justify-content: center;
+}
+
+#controls1,
+#controls2 {
+  padding-top: 5%;
+}
+
+
 </style>

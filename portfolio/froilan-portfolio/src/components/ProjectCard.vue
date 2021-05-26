@@ -1,5 +1,5 @@
 <template>
-  <div id="projectsContainer">
+  <div id="projectsContainer" class="col-lg-8">
     <div class="card mt-3" id="projects">
       <div class="card-header bg-secondary text-white">
         <h5 class="card-title mt-2 mb-0 translate" id="projectCardHeader">
@@ -207,21 +207,21 @@ export default {
 </script>
 <style scoped>
 #projects {
-  width: 60vw;
+  /* width: 60vw; */
   z-index: 2;
   /* transition: height 4s linear; */
 }
 #carousel {
   width: 100%;
   /* height: auto; */
-  height: 60vh;
+  /* height: 60vh; */
 }
 .carousel-item {
   height: 100%;
 }
 img {
   width: 100%;
-  height: 50vh;
+  /* height: 50vh; */
 }
 .carousel-caption {
   color: black;

@@ -295,7 +295,7 @@ export default {
       // console.log(document.getElementById(stringID).innerHTML);
       // console.log(lang.stringID);
       if (document.getElementById(stringID) == null) {
-        console.log(stringID);
+        // console.log(stringID);
       } else document.getElementById(stringID).innerHTML = lang[stringID];
     },
   },

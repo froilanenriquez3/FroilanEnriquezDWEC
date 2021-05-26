@@ -17,12 +17,12 @@ export default {
 #start {
     display: flex;
     justify-content: center;
-    height: 100vh;
-    
+    /* height: 100vh; */
 }
 #myLogo {
   animation: fadeIn 3s;
   height: 100vh;
+  width: 100vw;
   transition: all 1s linear;
 
 }

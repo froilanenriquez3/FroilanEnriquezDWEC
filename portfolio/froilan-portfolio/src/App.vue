@@ -41,6 +41,7 @@ export default {
 *{
   margin: 0;
   padding: 0;
+  font-size: 100%;
 }
 html{
   scroll-behavior: smooth;
@@ -55,7 +56,9 @@ html{
   background-color: #00AEDC;
   overflow: hidden;
 
-  font-size: 18px;
+  /* font-size: 18px; */
+  /* font-size: 2em; */
+  /* font-size: 120%; */
 
   position: relative;
 }
@@ -63,10 +66,7 @@ html{
 #landing{
   animation: fadeIn 5s;
 }
-header{
-  box-sizing: border-box;
-  width: 100vw;
-}
+
 .nav{
   padding: 0px;
 }

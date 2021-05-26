@@ -1,13 +1,17 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="maNavbar">
+
     <a class="navbar-brand" href="#">
-      <div class="bg-white rounded-circle" height="60">
-        <img src="../assets/img/logo.svg" alt="Logo" height="40" />
+      <div class="bg-white rounded-circle" >
+        <img src="../assets/img/logo.svg" alt="Logo" id="logoCircle" />
       </div>
     </a>
-    <h4 class="text-white">Froilan Enriquez</h4>
+
+    <h2 class="text-white">Froilan Enriquez</h2>
+
     <button
-      class="navbar-toggler"
+    id="navbarToggler"
+      class="navbar-toggler bg-info"
       type="button"
       data-toggle="collapse"
       data-target="#navDiv"
@@ -15,11 +19,11 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" />
     </button>
 
-    <div class="collapse navbar-collapse" id="navDiv">
-      <ul class="nav navbar-nav ml-auto " id="navBarr">
+    <div class="collapse navbar-collapse " id="navDiv">
+      <ul class="navbar-nav ml-auto" id="navBarr">
         <li class="nav-item">
           <a class="customScroll nav-link translate text-white active" href="#about" id="intro">
             Introduction
@@ -70,6 +74,7 @@
           >
           {{ language }}
           </a>
+
           <div class="dropdown-menu dropdown-menu-right bg-primary" id="customDropdown" aria-labelledby="navbarDropdown">
             <button class="dropdown-item" @click="changeLangEng">
               <span v-if="isEng" class="text-dark">EN</span>
@@ -81,7 +86,6 @@
             </button>
           </div>
         </li>
-
       </ul>
     </div>
 
@@ -314,18 +318,19 @@ export default {
       // console.log(document.getElementById(stringID).innerHTML);
       // console.log(lang.stringID);
       if (document.getElementById(stringID) == null) {
-        console.log(stringID);
+        // console.log(stringID);
       } else document.getElementById(stringID).innerHTML = lang[stringID];
     },
   },
   mounted() {
-    console.log("Navbar mounted");
+    // console.log("Navbar mounted");
   },
   setup() {},
 };
 </script>
 
 <style scoped>
+
 p {
   margin: 0;
 }
@@ -340,4 +345,12 @@ a.active{
 #customDropdown {
   width: 1vw;
 }
+#logoCircle{
+  height: 5vh;
+}
+#navbarToggler{
+  height: 5vh;
+  width: 10vw;
+}
+
 </style>

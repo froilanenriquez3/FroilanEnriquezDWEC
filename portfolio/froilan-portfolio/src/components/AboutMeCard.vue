@@ -1,5 +1,5 @@
 <template>
-  <div class="card m-1 cardcom">
+  <div class="card m-1 cardcom ">
     <div class="card-header bg-secondary text-white">
       <h3 class="card-title mt-2 translate" id="aboutMe3">About Me</h3>
     </div>
@@ -48,13 +48,15 @@ export default {
 <style scoped>
 .cardcom {
   position: relative;
-  width: 50vw;
+  /* width: 50vw; */
   z-index: 2;
+  padding: 0px;
   /* height: 70vh; */
 }
 #fe3 {
   width: 18vw;
 }
+
 #iconsRow {
   display: flex;
   justify-content: center;
