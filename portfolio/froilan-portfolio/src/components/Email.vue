@@ -79,7 +79,7 @@
       <textarea class="form-control" id="emailBody" v-model="body" />
     </div>
 
-    <button class="btn btn-lg bg-secondary text-white" @click="sendEmail" >
+    <button class="btn btn-lg bg-secondary text-white mt-1" @click="sendEmail" >
      <span class="translate" id="sendEmail">Send </span>
       <font-awesome-icon
             icon="paper-plane"
@@ -133,6 +133,8 @@ export default {
   z-index: 2;
   padding-left: 7%;
   padding-right: 7%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 #envelope {
   color: #00aedc;
