@@ -18,7 +18,7 @@
 
       <section id="markerOne" class="row" @mouseover="fillBars('frontbars')">
         <div
-          class="cardHolder col-md-11 col-lg-5"
+          class="cardHolder col-md-11 col-lg-5 mb-3"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
@@ -51,7 +51,7 @@
 
       <section id="markerTwo" class="row" @mouseover="fillBars('backbars')">
         <div
-          class="cardHolder col-md-11 col-lg-5"
+          class="cardHolder col-md-11 col-lg-5 mb-3"
           data-aos="fade-up"
           data-aos-duration="750"
         >
@@ -101,7 +101,7 @@
 
       <section id="markerFour" class="row">
         <div
-          class="cardHolder col-md-11 col-lg-5"
+          class="cardHolder col-md-11 col-lg-5 mb-3"
           data-aos="fade-up-right"
           data-aos-duration="1000"
         >
@@ -139,7 +139,7 @@
           data-aos="zoom-out"
           data-aos-duration="1000"
         >
-          <AboutMeCard class="col-lg-6" />
+          <AboutMeCard class="col-md-10 col-lg-6" />
         </div>
 
         <button

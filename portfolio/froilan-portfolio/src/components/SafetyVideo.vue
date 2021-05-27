@@ -55,26 +55,26 @@
 
         <div id="controls">
           <button
-            class="btn btn-primary m-1"
+            class="btn btn-primary"
             id="playButton"
             @click="playVideo"
           >
             <span v-show="play === true">
-              <font-awesome-icon icon="play" size="2x"></font-awesome-icon>
+              <font-awesome-icon icon="play" size="2x" class="mt-1 mb-1"></font-awesome-icon>
             </span>
             <span v-show="play === false">
-              <font-awesome-icon icon="pause" size="2x"></font-awesome-icon>
+              <font-awesome-icon icon="pause" size="2x" class="mt-1 mb-1"></font-awesome-icon>
             </span>
           </button>
 
           <div
             id="videoBar"
             @click="setProgress($event)"
-            class="progress-range bg-primary ml-1"
+            class="progress-range bg-primary ml-1 mr-1"
           >
             <div id="videoBarBar" class="progress-bar bg-info"></div>
           </div>
-          <button @click="toggleMute" class="btn btn-primary m-1">
+          <button @click="toggleMute" class="btn btn-primary">
             <font-awesome-icon
               v-show="mute === true"
               id="muteIcon"
