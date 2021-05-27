@@ -41,7 +41,7 @@
         </div>
 
         <div
-          class="cardHolder col-md-11 col-lg-5"
+          class="cardHolder col-md-11 col-lg-5 mb-3"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
@@ -74,7 +74,7 @@
         </div>
 
         <div
-          class="cardHolder col-md-11 col-lg-5"
+          class="cardHolder col-md-11 col-lg-5 mb-3"
           data-aos="fade-up"
           data-aos-duration="750"
         >
@@ -124,7 +124,7 @@
         </div>
 
         <div
-          class="cardHolder col-md-11 col-lg-5"
+          class="cardHolder col-md-11 col-lg-5 mb-3"
           data-aos="fade-up-left"
           data-aos-duration="1000"
         >
