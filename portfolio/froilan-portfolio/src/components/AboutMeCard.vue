@@ -27,7 +27,7 @@
         girlfriend, or playing chess online.
       </p>
 
-        <a class="btn btn-primary btn-download"  download href="assets/FroilanEnriquezCurriculum.pdf">
+        <a class="btn btn-primary btn-download mt-3"  download href="assets/FroilanEnriquezCurriculum.pdf">
           <span class="translate" id="download">Download curriculum </span>
            <font-awesome-icon icon="file-download" />
         </a>

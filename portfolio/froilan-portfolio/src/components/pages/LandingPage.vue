@@ -12,7 +12,7 @@
     </div> -->
 
     <main>
-      <SafetyVideo class=" col-md-10 col-8" />
+      <SafetyVideo class=" col-md-10 col-lg-7" />
 
       <span id="skillsSec" class="secSpan"></span>
 
@@ -139,7 +139,7 @@
           data-aos="zoom-out"
           data-aos-duration="1000"
         >
-          <AboutMeCard class="col-8" />
+          <AboutMeCard class="col-lg-6" />
         </div>
 
         <button
