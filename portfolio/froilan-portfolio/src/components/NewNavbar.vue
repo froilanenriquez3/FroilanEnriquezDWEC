@@ -62,7 +62,7 @@
           </a>
         </li>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown ml-2">
           <a
             class="nav-link dropdown-toggle text-white btn btn-info"
             href="#"

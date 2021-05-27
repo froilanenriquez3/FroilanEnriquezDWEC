@@ -47,7 +47,7 @@
               <p class="translate text-white" id="aboutMe">About Me</p>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-1">
             <a class="nav-link" href="#markerSix">
               <p class="translate text-white" id="contactMe">Contact Me</p>
             </a>
